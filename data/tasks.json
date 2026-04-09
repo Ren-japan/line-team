@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-09T14:34:40",
+  "last_updated": "2026-04-09T14:38:55",
   "updated_by": "Ren",
   "tasks": [
     {
@@ -80,7 +80,7 @@
       "created_at": "2026-04-09",
       "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ai"
     },
     {
       "id": "t10",
@@ -240,7 +240,7 @@
       "created_at": "2026-04-09",
       "notes": "HTMLモックv4完成済み（star-team/team-board.html）。配色Warm SaaS系。デザインガイドはstar-team/docs/に",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ai"
     },
     {
       "id": "t20",
@@ -272,7 +272,7 @@
       "created_at": "2026-04-09",
       "notes": "",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ai"
     },
     {
       "id": "t22",
@@ -368,7 +368,7 @@
       "created_at": "2026-04-09",
       "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ai"
     },
     {
       "id": "t29",
