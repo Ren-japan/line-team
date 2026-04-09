@@ -276,6 +276,25 @@ def cmd_show(args):
     print()
 
 
+def cmd_delete(args):
+    """タスクを削除"""
+    data = load_tasks()
+    task = None
+    for t in data["tasks"]:
+        if t["id"] == args.id:
+            task = t
+            break
+
+    if not task:
+        print(f"エラー: タスク '{args.id}' が見つかりません")
+        sys.exit(1)
+
+    data["tasks"] = [t for t in data["tasks"] if t["id"] != args.id]
+    user = get_user(args.deleted_by) or data.get("updated_by", "unknown")
+    save_tasks(data, user)
+    print(f"削除: {args.id} — {task['title']}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Star Team タスク管理CLI")
     sub = parser.add_subparsers(dest="command", help="サブコマンド")
@@ -344,21 +363,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-def cmd_delete(args):
-    """タスクを削除"""
-    data = load_tasks()
-    task = None
-    for t in data["tasks"]:
-        if t["id"] == args.id:
-            task = t
-            break
-
-    if not task:
-        print(f"エラー: タスク '{args.id}' が見つかりません")
-        sys.exit(1)
-
-    data["tasks"] = [t for t in data["tasks"] if t["id"] != args.id]
-    user = get_user(args.deleted_by) or data.get("updated_by", "unknown")
-    save_tasks(data, user)
-    print(f"削除: {args.id} — {task['title']}")
