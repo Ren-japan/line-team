@@ -26,17 +26,17 @@ for m in members:
 tab_labels.append("➕ タスク追加")
 all_tabs = st.tabs(tab_labels)
 
-# チーム全体
+# チーム全体（ownerで表示）
 with all_tabs[0]:
-    render_kanban(tasks, TEAM_COLUMNS, members, key_prefix="team_")
+    render_kanban(tasks, TEAM_COLUMNS, members, key_prefix="team_", use_owner=True)
 
-# 個人タブ
+# 個人タブ（ballで列分け）
 for idx, m in enumerate(members):
     with all_tabs[idx + 1]:
         my_tasks = get_personal_tasks(tasks, m["name"])
         active = len([t for t in my_tasks if t["column"] != "done"])
         st.caption(f"アクティブ {active}件")
-        render_kanban(my_tasks, PERSONAL_COLUMNS, members, key_prefix=f"{m['name']}_")
+        render_personal_kanban(tasks, m["name"], members, key_prefix=f"{m['name']}_")
 
 # タスク追加
 with all_tabs[-1]:

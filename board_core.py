@@ -389,7 +389,7 @@ def show_task_detail(task, columns_def, team_members, key_prefix):
 # ============================================
 # カンバン描画
 # ============================================
-def render_kanban(task_list, columns_def, team_members, key_prefix=""):
+def render_kanban(task_list, columns_def, team_members, key_prefix="", use_owner=True):
     cols = st.columns(4)
     for i, col_key in enumerate(COL_KEYS):
         col_info = columns_def[col_key]
@@ -402,18 +402,19 @@ def render_kanban(task_list, columns_def, team_members, key_prefix=""):
                 unsafe_allow_html=True
             )
             for task in col_tasks:
-                render_card(task, col_info, columns_def, team_members, key_prefix)
+                render_card(task, col_info, columns_def, team_members, key_prefix, use_owner=use_owner)
 
 
-def render_card(task, col_info, columns_def, team_members, key_prefix):
-    assignee = task.get("assignee", "")
-    assignee_color = PEOPLE_COLORS.get(assignee, "#A8A29E")
-    initial = assignee[0].upper() if assignee else ""
+def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner=True):
+    # チーム全体ボードではowner表示、マイボードではassignee表示
+    display_name = task.get("owner", task.get("assignee", "")) if use_owner else task.get("assignee", "")
+    assignee_color = PEOPLE_COLORS.get(display_name, "#A8A29E")
+    initial = display_name[0].upper() if display_name else ""
 
     approval_html = '<span class="approval-badge">🔒 承認待ち</span>' if task.get("needs_approval") else ""
     deadline_html = f'<span class="deadline-badge">{task["deadline"]}</span>' if task.get("deadline") else ""
     impact_html = f'<div class="task-impact">{task["impact"]}</div>' if task.get("impact") else ""
-    assignee_html = f'<span class="task-assignee"><span class="avatar-dot" style="background:{assignee_color}">{initial}</span>{assignee}</span>' if assignee else ""
+    assignee_html = f'<span class="task-assignee"><span class="avatar-dot" style="background:{assignee_color}">{initial}</span>{display_name}</span>' if display_name else ""
 
     # コメントプレビュー（最新1行）
     note_preview = ""
@@ -488,10 +489,49 @@ def render_add_form(members):
 
 
 def get_personal_tasks(all_tasks, name):
-    my_tasks = [t for t in all_tasks if t.get("assignee") == name]
+    """ownerベースでフィルタ。マイボード用。"""
+    my_tasks = [t for t in all_tasks if t.get("owner") == name]
     watching = [t for t in all_tasks if t["column"] == "watching"]
     my_ids = {t["id"] for t in my_tasks}
     for wt in watching:
         if wt["id"] not in my_ids:
             my_tasks.append(wt)
     return my_tasks
+
+
+def get_personal_tasks_by_ball(all_tasks, name):
+    """ownerベースでフィルタし、ballで分類した辞書を返す。"""
+    my_tasks = get_personal_tasks(all_tasks, name)
+    return {
+        "me": [t for t in my_tasks if t.get("ball") == "me" and t["column"] != "done"],
+        "ai": [t for t in my_tasks if t.get("ball") == "ai" and t["column"] != "done"],
+        "waiting": [t for t in my_tasks if t.get("ball") == "waiting" or t["column"] == "watching"],
+        "done": [t for t in my_tasks if t["column"] == "done"],
+    }
+
+
+def render_personal_kanban(all_tasks, name, team_members, key_prefix=""):
+    """マイボード：ballベースで4列表示"""
+    ball_columns = {
+        "me": {"label": "🙋 自分ボール", "color": "#D97706"},
+        "ai": {"label": "🤖 AI進行中", "color": "#2563EB"},
+        "waiting": {"label": "⏳ 結果待ち", "color": "#94A3B8"},
+        "done": {"label": "✅ 完了", "color": "#059669"},
+    }
+    ball_keys = ["me", "ai", "waiting", "done"]
+
+    by_ball = get_personal_tasks_by_ball(all_tasks, name)
+
+    cols = st.columns(4)
+    for i, bk in enumerate(ball_keys):
+        col_info = ball_columns[bk]
+        col_tasks = by_ball.get(bk, [])
+        with cols[i]:
+            st.markdown(
+                f'<div class="col-header">'
+                f'<span class="col-count" style="background:{col_info["color"]}">{len(col_tasks)}</span>'
+                f'{col_info["label"]}</div>',
+                unsafe_allow_html=True
+            )
+            for task in col_tasks:
+                render_card(task, col_info, ball_columns, team_members, key_prefix, use_owner=False)

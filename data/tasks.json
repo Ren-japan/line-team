@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-09T14:19:10",
-  "updated_by": "CEO",
+  "last_updated": "2026-04-09T14:29:13",
+  "updated_by": "Ren",
   "tasks": [
     {
       "id": "t5",
@@ -14,7 +14,9 @@
       "needs_approval": false,
       "created_by": "Noa",
       "created_at": "2026-04-09",
-      "notes": "[04/09 03:19] おはよう / [04/09 12:19] TODO: ①ICL記事一覧の収集 ②ジャンル横断診断コンセプトの確定 ③壁打ち継続"
+      "notes": "[04/09 03:19] おはよう / [04/09 12:19] TODO: ①ICL記事一覧の収集 ②ジャンル横断診断コンセプトの確定 ③壁打ち継続",
+      "owner": "Noa",
+      "ball": "me"
     },
     {
       "id": "t6",
@@ -28,7 +30,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "archives URLなので記事内容の確認が先。管轄外ジャンル（ピル等）が混じってる可能性あり。ecはピルの可能性高い"
+      "notes": "archives URLなので記事内容の確認が先。管轄外ジャンル（ピル等）が混じってる可能性あり。ecはピルの可能性高い",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t7",
@@ -42,7 +46,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく"
+      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t8",
@@ -56,7 +62,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "tohaは母数少ないため引き続き観察。来週再確認"
+      "notes": "tohaは母数少ないため引き続き観察。来週再確認",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t9",
@@ -70,7 +78,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼"
+      "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t10",
@@ -84,7 +94,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "既存PU（CV月5-6件）は温存。2本目の差し替えのみ。PU画像完成済み"
+      "notes": "既存PU（CV月5-6件）は温存。2本目の差し替えのみ。PU画像完成済み",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t11",
@@ -98,7 +110,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "FCVR 22.2%で全記事トップクラス。友だち数は少ないがCV効率が高い。PU変更でCV層が薄まるリスクあり。現状維持"
+      "notes": "FCVR 22.2%で全記事トップクラス。友だち数は少ないがCV効率が高い。PU変更でCV層が薄まるリスクあり。現状維持",
+      "owner": "none",
+      "ball": "me"
     },
     {
       "id": "t12",
@@ -112,7 +126,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "PU①「自分に1番合う方法」はCV実績あり(2月2件)で温存。FCVR改善プロジェクト後に着手"
+      "notes": "PU①「自分に1番合う方法」はCV実績あり(2月2件)で温存。FCVR改善プロジェクト後に着手",
+      "owner": "external",
+      "ball": "me"
     },
     {
       "id": "t13",
@@ -126,7 +142,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "Winutに入って今何が配信されてるか実態把握。pending-decisions ④"
+      "notes": "Winutに入って今何が配信されてるか実態把握。pending-decisions ④",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t14",
@@ -140,7 +158,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "依頼書: data/output/briefs/依頼書_RW_PU差し替え.md。CMOブリッジテスト導入後の初成果物"
+      "notes": "依頼書: data/output/briefs/依頼書_RW_PU差し替え.md。CMOブリッジテスト導入後の初成果物",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t15",
@@ -154,7 +174,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "3/31方針転換: リサーチで「方法診断は合ってる（友だち取れてる）、出口が壊れてる」と判明。新診断不要。出口改修+リテンション設計に集中"
+      "notes": "3/31方針転換: リサーチで「方法診断は合ってる（友だち取れてる）、出口が壊れてる」と判明。新診断不要。出口改修+リテンション設計に集中",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t16",
@@ -168,7 +190,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "3/26 CTOがslug→KWブリッジ修正済み。candidates再スコアリング要"
+      "notes": "3/26 CTOがslug→KWブリッジ修正済み。candidates再スコアリング要",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t17",
@@ -182,7 +206,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "チーム側の権限設定待ち"
+      "notes": "チーム側の権限設定待ち",
+      "owner": "external",
+      "ball": "me"
     },
     {
       "id": "t18",
@@ -196,7 +222,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "大枠: ①ジャンル別アカウント設計 ②投稿戦略（ロングテキスト活用）③商材CV導線設計 ④自動化。renと要MTG"
+      "notes": "大枠: ①ジャンル別アカウント設計 ②投稿戦略（ロングテキスト活用）③商材CV導線設計 ④自動化。renと要MTG",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t19",
@@ -210,7 +238,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "HTMLモックv4完成済み（star-team/team-board.html）。配色Warm SaaS系。デザインガイドはstar-team/docs/に"
+      "notes": "HTMLモックv4完成済み（star-team/team-board.html）。配色Warm SaaS系。デザインガイドはstar-team/docs/に",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t20",
@@ -224,7 +254,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "chie.money（13万フォロワー）は後追い。まずre.cosmeで検証"
+      "notes": "chie.money（13万フォロワー）は後追い。まずre.cosmeで検証",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t21",
@@ -238,7 +270,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": ""
+      "notes": "",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t22",
@@ -252,7 +286,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": ""
+      "notes": "",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t23",
@@ -266,7 +302,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": null
+      "notes": null,
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t25",
@@ -280,7 +318,9 @@
       "needs_approval": true,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": null
+      "notes": null,
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t26",
@@ -294,7 +334,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": null
+      "notes": null,
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t27",
@@ -308,7 +350,9 @@
       "needs_approval": true,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": null
+      "notes": null,
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t28",
@@ -322,7 +366,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要"
+      "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t29",
@@ -336,7 +382,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "あいたクリニックのインパクト確認が先。SEO記事のPV・本数の把握が必要。現在管轄外リストに入っているため、管轄追加の判断も含む"
+      "notes": "あいたクリニックのインパクト確認が先。SEO記事のPV・本数の把握が必要。現在管轄外リストに入っているため、管轄追加の判断も含む",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t30",
@@ -350,7 +398,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": ""
+      "notes": "",
+      "owner": "Ren",
+      "ball": "me"
     },
     {
       "id": "t31",
@@ -364,7 +414,9 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-09",
-      "notes": ""
+      "notes": "",
+      "owner": "Ren",
+      "ball": "me"
     }
   ]
 }
