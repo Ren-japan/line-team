@@ -315,9 +315,11 @@ def show_task_detail(task, columns_def, team_members, key_prefix):
     # コメント履歴
     if task.get("notes"):
         st.markdown('<div class="detail-label">💬 メモ履歴</div>', unsafe_allow_html=True)
-        for line in task["notes"].split("\n"):
+        # 改行 or " / " で分割して1行ずつ表示
+        raw_notes = task["notes"].replace(" / ", "\n")
+        for line in raw_notes.split("\n"):
             if line.strip():
-                st.markdown(f'<div class="note-line">{line}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="note-line">{line.strip()}</div>', unsafe_allow_html=True)
 
     st.markdown("---")
 
