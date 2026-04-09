@@ -1,6 +1,6 @@
 """
 共通コード: データ読み書き + カンバン描画
-app.py / pages/ren.py / pages/noa.py から参照
+app.py / pages/*.py から参照
 """
 import json
 import base64
@@ -47,20 +47,154 @@ COL_KEYS = ["todo", "in_progress", "watching", "done"]
 COMMON_CSS = """
 <style>
     .block-container { padding-top: 1rem; padding-bottom: 1rem; }
-    .task-card { background: #FFFFFF; border: 1px solid #E7E5E4; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; border-left: 4px solid; }
-    .task-title { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; word-break: break-word; overflow-wrap: break-word; }
-    .task-purpose { font-size: 0.75rem; color: #999; margin-bottom: 6px; line-height: 1.4; word-break: break-word; overflow-wrap: break-word; }
-    .task-meta { font-size: 0.7rem; color: #777; display: flex; justify-content: space-between; align-items: center; }
-    .task-impact { font-size: 0.72rem; color: #66BB6A; font-weight: 600; }
-    .task-assignee { display: inline-flex; align-items: center; gap: 4px; }
-    .avatar-dot { width: 18px; height: 18px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 0.6rem; font-weight: 700; }
-    .approval-badge { display: inline-block; background: #FEF3C7; color: #D97706; font-size: 0.6rem; font-weight: 600; padding: 1px 6px; border-radius: 8px; margin-left: 4px; }
-    .deadline-badge { font-size: 0.68rem; color: #A8A29E; }
-    .col-header { font-size: 0.88rem; font-weight: 700; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #E7E5E4; }
-    .col-count { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; color: white; font-size: 0.7rem; font-weight: 700; margin-right: 6px; }
-    .team-bar { background: #FFFFFF; border: 1px solid #E7E5E4; border-radius: 8px; padding: 8px 16px; font-size: 0.78rem; color: #AAA; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
-    .team-bar-item { display: flex; align-items: center; gap: 4px; }
-    .team-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+    /* カンバンカード */
+    .task-card {
+        background: #FFFFFF;
+        border: 1px solid #E7E5E4;
+        border-radius: 10px;
+        padding: 12px 14px;
+        margin-bottom: 8px;
+        border-left: 4px solid;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+    }
+    .task-card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .task-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .task-purpose {
+        font-size: 0.75rem;
+        color: #78716C;
+        margin-bottom: 6px;
+        line-height: 1.4;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .task-meta {
+        font-size: 0.7rem;
+        color: #A8A29E;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .task-impact {
+        font-size: 0.72rem;
+        color: #059669;
+        font-weight: 600;
+    }
+    .task-assignee {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .avatar-dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.6rem;
+        font-weight: 700;
+        flex-shrink: 0;
+    }
+    .approval-badge {
+        display: inline-block;
+        background: #FEF3C7;
+        color: #D97706;
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 1px 6px;
+        border-radius: 8px;
+        margin-left: 4px;
+    }
+    .deadline-badge {
+        font-size: 0.68rem;
+        color: #A8A29E;
+    }
+    .task-note-preview {
+        font-size: 0.68rem;
+        color: #A8A29E;
+        margin-top: 4px;
+        font-style: italic;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* カラムヘッダー */
+    .col-header {
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid #E7E5E4;
+    }
+    .col-count {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: white;
+        font-size: 0.65rem;
+        font-weight: 700;
+        margin-right: 6px;
+    }
+
+    /* チーム稼働バー */
+    .team-bar {
+        background: #FFFFFF;
+        border: 1px solid #E7E5E4;
+        border-radius: 8px;
+        padding: 8px 16px;
+        font-size: 0.78rem;
+        color: #78716C;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .team-bar-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .team-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+
+    /* ダイアログ内 */
+    .detail-label {
+        font-size: 0.75rem;
+        color: #A8A29E;
+        margin-bottom: 2px;
+    }
+    .detail-value {
+        font-size: 0.88rem;
+        color: #292524;
+        margin-bottom: 12px;
+    }
+    .note-line {
+        font-size: 0.8rem;
+        color: #57534E;
+        padding: 4px 0;
+        border-bottom: 1px solid #F5F5F4;
+    }
 </style>
 """
 
@@ -150,6 +284,76 @@ def next_id(tasks):
 
 
 # ============================================
+# タスク詳細ダイアログ
+# ============================================
+def show_task_detail(task, columns_def, team_members, key_prefix):
+    """タスク詳細の編集UIを描画（st.dialogの中で呼ぶ）"""
+    pk = f"{key_prefix}{task['id']}"
+    assignee = task.get("assignee", "")
+
+    # 詳細表示
+    if task.get("purpose"):
+        st.markdown(f'<div class="detail-label">📌 目的</div><div class="detail-value">{task["purpose"]}</div>', unsafe_allow_html=True)
+    if task.get("impact"):
+        st.markdown(f'<div class="detail-label">📊 インパクト</div><div class="detail-value" style="color:#059669;font-weight:600">{task["impact"]}</div>', unsafe_allow_html=True)
+    if task.get("description"):
+        st.markdown(f'<div class="detail-label">📝 詳細</div><div class="detail-value">{task["description"]}</div>', unsafe_allow_html=True)
+
+    st.divider()
+
+    # 操作フォーム
+    current_idx = COL_KEYS.index(task["column"]) if task["column"] in COL_KEYS else 0
+    new_status = st.selectbox("ステータス", COL_KEYS, index=current_idx,
+        format_func=lambda x: columns_def[x]["label"], key=f"st_{pk}")
+
+    member_names = [""] + [m["name"] for m in team_members]
+    current_assignee_idx = member_names.index(assignee) if assignee in member_names else 0
+    new_assignee = st.selectbox("担当者", member_names, index=current_assignee_idx, key=f"as_{pk}")
+
+    new_note = st.text_input("メモ追加", key=f"no_{pk}", placeholder="メモを入力...")
+
+    # コメント履歴
+    if task.get("notes"):
+        st.markdown('<div class="detail-label">💬 メモ履歴</div>', unsafe_allow_html=True)
+        for line in task["notes"].split("\n"):
+            if line.strip():
+                st.markdown(f'<div class="note-line">{line}</div>', unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # ボタン
+    btn_col1, btn_col2, btn_col3 = st.columns([2, 2, 1])
+    with btn_col1:
+        if st.button("💾 保存", key=f"sv_{pk}", type="primary", use_container_width=True):
+            fresh_data = load_tasks()
+            for t in fresh_data["tasks"]:
+                if t["id"] == task["id"]:
+                    if new_status != t["column"]:
+                        t["column"] = new_status
+                    if new_assignee != t.get("assignee", ""):
+                        t["assignee"] = new_assignee
+                    if new_note:
+                        timestamp = datetime.now().strftime("%m/%d %H:%M")
+                        note_line = f"[{timestamp}] {new_note}"
+                        existing = t.get("notes", "")
+                        t["notes"] = (existing + "\n" + note_line) if existing else note_line
+                    break
+            save_tasks(fresh_data, new_assignee or "App")
+            st.rerun()
+    with btn_col2:
+        pass
+    with btn_col3:
+        if st.button("🗑", key=f"del_{pk}"):
+            fresh_data = load_tasks()
+            fresh_data["tasks"] = [t for t in fresh_data["tasks"] if t["id"] != task["id"]]
+            save_tasks(fresh_data, "App")
+            st.rerun()
+
+    # メタ情報
+    st.caption(f"作成: {task.get('created_by', '')} · {task.get('created_at', '')}")
+
+
+# ============================================
 # カンバン描画
 # ============================================
 def render_kanban(task_list, columns_def, team_members, key_prefix=""):
@@ -178,54 +382,33 @@ def render_card(task, col_info, columns_def, team_members, key_prefix):
     impact_html = f'<div class="task-impact">{task["impact"]}</div>' if task.get("impact") else ""
     assignee_html = f'<span class="task-assignee"><span class="avatar-dot" style="background:{assignee_color}">{initial}</span>{assignee}</span>' if assignee else ""
 
+    # コメントプレビュー（最新1行）
+    note_preview = ""
+    if task.get("notes"):
+        lines = [l.strip() for l in task["notes"].split("\n") if l.strip()]
+        if lines:
+            note_preview = f'<div class="task-note-preview">💬 {lines[-1]}</div>'
+
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
         f'<div class="task-title">{task["title"]}{approval_html}</div>'
         f'{"<div class=task-purpose>" + task["purpose"] + "</div>" if task.get("purpose") else ""}'
         f'{impact_html}'
+        f'{note_preview}'
         f'<div class="task-meta">{assignee_html}{deadline_html}</div>'
         f'</div>',
         unsafe_allow_html=True
     )
 
+    # 詳細ダイアログ
     pk = f"{key_prefix}{task['id']}"
-    with st.popover("✏️", use_container_width=False):
-        st.caption(f"{task['id']}: {task['title']}")
-        current_idx = COL_KEYS.index(task["column"]) if task["column"] in COL_KEYS else 0
-        new_status = st.selectbox("ステータス", COL_KEYS, index=current_idx,
-            format_func=lambda x: columns_def[x]["label"], key=f"st_{pk}")
-        member_names = [""] + [m["name"] for m in team_members]
-        current_assignee_idx = member_names.index(assignee) if assignee in member_names else 0
-        new_assignee = st.selectbox("担当者", member_names, index=current_assignee_idx, key=f"as_{pk}")
-        new_note = st.text_input("メモ", key=f"no_{pk}", placeholder="メモを入力...")
-        if task.get("notes"):
-            st.caption("履歴:")
-            for line in task["notes"].split("\n"):
-                st.text(line)
-        btn_col1, btn_col2 = st.columns(2)
-        with btn_col1:
-            if st.button("保存", key=f"sv_{pk}", type="primary"):
-                fresh_data = load_tasks()
-                for t in fresh_data["tasks"]:
-                    if t["id"] == task["id"]:
-                        if new_status != t["column"]:
-                            t["column"] = new_status
-                        if new_assignee != t.get("assignee", ""):
-                            t["assignee"] = new_assignee
-                        if new_note:
-                            timestamp = datetime.now().strftime("%m/%d %H:%M")
-                            note_line = f"[{timestamp}] {new_note}"
-                            existing = t.get("notes", "")
-                            t["notes"] = (existing + "\n" + note_line) if existing else note_line
-                        break
-                save_tasks(fresh_data, new_assignee or "App")
-                st.rerun()
-        with btn_col2:
-            if st.button("🗑 削除", key=f"del_{pk}"):
-                fresh_data = load_tasks()
-                fresh_data["tasks"] = [t for t in fresh_data["tasks"] if t["id"] != task["id"]]
-                save_tasks(fresh_data, "App")
-                st.rerun()
+
+    @st.dialog(f"{task['id']}: {task['title']}", width="large")
+    def open_detail():
+        show_task_detail(task, columns_def, team_members, key_prefix)
+
+    if st.button("詳細", key=f"open_{pk}", use_container_width=True):
+        open_detail()
 
 
 def render_team_bar(tasks, members):
