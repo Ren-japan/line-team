@@ -137,6 +137,7 @@ COMMON_CSS = """
         margin-bottom: 10px;
         padding-bottom: 6px;
         border-bottom: 2px solid #E7E5E4;
+        white-space: nowrap;
     }
     .col-count {
         display: inline-flex;
@@ -149,6 +150,16 @@ COMMON_CSS = """
         font-size: 0.65rem;
         font-weight: 700;
         margin-right: 6px;
+    }
+
+    /* ヘッダー・タブの見切れ防止 */
+    h2, h1 {
+        white-space: nowrap;
+        overflow: visible;
+    }
+    div[data-testid="stTabs"] button {
+        white-space: nowrap;
+        overflow: visible;
     }
 
     /* チーム稼働バー */
@@ -176,6 +187,26 @@ COMMON_CSS = """
         border-radius: 50%;
         display: inline-block;
         flex-shrink: 0;
+    }
+
+    /* ···ボタン（カード直下、右寄せ、小さく） */
+    div[data-testid="stVerticalBlock"] button[kind="secondary"] {
+        float: right;
+        padding: 0 6px;
+        font-size: 0.75rem;
+        min-height: 0;
+        height: 22px;
+        line-height: 22px;
+        border: none;
+        background: transparent;
+        color: #A8A29E;
+        margin-top: -8px;
+        margin-bottom: 4px;
+    }
+    div[data-testid="stVerticalBlock"] button[kind="secondary"]:hover {
+        color: #292524;
+        background: #F5F5F4;
+        border-radius: 4px;
     }
 
     /* ダイアログ内 */
@@ -391,6 +422,14 @@ def render_card(task, col_info, columns_def, team_members, key_prefix):
         if lines:
             note_preview = f'<div class="task-note-preview">💬 {lines[-1]}</div>'
 
+    # 詳細ダイアログ
+    pk = f"{key_prefix}{task['id']}"
+
+    @st.dialog(f"{task['id']}: {task['title']}", width="large")
+    def open_detail():
+        show_task_detail(task, columns_def, team_members, key_prefix)
+
+    # カード + 右下に ··· ボタン
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
         f'<div class="task-title">{task["title"]}{approval_html}</div>'
@@ -401,15 +440,7 @@ def render_card(task, col_info, columns_def, team_members, key_prefix):
         f'</div>',
         unsafe_allow_html=True
     )
-
-    # 詳細ダイアログ
-    pk = f"{key_prefix}{task['id']}"
-
-    @st.dialog(f"{task['id']}: {task['title']}", width="large")
-    def open_detail():
-        show_task_detail(task, columns_def, team_members, key_prefix)
-
-    if st.button("▸", key=f"open_{pk}"):
+    if st.button("···", key=f"open_{pk}"):
         open_detail()
 
 
