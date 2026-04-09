@@ -178,6 +178,24 @@ COMMON_CSS = """
         flex-shrink: 0;
     }
 
+    /* カードボタン */
+    div[data-testid="stVerticalBlock"] button[kind="secondary"] {
+        background: #FFFFFF;
+        border: 1px solid #E7E5E4;
+        border-radius: 10px;
+        padding: 10px 14px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: #292524;
+        transition: box-shadow 0.2s;
+        border-left: 4px solid #94A3B8;
+    }
+    div[data-testid="stVerticalBlock"] button[kind="secondary"]:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        border-color: #D6D3D1;
+    }
+
     /* ダイアログ内 */
     .detail-label {
         font-size: 0.75rem;
@@ -389,17 +407,6 @@ def render_card(task, col_info, columns_def, team_members, key_prefix):
         if lines:
             note_preview = f'<div class="task-note-preview">💬 {lines[-1]}</div>'
 
-    st.markdown(
-        f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
-        f'<div class="task-title">{task["title"]}{approval_html}</div>'
-        f'{"<div class=task-purpose>" + task["purpose"] + "</div>" if task.get("purpose") else ""}'
-        f'{impact_html}'
-        f'{note_preview}'
-        f'<div class="task-meta">{assignee_html}{deadline_html}</div>'
-        f'</div>',
-        unsafe_allow_html=True
-    )
-
     # 詳細ダイアログ
     pk = f"{key_prefix}{task['id']}"
 
@@ -407,7 +414,23 @@ def render_card(task, col_info, columns_def, team_members, key_prefix):
     def open_detail():
         show_task_detail(task, columns_def, team_members, key_prefix)
 
-    if st.button("詳細", key=f"open_{pk}", use_container_width=True):
+    # カード全体がボタン（中にHTML埋め込み）
+    card_html = (
+        f'<div style="text-align:left;padding:0">'
+        f'<div class="task-title">{task["title"]}{approval_html}</div>'
+        f'{"<div class=task-purpose>" + task["purpose"] + "</div>" if task.get("purpose") else ""}'
+        f'{impact_html}'
+        f'{note_preview}'
+        f'<div class="task-meta">{assignee_html}{deadline_html}</div>'
+        f'</div>'
+    )
+
+    if st.button(
+        f"{task['title']}",
+        key=f"open_{pk}",
+        use_container_width=True,
+        help=task.get("purpose", ""),
+    ):
         open_detail()
 
 
