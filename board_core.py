@@ -202,22 +202,30 @@ def render_card(task, col_info, columns_def, team_members, key_prefix):
             st.caption("履歴:")
             for line in task["notes"].split("\n"):
                 st.text(line)
-        if st.button("保存", key=f"sv_{pk}", type="primary"):
-            fresh_data = load_tasks()
-            for t in fresh_data["tasks"]:
-                if t["id"] == task["id"]:
-                    if new_status != t["column"]:
-                        t["column"] = new_status
-                    if new_assignee != t.get("assignee", ""):
-                        t["assignee"] = new_assignee
-                    if new_note:
-                        timestamp = datetime.now().strftime("%m/%d %H:%M")
-                        note_line = f"[{timestamp}] {new_note}"
-                        existing = t.get("notes", "")
-                        t["notes"] = (existing + "\n" + note_line) if existing else note_line
-                    break
-            save_tasks(fresh_data, new_assignee or "App")
-            st.rerun()
+        btn_col1, btn_col2 = st.columns(2)
+        with btn_col1:
+            if st.button("保存", key=f"sv_{pk}", type="primary"):
+                fresh_data = load_tasks()
+                for t in fresh_data["tasks"]:
+                    if t["id"] == task["id"]:
+                        if new_status != t["column"]:
+                            t["column"] = new_status
+                        if new_assignee != t.get("assignee", ""):
+                            t["assignee"] = new_assignee
+                        if new_note:
+                            timestamp = datetime.now().strftime("%m/%d %H:%M")
+                            note_line = f"[{timestamp}] {new_note}"
+                            existing = t.get("notes", "")
+                            t["notes"] = (existing + "\n" + note_line) if existing else note_line
+                        break
+                save_tasks(fresh_data, new_assignee or "App")
+                st.rerun()
+        with btn_col2:
+            if st.button("🗑 削除", key=f"del_{pk}"):
+                fresh_data = load_tasks()
+                fresh_data["tasks"] = [t for t in fresh_data["tasks"] if t["id"] != task["id"]]
+                save_tasks(fresh_data, "App")
+                st.rerun()
 
 
 def render_team_bar(tasks, members):

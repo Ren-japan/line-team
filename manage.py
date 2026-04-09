@@ -318,6 +318,12 @@ def main():
     p_show = sub.add_parser("show", help="タスク詳細表示")
     p_show.add_argument("id", help="タスクID")
 
+
+    # delete
+    p_delete = sub.add_parser("delete", help="タスク削除")
+    p_delete.add_argument("id", help="タスクID（例: t3）")
+    p_delete.add_argument("--deleted-by", dest="deleted_by", help="削除者")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -331,9 +337,28 @@ def main():
         "update": cmd_update,
         "note": cmd_note,
         "show": cmd_show,
+        "delete": cmd_delete,
     }
     commands[args.command](args)
 
 
 if __name__ == "__main__":
     main()
+
+def cmd_delete(args):
+    """タスクを削除"""
+    data = load_tasks()
+    task = None
+    for t in data["tasks"]:
+        if t["id"] == args.id:
+            task = t
+            break
+
+    if not task:
+        print(f"エラー: タスク '{args.id}' が見つかりません")
+        sys.exit(1)
+
+    data["tasks"] = [t for t in data["tasks"] if t["id"] != args.id]
+    user = get_user(args.deleted_by) or data.get("updated_by", "unknown")
+    save_tasks(data, user)
+    print(f"削除: {args.id} — {task['title']}")
