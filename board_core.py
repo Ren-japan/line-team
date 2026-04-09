@@ -10,9 +10,9 @@ from pathlib import Path
 from datetime import datetime
 
 # --- GitHub設定 ---
-REPO = "Ren-japan/claude-projects"
+REPO = "Ren-japan/line-team"
 BRANCH = "main"
-DATA_PATH_PREFIX = "star-team/data"
+DATA_PATH_PREFIX = "data"
 
 # --- ローカルパス ---
 DATA_DIR = Path(__file__).parent / "data"
