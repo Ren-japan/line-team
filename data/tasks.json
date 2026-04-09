@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-09T12:10:08",
+  "last_updated": "2026-04-09T12:15:16",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -50,6 +50,20 @@
       "column": "todo",
       "assignee": "Noa",
       "purpose": "line-teamリポからの追加・push・ボード反映が正常に動くか確認",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-04-09",
+      "notes": ""
+    },
+    {
+      "id": "t5",
+      "title": "ICL診断 立ち上げ進行",
+      "column": "in_progress",
+      "assignee": "Noa",
+      "purpose": "ICLジャンルで友だち追加増加。ジャンル横断1診断の設計・設置完了まで",
       "impact": "",
       "description": "",
       "deadline": "",
