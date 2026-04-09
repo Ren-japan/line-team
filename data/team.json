@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "name": "Ren",
+      "type": "human",
+      "icon": "👤",
+      "schedule": "",
+      "status": "",
+      "status_color": "gray"
+    },
+    {
+      "name": "Noa",
+      "type": "human",
+      "icon": "👤",
+      "schedule": "常駐",
+      "status": "",
+      "status_color": "gray"
+    },
+    {
+      "name": "Rinon",
+      "type": "human",
+      "icon": "👤",
+      "schedule": "週1",
+      "status": "",
+      "status_color": "gray"
+    },
+    {
+      "name": "Kate",
+      "type": "human",
+      "icon": "👤",
+      "schedule": "週3",
+      "status": "",
+      "status_color": "gray"
+    }
+  ]
+}

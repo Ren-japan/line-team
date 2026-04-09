@@ -1,0 +1,12 @@
+{
+  "friends": {
+    "current": 1097,
+    "target": 1000,
+    "label": "友だち"
+  },
+  "revenue": {
+    "current": 979300,
+    "target": 1000000,
+    "label": "売上"
+  }
+}

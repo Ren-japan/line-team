@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Star Team Board v4</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#FAF8F5;color:#292524;font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.5}
+
+/* ヘッダー */
+.header{background:#fff;border-bottom:1px solid #E7E5E4;padding:16px 28px;display:flex;justify-content:space-between;align-items:center}
+.header h1{font-size:1.15rem;font-weight:700}
+.header .date{color:#A8A29E;font-size:0.85rem}
+
+/* タブ */
+.tabs{background:#fff;padding:0 28px;border-bottom:1px solid #E7E5E4;display:flex;gap:0}
+.tab{padding:10px 20px;font-size:0.88rem;cursor:pointer;border-bottom:3px solid transparent;color:#A8A29E;transition:color .2s}
+.tab:hover{color:#292524}
+.tab.active{color:#D97706;border-bottom-color:#D97706;font-weight:600}
+
+/* 稼働バー */
+.status-bar{background:#fff;padding:8px 28px;border-bottom:1px solid #E7E5E4;font-size:.78rem;color:#A8A29E;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.status-bar .dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0}
+.status-bar .sep{margin:0 6px;color:#E7E5E4}
+
+/* メインコンテンツ */
+.main{padding:20px 28px;position:relative}
+
+/* カンバン */
+.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.col-header{font-size:.82rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.col-header .badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;color:#fff;font-size:.7rem;font-weight:700}
+.column{min-height:200px}
+
+/* タスクカード共通 */
+.card{background:#fff;border-radius:12px;padding:14px 16px;margin-bottom:10px;cursor:pointer;box-shadow:0 2px 8px rgba(120,100,80,.06);border-left:4px solid #E7E5E4;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 4px 16px rgba(120,100,80,.13);transform:translateY(-1px)}
+.card .title{font-size:.85rem;font-weight:700;margin-bottom:4px;display:flex;justify-content:space-between;align-items:center}
+.card .title .deadline{font-size:.72rem;color:#A8A29E;font-weight:400;white-space:nowrap}
+.card .purpose{font-size:.75rem;color:#A8A29E;line-height:1.4;margin-bottom:8px}
+.card .meta{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:#A8A29E}
+.card .assignee{display:flex;align-items:center;gap:5px}
+.card .assignee .avatar{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.65rem;font-weight:700;flex-shrink:0}
+.card .created{font-size:.7rem;color:#A8A29E}
+
+/* 承認待ちバッジ */
+.approval-badge{display:inline-block;background:#FEF3C7;color:#D97706;font-size:.65rem;font-weight:600;padding:.1rem .4rem;border-radius:10px;margin-left:.3rem;vertical-align:middle}
+
+/* 担当者ビュー */
+.person-view{display:none}
+.person-section{margin-bottom:24px}
+.person-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:.9rem;font-weight:700}
+.person-header .avatar-lg{width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.85rem;font-weight:700;flex-shrink:0}
+.person-header .name{font-size:.95rem}
+.person-header .status-info{font-size:.78rem;color:#A8A29E;font-weight:400;margin-left:auto;display:flex;align-items:center;gap:4px}
+.person-header .status-info .s-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.person-cards{display:flex;flex-wrap:wrap;gap:10px}
+.person-cards .card{width:280px;margin-bottom:0;flex-shrink:0}
+.empty-msg{color:#A8A29E;font-size:.8rem;padding:12px 16px}
+
+/* オーバーレイ */
+.overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.15);z-index:100}
+.overlay.open{display:block}
+
+/* サイドパネル */
+.panel{position:fixed;top:0;right:-400px;width:380px;height:100%;background:#fff;z-index:200;border-left:1px solid #E7E5E4;box-shadow:-4px 0 12px rgba(0,0,0,.05);transition:right .25s ease;overflow-y:auto;padding:24px}
+.panel.open{right:0}
+.panel .close-btn{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#A8A29E;transition:color .2s}
+.panel .close-btn:hover{color:#292524}
+.panel .p-title{font-size:1.1rem;font-weight:700;margin-top:8px;margin-bottom:12px;padding-right:30px}
+.panel .p-divider{border:none;border-top:1px solid #E7E5E4;margin:12px 0}
+.panel .p-row{font-size:.85rem;margin-bottom:6px;color:#292524}
+.panel .p-row .label{color:#A8A29E}
+.panel .p-section{font-size:.85rem;font-weight:700;margin:16px 0 8px;display:flex;align-items:center;gap:5px}
+.panel .p-desc{font-size:.83rem;color:#292524;background:#FAF8F5;border-radius:8px;padding:12px;line-height:1.6}
+.panel .p-impact{font-size:.83rem;color:#059669;font-weight:600;background:#FAF8F5;border-radius:8px;padding:12px}
+.panel textarea{width:100%;height:120px;border:1px solid #E7E5E4;border-radius:8px;padding:10px;font-size:.83rem;font-family:inherit;resize:vertical;outline:none;transition:border-color .2s}
+.panel textarea:focus{border-color:#D97706}
+.panel .save-btn{margin-top:8px;padding:6px 16px;background:#D97706;color:#fff;border:none;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;transition:background .2s}
+.panel .save-btn:hover{background:#B45309}
+
+/* フッター */
+.footer{text-align:center;padding:16px;font-size:.75rem;color:#A8A29E;border-top:1px solid #E7E5E4;margin-top:12px}
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<div class="header">
+  <h1>Star Team ⭐</h1>
+  <div class="date">2026/3/31</div>
+</div>
+
+<!-- タブ -->
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('task')">📋 タスクビュー</div>
+  <div class="tab" onclick="switchTab('person')">👤 担当者ビュー</div>
+</div>
+
+<!-- 稼働バー -->
+<div class="status-bar">
+  <span class="dot" style="background:#D97706"></span> Ren: 判断待ち2件
+  <span class="sep">|</span>
+  <span class="dot" style="background:#2563EB"></span> Noah: CSV投入中
+  <span class="sep">|</span>
+  <span class="dot" style="background:#EC4899"></span> Kate: LINE導線
+  <span class="sep">|</span>
+  <span class="dot" style="background:#8B5CF6"></span> Rinon: 次回4/2
+  <span class="sep">|</span>
+  🤖 CEO: FCVR準備 · CIO: 待機 · CMO: 待機
+</div>
+
+<!-- タスクビュー（カンバン） -->
+<div class="main" id="taskView"></div>
+
+<!-- 担当者ビュー -->
+<div class="main person-view" id="personView"></div>
+
+<!-- オーバーレイ -->
+<div class="overlay" id="overlay" onclick="closePanel()"></div>
+
+<!-- サイドパネル -->
+<div class="panel" id="panel">
+  <button class="close-btn" onclick="closePanel()">✕</button>
+  <div class="p-title" id="pTitle"></div>
+  <hr class="p-divider">
+  <div class="p-row"><span class="label">担当: </span><span id="pAssignee"></span></div>
+  <div class="p-row"><span class="label">ステータス: </span><span id="pStatus"></span></div>
+  <div class="p-row"><span class="label">期限: </span><span id="pDeadline"></span></div>
+  <div class="p-row"><span class="label">作成: </span><span id="pCreated"></span></div>
+  <div class="p-section">📌 目的</div>
+  <div class="p-desc" id="pPurpose"></div>
+  <div class="p-section">📊 期待インパクト</div>
+  <div class="p-impact" id="pImpact"></div>
+  <div class="p-section">📝 詳細</div>
+  <div class="p-desc" id="pDesc"></div>
+  <div class="p-section">💬 メモ</div>
+  <textarea id="pMemo" placeholder="メモを入力..."></textarea>
+  <button class="save-btn" id="saveBtn" onclick="saveMemo()">保存</button>
+</div>
+
+<!-- フッター -->
+<div class="footer">完了 1件 | 進行中 3件 | TODO 2件 | 次の判定: 4/4（金）</div>
+
+<script>
+// ===BUILD_MARKER_START===
+var TASKS = [
+  {"id": "t1", "title": "FCVR設計レビュー", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ダイエットFCVR 1.7%→3%にする", "impact": "売上+¥400K/月", "description": "「本気で痩せたい」記事（96人/CV 0）向け診断設計のレビュー。設計書はbriefs/に保存済み。", "created_by": "CEO(AI)", "created_at": "3/26", "needs_approval": true},
+  {"id": "t2", "title": "archives CSV投入指示", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "今週", "purpose": "PU未設置10記事にPUが設置されてる状態にする", "impact": "+500人/月", "description": "渋谷サイトのarchives記事10本以上にPU未設置。Noahに引き継ぎ予定。手順書作成中。", "created_by": "CEO(AI)", "created_at": "3/26", "needs_approval": true},
+  {"id": "t3", "title": "archives CSV投入", "column": "in_progress", "assignee": "Noah", "assignee_color": "#2563EB", "deadline": "4/4", "purpose": "PU未設置10記事にPUが設置されてる状態にする", "impact": "+500人/月", "description": "手順書に沿ってスプシにデータ投入。投入後にPU表示を確認。", "created_by": "Ren", "created_at": "3/31", "needs_approval": false},
+  {"id": "t4", "title": "断食PU撤去", "column": "in_progress", "assignee": "Noah", "assignee_color": "#2563EB", "deadline": "今週", "purpose": "CV出ないPU②がなくなってる状態にする", "impact": "", "description": "16時間断食のPU②を撤去。PU①「自分に1番合う方法」はCV実績ありで温存。", "created_by": "Ren", "created_at": "3/31", "needs_approval": false},
+  {"id": "t5", "title": "re.cosme LINE導線設置", "column": "in_progress", "assignee": "Kate", "assignee_color": "#EC4899", "deadline": "今週", "purpose": "Instaからの友だち獲得が始まってる状態にする", "impact": "月100〜300人", "description": "re.cosmeのプロフィールにLINEリンクを設置。既存診断（方法診断）を使ってテスト。", "created_by": "Ren", "created_at": "3/31", "needs_approval": false},
+  {"id": "t6", "title": "ED精力剤PU 2本目", "column": "watching", "assignee": "", "assignee_color": "", "deadline": "判定4/4", "purpose": "追加率3.3%→11%に改善されてる状態にする", "impact": "+34人/月", "description": "3/30差し替え完了。「精力剤？ED薬？ あなたに合う対処法を30秒で診断」。5日間データ蓄積後に判定。", "created_by": "CEO(AI)", "created_at": "3/19", "needs_approval": false},
+  {"id": "t7", "title": "RW ワークマンPU差し替え", "column": "watching", "assignee": "", "assignee_color": "", "deadline": "判定4/4", "purpose": "追加率2.87%→11%に改善されてる状態にする", "impact": "+191人/月", "description": "3/30にPU3本差し替え完了。A/B 2パターン。ワークマン口コミ記事のLP imp 17K。", "created_by": "CEO(AI)", "created_at": "3/26", "needs_approval": false},
+  {"id": "t8", "title": "kasei判定PASS", "column": "done", "assignee": "", "assignee_color": "", "deadline": "", "purpose": "包茎kasei PU効果検証→基準クリア確認済み", "impact": "", "description": "包茎kasei記事のPU効果判定PASS。PVFR 0.98%で基準クリア。", "created_by": "CIO(AI)", "created_at": "3/26", "needs_approval": false},
+  {"id": "t10", "title": "新人研修資料作成", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "出張前", "purpose": "出張4日間で新人ちゃんがLINEマーケを自走できる状態にする", "impact": "チーム戦力+1名", "description": "HTML草案28枚完成済み（docs/training-slides-draft.html）。Canvaで完全版を仕上げる。既存アド研修+数値施策研修のCanvaをLINE版にカスタマイズ。", "created_by": "Ren", "created_at": "4/2", "needs_approval": false},
+  {"id": "t9", "title": "メンバーGitHub招待", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "Noah/Kate/RinonがPrivateリポにアクセスできる状態にする", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
+  {"id": "t11", "title": "sutekihサイトPVFR改善（0.46%→0.80%）", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "PV4万あるのに友だち184人しか取れてない効率ギャップを解消する", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
+  {"id": "t12", "title": "CIOデータ取得ゲートスキル導入完了", "column": "done", "assignee": "", "assignee_color": "", "deadline": "", "purpose": "全分析でダッシュボードと同じ数字が出る状態にする", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
+  {"id": "t13", "title": "3月総括（確定値ベース）", "column": "in_progress", "assignee": "CEO(AI)", "assignee_color": "#A8A29E", "deadline": "", "purpose": "3月の実績を正しいデータで総括して4月計画の土台にする", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
+  {"id": "t14", "title": "ダイエットPV減少分析（正データで再実行）", "column": "in_progress", "assignee": "CEO(AI)", "assignee_color": "#A8A29E", "deadline": "", "purpose": "PV減少の犯人と友だち損失を正確に把握する", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
+  {"id": "t15", "title": "セットアップ完了確認", "column": "done", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "git clone〜タスクボード操作が一通りできることを確認", "impact": "", "description": "", "created_by": "Ren", "created_at": "4/6", "needs_approval": false}
+];
+
+var COLUMNS = {
+  "todo": {"label": "📌 TODO", "color": "#94A3B8"},
+  "in_progress": {"label": "🔵 進行中", "color": "#2563EB"},
+  "watching": {"label": "⏳ 観測中", "color": "#D97706"},
+  "done": {"label": "✅ 完了", "color": "#059669"}
+};
+
+var PEOPLE = [
+  {"key": "Ren", "name": "Ren", "initial": "R", "color": "#D97706", "statusLabel": "判断待ち"},
+  {"key": "Noah", "name": "Noah", "initial": "N", "color": "#2563EB", "statusLabel": "作業中"},
+  {"key": "Kate", "name": "Kate", "initial": "K", "color": "#EC4899", "statusLabel": "作業中"},
+  {"key": "Rinon", "name": "Rinon", "initial": "R", "color": "#8B5CF6", "statusLabel": "次回4/2"},
+  {"key": "Noa", "name": "Noa", "initial": "N", "color": "#10B981", "statusLabel": "作業中"}
+];
+// ===BUILD_MARKER_END===
+
+var currentTask = null;
+
+/* アバター初期値の取得 */
+function getAvatarInitial(name) {
+  if (!name) return "";
+  var n = name.replace(/\s/g,"");
+  for (var i = 0; i < PEOPLE.length; i++) {
+    if (n === PEOPLE[i].key || n === PEOPLE[i].name) return PEOPLE[i].initial;
+  }
+  return name.charAt(0).toUpperCase();
+}
+function getAvatarColor(task) {
+  if (task.assignee_color) return task.assignee_color;
+  var n = (task.assignee || "").replace(/\s/g,"");
+  for (var i = 0; i < PEOPLE.length; i++) {
+    if (n === PEOPLE[i].key) return PEOPLE[i].color;
+  }
+  return "#A8A29E";
+}
+
+/* カード HTML 生成（共通） */
+function renderCard(task) {
+  var col = COLUMNS[task.column];
+  var borderColor = col ? col.color : "#E7E5E4";
+  var html = '<div class="card" style="border-left-color:' + borderColor + '" onclick="openPanel(\'' + task.id + '\')">';
+  html += '<div class="title"><span>' + task.title;
+  if (task.needs_approval) html += '<span class="approval-badge">🔒 承認待ち</span>';
+  html += '</span>';
+  if (task.deadline) html += '<span class="deadline">' + task.deadline + '</span>';
+  html += '</div>';
+  if (task.purpose) html += '<div class="purpose">' + task.purpose + '</div>';
+  html += '<div class="meta">';
+  if (task.assignee) {
+    html += '<div class="assignee"><span class="avatar" style="background:' + getAvatarColor(task) + '">' + getAvatarInitial(task.assignee) + '</span> ' + task.assignee + '</div>';
+  } else {
+    html += '<div></div>';
+  }
+  html += '<div class="created">作成: ' + task.created_by + ' ' + task.created_at + '</div>';
+  html += '</div></div>';
+  return html;
+}
+
+/* タスクビュー（カンバン）描画 */
+function renderTaskView() {
+  var container = document.getElementById("taskView");
+  var html = '<div class="kanban">';
+  var colKeys = ["todo","in_progress","watching","done"];
+  for (var c = 0; c < colKeys.length; c++) {
+    var key = colKeys[c];
+    var col = COLUMNS[key];
+    var colTasks = TASKS.filter(function(t){ return t.column === key; });
+    html += '<div class="column">';
+    html += '<div class="col-header"><span class="badge" style="background:' + col.color + '">' + colTasks.length + '</span> ' + col.label + '</div>';
+    for (var i = 0; i < colTasks.length; i++) {
+      html += renderCard(colTasks[i]);
+    }
+    html += '</div>';
+  }
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+/* 担当者ビュー描画 */
+function renderPersonView() {
+  var container = document.getElementById("personView");
+  var html = '';
+
+  /* 人ごとのセクション */
+  for (var p = 0; p < PEOPLE.length; p++) {
+    var person = PEOPLE[p];
+    var personTasks = TASKS.filter(function(t){
+      if (!t.assignee) return false;
+      return t.assignee.replace(/\s/g,"") === person.key;
+    });
+    /* 完了タスクは人セクションには出さない */
+    personTasks = personTasks.filter(function(t){ return t.column !== "done"; });
+
+    var statusDotColor = personTasks.length > 0 ? "#059669" : "#A8A29E";
+    var statusText = person.statusLabel;
+
+    html += '<div class="person-section">';
+    html += '<div class="person-header">';
+    html += '<span class="avatar-lg" style="background:' + person.color + '">' + person.initial + '</span>';
+    html += '<span class="name">' + person.name + '</span>';
+    html += '<span class="status-info"><span class="s-dot" style="background:' + statusDotColor + '"></span> ' + statusText + '  ' + personTasks.length + '件</span>';
+    html += '</div>';
+    html += '<div class="person-cards">';
+    if (personTasks.length === 0) {
+      html += '<div class="empty-msg">（今週のタスクなし）</div>';
+    } else {
+      for (var i = 0; i < personTasks.length; i++) {
+        html += renderCard(personTasks[i]);
+      }
+    }
+    html += '</div></div>';
+  }
+
+  /* 観測中（人に紐付かない） */
+  var watchTasks = TASKS.filter(function(t){ return t.column === "watching"; });
+  if (watchTasks.length > 0) {
+    html += '<div class="person-section">';
+    html += '<div class="person-header">';
+    html += '<span class="avatar-lg" style="background:#D97706;font-size:1.1rem">⏳</span>';
+    html += '<span class="name">観測中</span>';
+    html += '<span class="status-info">' + watchTasks.length + '件</span>';
+    html += '</div>';
+    html += '<div class="person-cards">';
+    for (var i = 0; i < watchTasks.length; i++) {
+      html += renderCard(watchTasks[i]);
+    }
+    html += '</div></div>';
+  }
+
+  /* 完了 */
+  var doneTasks = TASKS.filter(function(t){ return t.column === "done"; });
+  if (doneTasks.length > 0) {
+    html += '<div class="person-section">';
+    html += '<div class="person-header">';
+    html += '<span class="avatar-lg" style="background:#059669;font-size:1.1rem">✅</span>';
+    html += '<span class="name">完了</span>';
+    html += '<span class="status-info">' + doneTasks.length + '件</span>';
+    html += '</div>';
+    html += '<div class="person-cards">';
+    for (var i = 0; i < doneTasks.length; i++) {
+      html += renderCard(doneTasks[i]);
+    }
+    html += '</div></div>';
+  }
+
+  container.innerHTML = html;
+}
+
+/* タスクをIDで検索 */
+function findTask(id) {
+  for (var i = 0; i < TASKS.length; i++) {
+    if (TASKS[i].id === id) return TASKS[i];
+  }
+  return null;
+}
+
+/* タブ切り替え */
+function switchTab(t) {
+  document.querySelectorAll('.tab').forEach(function(el, i) {
+    el.classList.toggle('active', i === (t === 'task' ? 0 : 1));
+  });
+  document.getElementById('taskView').style.display = t === 'task' ? 'block' : 'none';
+  document.getElementById('personView').style.display = t === 'person' ? 'block' : 'none';
+}
+
+/* パネル開く */
+function openPanel(id) {
+  var t = findTask(id);
+  if (!t) return;
+  currentTask = id;
+  var col = COLUMNS[t.column];
+  /* タイトル（承認待ちバッジ付き） */
+  var titleEl = document.getElementById('pTitle');
+  if (t.needs_approval) {
+    titleEl.innerHTML = t.title + ' <span class="approval-badge">🔒 承認待ち</span>';
+  } else {
+    titleEl.textContent = t.title;
+  }
+  /* 担当者（アバター付き） */
+  var assigneeEl = document.getElementById('pAssignee');
+  if (t.assignee) {
+    assigneeEl.innerHTML = '<span style="display:inline-flex;align-items:center;gap:4px"><span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:' + getAvatarColor(t) + ';color:#fff;font-size:.6rem;font-weight:700">' + getAvatarInitial(t.assignee) + '</span> ' + t.assignee + '</span>';
+  } else {
+    assigneeEl.textContent = '—';
+  }
+  /* ステータス（承認待ちの場合は追記） */
+  var statusText = col ? col.label : '—';
+  if (t.needs_approval) statusText += ' · 🔒 承認待ち';
+  document.getElementById('pStatus').textContent = statusText;
+  document.getElementById('pDeadline').textContent = t.deadline || '—';
+  document.getElementById('pCreated').textContent = t.created_by + ' · ' + t.created_at;
+  document.getElementById('pPurpose').textContent = t.purpose || '—';
+  document.getElementById('pImpact').textContent = t.impact || '—';
+  document.getElementById('pDesc').textContent = t.description;
+  /* メモ読み込み */
+  var memo = localStorage.getItem('memo_' + id) || '';
+  document.getElementById('pMemo').value = memo;
+  document.getElementById('saveBtn').textContent = '保存';
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('panel').classList.add('open');
+}
+
+/* パネル閉じる */
+function closePanel() {
+  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('panel').classList.remove('open');
+  currentTask = null;
+}
+
+/* メモ保存 */
+function saveMemo() {
+  if (!currentTask) return;
+  var memo = document.getElementById('pMemo').value;
+  localStorage.setItem('memo_' + currentTask, memo);
+  var btn = document.getElementById('saveBtn');
+  btn.textContent = '保存しました ✓';
+  setTimeout(function(){ btn.textContent = '保存'; }, 1500);
+}
+
+/* ESCで閉じる */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePanel();
+});
+
+/* 初期描画 */
+renderTaskView();
+renderPersonView();
+</script>
+</body>
+</html>

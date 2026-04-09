@@ -1,0 +1,44 @@
+{
+  "seo": {
+    "label": "SEO",
+    "icon": "📱",
+    "total_friends": 1097,
+    "status": "稼働中",
+    "genres": {
+      "GLP-1": 841,
+      "包茎": 100,
+      "RW": 96,
+      "ED": 35,
+      "ピル": 13,
+      "FAGA": 2,
+      "看護": 1,
+      "脱毛": 0
+    }
+  },
+  "instagram": {
+    "label": "Instagram",
+    "icon": "📸",
+    "total_friends": 0,
+    "status": "設計中",
+    "accounts": [
+      {
+        "name": "re.cosme",
+        "followers": 50000,
+        "followers_label": "5万",
+        "status": "導線設計中"
+      },
+      {
+        "name": "chie.money",
+        "followers": 130000,
+        "followers_label": "13万",
+        "status": "導線設計中"
+      }
+    ]
+  },
+  "x": {
+    "label": "X",
+    "icon": "🐦",
+    "total_friends": 0,
+    "status": "未着手"
+  }
+}
