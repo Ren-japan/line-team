@@ -332,10 +332,10 @@ def show_task_detail(task, columns_def, team_members, key_prefix):
 
     st.divider()
 
-    # 操作フォーム
+    # 操作フォーム（ステータスは常にTEAM_COLUMNSの列名で操作）
     current_idx = COL_KEYS.index(task["column"]) if task["column"] in COL_KEYS else 0
     new_status = st.selectbox("ステータス", COL_KEYS, index=current_idx,
-        format_func=lambda x: columns_def[x]["label"], key=f"st_{pk}")
+        format_func=lambda x: TEAM_COLUMNS[x]["label"], key=f"st_{pk}")
 
     member_names = [""] + [m["name"] for m in team_members]
     current_assignee_idx = member_names.index(assignee) if assignee in member_names else 0
