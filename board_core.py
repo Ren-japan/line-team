@@ -503,8 +503,8 @@ def get_personal_tasks_by_ball(all_tasks, name):
     """ownerベースでフィルタし、ballで分類した辞書を返す。"""
     my_tasks = get_personal_tasks(all_tasks, name)
     return {
-        "me": [t for t in my_tasks if t.get("ball") == "me" and t["column"] != "done"],
-        "ai": [t for t in my_tasks if t.get("ball") == "ai" and t["column"] != "done"],
+        "me": [t for t in my_tasks if t.get("ball") == "me" and t["column"] not in ("done", "watching")],
+        "ai": [t for t in my_tasks if t.get("ball") == "ai" and t["column"] not in ("done", "watching")],
         "waiting": [t for t in my_tasks if t.get("ball") == "waiting" or t["column"] == "watching"],
         "done": [t for t in my_tasks if t["column"] == "done"],
     }
