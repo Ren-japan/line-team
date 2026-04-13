@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-10T18:46:27",
+  "last_updated": "2026-04-13T14:15:00",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -389,7 +389,7 @@
     {
       "id": "t30",
       "title": "タスクボード連携テスト",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "CEOからmanage.py経由でタスク追加→ボード反映を確認",
       "impact": "",
@@ -405,7 +405,7 @@
     {
       "id": "t31",
       "title": "目標設定（4月GOAL）",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "4月の目標設定を完了する",
       "impact": "",
