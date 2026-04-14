@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T18:03:37",
+  "last_updated": "2026-04-14T14:59:11",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -197,7 +197,7 @@
     {
       "id": "t17",
       "title": "SC API サービスアカウント分離",
-      "column": "todo",
+      "column": "done",
       "assignee": "external",
       "purpose": "手動レビュー時の芋づる式チェック回避。アカウント分離完了、チームへ依頼済み（3/17）",
       "impact": "リスク軽減（手動ペナ時の他サイト巻き込み防止）",
@@ -229,7 +229,7 @@
     {
       "id": "t19",
       "title": "Star Team Streamlit本実装+Cloud デプロイ",
-      "column": "todo",
+      "column": "done",
       "assignee": "CTO",
       "purpose": "チームボード（タスクカンバン+担当者ビュー+詳細パネル）+ renビュー（GOAL→GAP→事業課題→指標推移）をStreamlitで実装。Streamlit Cloudデプロイで全員アクセス可能に",
       "impact": "チーム全員のタスク可視化。renの判断スピード向上",
@@ -309,7 +309,7 @@
     {
       "id": "t25",
       "title": "スターターキット配布準備",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": null,
       "impact": null,
@@ -325,7 +325,7 @@
     {
       "id": "t26",
       "title": "Streamlit タスクボード",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": null,
       "impact": null,
@@ -341,7 +341,7 @@
     {
       "id": "t27",
       "title": "新人研修資料作成（出張用）",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": null,
       "impact": null,
