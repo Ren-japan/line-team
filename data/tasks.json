@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14T14:59:11",
+  "last_updated": "2026-04-14T15:09:30.559584",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -260,18 +260,18 @@
     },
     {
       "id": "t21",
-      "title": "小田BMI系PU改修（PVFR重症）→ 隠れ肥満度チェック",
+      "title": "BMI隠れ肥満度チェック デザイン上がり待ち",
       "column": "in_progress",
       "assignee": "external",
-      "purpose": "",
+      "purpose": "BMI系記事のPVFR重症。隠れ肥満度チェック診断で改善狙い。体脂肪系53万vol、カロリー成功構造と同型",
       "impact": "",
-      "description": "/intent-dive完了。方向性: 隠れ肥満度チェック（体脂肪系53万vol、カロリー成功構造と同型）。CMOに再設計させる",
+      "description": "【状態】デザイナーに発注済み（4/13）。24枚（PU6+表紙2+設問4+結果12）。デザイン上がり待ち\n【設計書】briefs/診断-隠れ肥満度チェックBMI.md\n【依頼書】briefs/依頼書_隠れ肥満度チェックBMI.md\n【次のアクション】デザイン納品→設置→効果観測（設置から5日間）",
       "deadline": "",
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": "[04/13 18:03] 依頼書完成・デザイナー発注済み(4/13)。24枚(PU6+表紙2+設問4+結果12)。デザイン上がり待ち",
-      "owner": "Ren",
+      "owner": "external",
       "ball": "ai"
     },
     {
