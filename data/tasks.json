@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14T15:09:30.559584",
+  "last_updated": "2026-04-14T18:10:35.846870",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -276,18 +276,18 @@
     },
     {
       "id": "t22",
-      "title": "ED精力剤10選PU改修（友だち0）",
-      "column": "todo",
+      "title": "ED精力剤10選 PV監視（率改善は保留）",
+      "column": "watching",
       "assignee": "Ren",
-      "purpose": "",
+      "purpose": "4月PV日均89.5（3月220.6から-59%）。率は微改善中だが全指標基準割れ（追加率3.9%）。PV戻るまで施策保留",
       "impact": "",
-      "description": "imp773/友だち0。小田BMI完了後に着手",
+      "description": "【現状（4月13日間）】PV日均89.5 / PVFR 0.26% / IMPFR 0.54% / CTR 13.95% / 追加率 3.90% / 友だち3人\n【3月比】PV-59%（精力剤10選の順位下落が主因）。率はほぼ横ばい〜微改善\n【判断】PVが外的要因で落ちてる。率改善しても天井が低い。PV回復したらPU再設計に着手\n【監視基準】PV日均が150以上に戻ったらCMOにPU再設計を振る",
       "deadline": "",
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": "",
-      "owner": "Ren",
+      "owner": "watching",
       "ball": "me"
     },
     {
