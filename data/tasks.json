@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17T10:32:27",
+  "last_updated": "2026-04-17T11:04:52",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "t7",
-      "title": "新規チャネルリサーチ（note/X/オーガニック）",
+      "title": "X収益化リサーチ（20事例・各ジャンル3事例）",
       "column": "in_progress",
       "assignee": "Ren",
       "purpose": "SEO依存脱却の第2エンジン。note/X/オーガニックの事例・導線設計・自動化を毎日リサーチ。来週ディベート用に草案まとめる",
@@ -46,7 +46,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく",
+      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断",
       "owner": "Ren",
       "ball": "me"
     },
