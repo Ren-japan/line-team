@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17T10:30:01",
+  "last_updated": "2026-04-17T10:30:43",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -519,7 +519,7 @@
     {
       "id": "t39",
       "title": "CIO発注: ピル/GLP-1記事別PV/PUマッピング",
-      "column": "todo",
+      "column": "done",
       "assignee": "CIO",
       "purpose": "打ち手D(ピルPU追加)の前提データ+GLP-1水平展開候補特定(5月準備)",
       "impact": "",
@@ -528,7 +528,7 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "[04/17 10:30] 4/17 11:00 CIO完了: GLP-1 BMI記事3本(PV 9,217)がPVFR 0.11%の埋蔵金発見。検索意図(BMI基準値)とPU文言(太りやすさ)ミスマッチ。BMI特化PU組み直しで+63人/15日。ピル値段PU差し替えで+6人。全体インパクト +79人/15日"
     },
     {
       "id": "t40",
@@ -578,6 +578,48 @@
       "column": "todo",
       "assignee": "CTO",
       "purpose": "RW SEO分析データ不足の解消",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-04-17",
+      "notes": ""
+    },
+    {
+      "id": "t44",
+      "title": "GLP-1 BMI記事3本にBMI特化PU設計(埋蔵金)",
+      "column": "todo",
+      "assignee": "CMO",
+      "purpose": "小田/こいずみ/渋谷bmi記事(PV 9,217) PVFR 0.11%→0.80%、+63人/15日(4月最大インパクト)",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-04-17",
+      "notes": ""
+    },
+    {
+      "id": "t45",
+      "title": "渋谷_本気で痩せたいPU新設(カロリー系流用)",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "バナー/ボタンで29人取れてるのにPU未設置、+8人/15日",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-04-17",
+      "notes": ""
+    },
+    {
+      "id": "t46",
+      "title": "ピル値段PU差し替え(低用量ピル種類型流用)",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "CTR 8.9→18%期待、+6人/15日",
       "impact": "",
       "description": "",
       "deadline": "",
