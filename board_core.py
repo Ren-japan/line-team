@@ -535,7 +535,7 @@ def render_add_form(members):
     st.markdown("### 新しいタスクを追加")
     with st.form("add_task_form"):
         title = st.text_input("タイトル *", placeholder="例: ED精力剤PU 3本目")
-        purpose = st.text_input("目的", placeholder="例: 追加率11%にする")
+        purpose = st.text_input("一言ゴール *", placeholder="例: 追加率5.1%→11% / +50人/月 / imp欠損解消", help="20字前後で数字込み。現状説明は『詳細』欄に書く")
         fc1, fc2 = st.columns(2)
         with fc1:
             member_names = [""] + [m["name"] for m in members]

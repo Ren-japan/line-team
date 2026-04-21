@@ -455,7 +455,7 @@ def main():
     p_add.add_argument("--title", required=True, help="タスクタイトル")
     p_add.add_argument("--ball", required=True, help="ボール所在（ren/ceo/worker/external/paused/watching）")
     p_add.add_argument("--assignee", help="担当者")
-    p_add.add_argument("--purpose", help="目的（ゴール状態）")
+    p_add.add_argument("--purpose", help="一言ゴール（20字前後、数字入り推奨。例『追加率5%→11%』。現状説明は--descriptionへ）")
     p_add.add_argument("--impact", help="期待インパクト")
     p_add.add_argument("--description", help="詳細説明")
     p_add.add_argument("--deadline", help="期限")
