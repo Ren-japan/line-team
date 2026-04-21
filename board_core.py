@@ -104,7 +104,19 @@ COMMON_CSS = """
         font-size: 0.65rem;
         color: #78716C;
     }
-    /* 旧クラス（互換維持用、使わない） */
+    /* 目的1行（省略付き） */
+    .task-purpose-line {
+        font-size: 0.7rem;
+        color: #78716C;
+        margin-top: 3px;
+        line-height: 1.35;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    /* 旧クラス（非表示） */
     .task-purpose {
         display: none;
     }
@@ -491,13 +503,17 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     def open_detail():
         show_task_detail(task, columns_def, team_members, key_prefix)
 
-    # カード: タイトル1行 + 右端にメタ（担当アイコン/期限/超過）
+    # 目的（1行のみ表示、溢れたら...で省略）
+    purpose_html = f'<div class="task-purpose-line">{task["purpose"]}</div>' if task.get("purpose") else ""
+
+    # カード: タイトル行 + 目的1行 + 右端にメタ
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
         f'<div class="task-title-row">'
         f'<span class="task-title">{ball_prefix}{task["title"]}{approval_html}</span>'
         f'<span class="task-meta-inline">{assignee_html}{deadline_html}{overdue_html}</span>'
         f'</div>'
+        f'{purpose_html}'
         f'</div>',
         unsafe_allow_html=True
     )
