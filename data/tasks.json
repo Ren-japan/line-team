@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17T18:29:55",
+  "last_updated": "2026-04-21T12:18:49",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -16,7 +16,7 @@
       "created_at": "2026-04-09",
       "notes": "[04/09 03:19] おはよう / [04/09 12:19] TODO: ①ICL記事一覧の収集 ②ジャンル横断診断コンセプトの確定 ③壁打ち継続",
       "owner": "Noa",
-      "ball": "me"
+      "ball": "worker"
     },
     {
       "id": "t6",
@@ -30,9 +30,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "archives URLなので記事内容の確認が先。管轄外ジャンル（ピル等）が混じってる可能性あり。ecはピルの可能性高い",
+      "notes": "archives URLなので記事内容の確認が先。管轄外ジャンル（ピル等）が混じってる可能性あり。ecはピルの可能性高い\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t7",
@@ -46,9 +46,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断\n[04/17 11:06] 2026-04-17: researcher起動。X収益化事例20本・各ジャンル3事例収集開始\n[04/17 11:12] 2026-04-17: 第3回リサーチ完了。薬機法が医療系X発信の最大の壁と判明。看護転職・ドライバー転職が評価トップ（薬機法リスクなし×CV単価高）。レポート: projects/line-marketing/research/x-income-research-2026-04-17.md\n[04/17 11:55] 2026-04-17: 実地調査完了（Claude in Chrome経由でX.com直接閲覧）。美容系大規模匿名(丸の内OL71.3万F/るる23.7万F/らむね18.1万F)はIG誘導型・PR案件型。しろくまちゃん9.5万Fは紹介コード(iHerb)型。GLP-1体験記は純粋個人記録型でマネタイズなし。【重要】X→LINE→CV型の個人成功例は発見できず。うちは型を自作する必要",
+      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断\n[04/17 11:06] 2026-04-17: researcher起動。X収益化事例20本・各ジャンル3事例収集開始\n[04/17 11:12] 2026-04-17: 第3回リサーチ完了。薬機法が医療系X発信の最大の壁と判明。看護転職・ドライバー転職が評価トップ（薬機法リスクなし×CV単価高）。レポート: projects/line-marketing/research/x-income-research-2026-04-17.md\n[04/17 11:55] 2026-04-17: 実地調査完了（Claude in Chrome経由でX.com直接閲覧）。美容系大規模匿名(丸の内OL71.3万F/るる23.7万F/らむね18.1万F)はIG誘導型・PR案件型。しろくまちゃん9.5万Fは紹介コード(iHerb)型。GLP-1体験記は純粋個人記録型でマネタイズなし。【重要】X→LINE→CV型の個人成功例は発見できず。うちは型を自作する必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "paused"
     },
     {
       "id": "t8",
@@ -64,7 +64,7 @@
       "created_at": "2026-04-09",
       "notes": "tohaは母数少ないため引き続き観察。来週再確認",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t9",
@@ -78,9 +78,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼",
+      "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "ai"
+      "ball": "worker"
     },
     {
       "id": "t10",
@@ -94,14 +94,14 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "既存PU（CV月5-6件）は温存。2本目の差し替えのみ。PU画像完成済み",
+      "notes": "既存PU（CV月5-6件）は温存。2本目の差し替えのみ。PU画像完成済み\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t11",
       "title": "ダイエットパッチ PU2撤去→PU1集約 効果観測",
-      "column": "in_progress",
+      "column": "watching",
       "assignee": "Ren",
       "purpose": "4月PV日均60（3月138から-56%）。PU1の率は大幅改善中だがPU2が足を引っ張ってた。PU2撤去でPU1にimp集約→友だち純増を狙う",
       "impact": "変更前: PU1友だち5人+PU2友だち1人=計6人/11日。PU2のimp（11日で229）がPU1に流れれば友だち増の余地あり",
@@ -112,7 +112,7 @@
       "created_at": "2026-04-09",
       "notes": "[04/13] PU2撤去実施。効果判定4/18。3月FCVR22.2%だった記事なので友だちの質も追跡する\n[04/17 10:18] 4/17朝暫定判定: 悪化シグナル(追加率26.87→14.29%、-12.58pt / 日均友だち-28%)。4/18本判定で5日分確定、ロールバック判断予定",
       "owner": "watching",
-      "ball": "me"
+      "ball": "watching"
     },
     {
       "id": "t12",
@@ -128,7 +128,7 @@
       "created_at": "2026-04-09",
       "notes": "PU①「自分に1番合う方法」はCV実績あり(2月2件)で温存。FCVR改善プロジェクト後に着手",
       "owner": "external",
-      "ball": "me"
+      "ball": "external"
     },
     {
       "id": "t13",
@@ -142,13 +142,13 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "Winutに入って今何が配信されてるか実態把握。pending-decisions ④",
+      "notes": "Winutに入って今何が配信されてるか実態把握。pending-decisions ④\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "paused"
     },
     {
       "id": "t14",
-      "title": "RW ワークマン口コミ PU3本差し替え",
+      "title": "RW ワークマン口コミ改善（親: PU差し替え+診断再設計+SEO改修）",
       "column": "in_progress",
       "assignee": "Ren",
       "purpose": "既存4PU→新3PUに差し替え。A/B 2パターン（ボタン変更型/はいいいえ型）× 3本 = 6枚。デザイナー依頼書作成済み",
@@ -158,9 +158,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "依頼書: data/output/briefs/依頼書_RW_PU差し替え.md。CMOブリッジテスト導入後の初成果物",
+      "notes": "依頼書: data/output/briefs/依頼書_RW_PU差し替え.md。CMOブリッジテスト導入後の初成果物\n[04/21 12:17] 🧩親タスク化: 子 t40(PU文言) / t41(診断再設計 CMO) / t42(SEO改修)",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t15",
@@ -176,7 +176,7 @@
       "created_at": "2026-04-09",
       "notes": "3/31方針転換: リサーチで「方法診断は合ってる（友だち取れてる）、出口が壊れてる」と判明。新診断不要。出口改修+リテンション設計に集中",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t16",
@@ -192,7 +192,7 @@
       "created_at": "2026-04-09",
       "notes": "3/26 CTOがslug→KWブリッジ修正済み。candidates再スコアリング要",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t17",
@@ -207,8 +207,7 @@
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": "チーム側の権限設定待ち",
-      "owner": "external",
-      "ball": "me"
+      "owner": "external"
     },
     {
       "id": "t18",
@@ -224,7 +223,7 @@
       "created_at": "2026-04-09",
       "notes": "大枠: ①ジャンル別アカウント設計 ②投稿戦略（ロングテキスト活用）③商材CV導線設計 ④自動化。renと要MTG",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t19",
@@ -239,8 +238,7 @@
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": "HTMLモックv4完成済み（star-team/team-board.html）。配色Warm SaaS系。デザインガイドはstar-team/docs/に",
-      "owner": "Ren",
-      "ball": "ai"
+      "owner": "Ren"
     },
     {
       "id": "t20",
@@ -254,9 +252,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "chie.money（13万フォロワー）は後追い。まずre.cosmeで検証",
+      "notes": "chie.money（13万フォロワー）は後追い。まずre.cosmeで検証\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t21",
@@ -272,7 +270,7 @@
       "created_at": "2026-04-09",
       "notes": "[04/13 18:03] 依頼書完成・デザイナー発注済み(4/13)。24枚(PU6+表紙2+設問4+結果12)。デザイン上がり待ち\n[04/17 10:18] 4/17朝: デザイン納品状況要確認(4/13発注・4/16リリース予定)。未納ならデザイナー督促要\n[04/17 10:32] 4/17 11:15【CEO訂正】設置先がCIOデータで特定。優先度順: ①小田bmi(PV 5,074/PVFR 0.10%/友だち5人) ②こいずみbmi(PV 2,224/PVFR 0.05%/友だち1人) ③渋谷bmi(PV 1,919/PVFR 0.21%/友だち4人)。合計PV 9,217でPVFR 0.11%の埋蔵金。0.80%到達で+63人/15日(旧試算+44人を上方修正)\n[04/17 18:29] 4/17 11:30 ren報告: BMI隠れ肥満度チェック診断を3記事(小田bmi/こいずみbmi/渋谷bmi)にリリース完了。効果観測開始→4/22に5日分で初期判定。期待+63人/15日",
       "owner": "external",
-      "ball": "ai"
+      "ball": "external"
     },
     {
       "id": "t22",
@@ -288,7 +286,7 @@
       "created_at": "2026-04-09",
       "notes": "[04/15 12:12] 【4/15】CMO設計完了。推奨PU「精力剤じゃ足りない人もいる。あなたは大丈夫？30秒セルフチェック」。診断本体不変更（FCVR 52.9%維持）、Q1文言と診断トップのみ微修正。設計書: briefs/PU改善-ED精力剤10選.md。次アクション: 第1候補+第3候補の2本A/Bテスト、判定は3日/5日/7日の段階判定。PV低下（外的要因）が戻るまでインパクトは限定的だがGOしたら実装2営業日\n[04/15 16:47] 【4/15 GO】renが実装。判定スケジュール: 実装日+3日(初期)→+5日(中間)→+7日(本判定、追加率9%↑で成功)。PU第1候補+第3候補の2本A/Bテスト必須。計測: PU別imp/CTR/追加率/FCVR\n[04/15 16:52] 【4/16予定】インターン実装。判定日: 4/20(初期/3日分)→4/22(中間/5日分)→4/24(本判定/7日分)。データ反映が翌13時なので実装日+4/+6/+8で確認可能\n[04/15 18:36] 【4/15確定】PU文言2本A/Bで4/16インターンリリース。PU-A『今飲んでる精力剤、本当に効いていますか?』(既飲)／PU-B『これから試す精力剤、本当に効くと思いますか?』(未飲)。サブコピーなし、はい/いいえ式。着地は既存ED薬診断そのまま。実装依頼書: briefs/依頼書_ED精力剤10選PU実装.md\n[04/17 10:18] 4/17朝: ren文言FINALでOK。依頼書確定(line-dashboard/data/output/briefs/依頼書_ED精力剤10選PU実装.md)。インターン発注へ。判定:4/20初期→4/22中間→4/24本\n[04/17 10:21] 【4/17 リリース済】PU-A/PU-B実装完了。判定スケジュール(4/17実装基準、データは翌13時反映): 4/21初期→4/23中間→4/25本判定(追加率9%↑で成功)。既存PU『自分に合うED薬』『ぴったりの対処法知りたい』は停止済みの想定",
       "owner": "ceo",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t23",
@@ -304,7 +302,7 @@
       "created_at": "2026-04-09",
       "notes": null,
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t25",
@@ -319,8 +317,7 @@
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": null,
-      "owner": "Ren",
-      "ball": "me"
+      "owner": "Ren"
     },
     {
       "id": "t26",
@@ -335,8 +332,7 @@
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": null,
-      "owner": "Ren",
-      "ball": "me"
+      "owner": "Ren"
     },
     {
       "id": "t27",
@@ -351,8 +347,7 @@
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": null,
-      "owner": "Ren",
-      "ball": "me"
+      "owner": "Ren"
     },
     {
       "id": "t28",
@@ -366,9 +361,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要",
+      "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
       "owner": "Ren",
-      "ball": "ai"
+      "ball": "worker"
     },
     {
       "id": "t29",
@@ -384,7 +379,7 @@
       "created_at": "2026-04-09",
       "notes": "あいたクリニックのインパクト確認が先。SEO記事のPV・本数の把握が必要。現在管轄外リストに入っているため、管轄追加の判断も含む",
       "owner": "Ren",
-      "ball": "me"
+      "ball": "ren"
     },
     {
       "id": "t30",
@@ -399,8 +394,7 @@
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
       "notes": "",
-      "owner": "Ren",
-      "ball": "me"
+      "owner": "Ren"
     },
     {
       "id": "t31",
@@ -415,8 +409,7 @@
       "created_by": "CEO",
       "created_at": "2026-04-09",
       "notes": "",
-      "owner": "Ren",
-      "ball": "me"
+      "owner": "Ren"
     },
     {
       "id": "t32",
@@ -430,12 +423,13 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-10",
-      "notes": ""
+      "notes": "",
+      "ball": "ren"
     },
     {
       "id": "t33",
       "title": "pending-decisions.md 廃止 → line-team一本化",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "roles/ceo/pending-decisions.md が機能していない（renは見に行かない、line-team一元管理方針と二重管理）。ceo-flow.md Phase 0の「判断キュー=pending-decisions.md」記述を書き換え、既存中身（FCVR設計書レビュー等）をline-team Renボールに移行してpending-decisions.md廃止。一旦ファイルは残しで段階移行。CLAUDE.mdとceo-flow.mdの矛盾解消が目的",
       "impact": "",
@@ -444,7 +438,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-10",
-      "notes": ""
+      "notes": "",
+      "ball": "ren"
     },
     {
       "id": "t34",
@@ -486,7 +481,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": "[04/17 10:21] 【4/17 着手】GAP埋めTOP1。PU『放っておいて不安』(imp656追加率0%)と『治し方が知りたい』(imp680追加率6.1%)が犯人。残13日+75人/+¥225K期待。CMO設計中、4/18実装依頼書FIX→4/20実装→4/25判定"
+      "notes": "[04/17 10:21] 【4/17 着手】GAP埋めTOP1。PU『放っておいて不安』(imp656追加率0%)と『治し方が知りたい』(imp680追加率6.1%)が犯人。残13日+75人/+¥225K期待。CMO設計中、4/18実装依頼書FIX→4/20実装→4/25判定",
+      "ball": "worker"
     },
     {
       "id": "t37",
@@ -500,7 +496,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": "[04/17 10:21] 【4/17 GO確定】TOP2。GLP-1 AVA太りやすさチェック(imp1133追加率2.8%)+体型が気になる(imp640追加率0%)が壊滅。BMI新診断をそのままPUとして設置。BMI本体リリース後に着手。残13日+56人期待。判定4/24"
+      "notes": "[04/17 10:21] 【4/17 GO確定】TOP2。GLP-1 AVA太りやすさチェック(imp1133追加率2.8%)+体型が気になる(imp640追加率0%)が壊滅。BMI新診断をそのままPUとして設置。BMI本体リリース後に着手。残13日+56人期待。判定4/24",
+      "ball": "ren"
     },
     {
       "id": "t38",
@@ -514,7 +511,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": "[04/17 10:22] 【4/17 着手】GAP埋めTOP3。CMOに診断本体触らずPU/診断トップ/Q1の改善案を依頼。はい/いいえ式含む複数案を検討。4/18 FIX→4/20実装→4/25判定"
+      "notes": "[04/17 10:22] 【4/17 着手】GAP埋めTOP3。CMOに診断本体触らずPU/診断トップ/Q1の改善案を依頼。はい/いいえ式含む複数案を検討。4/18 FIX→4/20実装→4/25判定",
+      "ball": "worker"
     },
     {
       "id": "t39",
@@ -542,7 +540,9 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "ren",
+      "parent_id": "t14"
     },
     {
       "id": "t41",
@@ -556,7 +556,9 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "worker",
+      "parent_id": "t14"
     },
     {
       "id": "t42",
@@ -570,7 +572,9 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "ren",
+      "parent_id": "t14"
     },
     {
       "id": "t43",
@@ -584,7 +588,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "worker"
     },
     {
       "id": "t45",
@@ -598,7 +603,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "ren"
     },
     {
       "id": "t46",
@@ -612,12 +618,13 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "ren"
     },
     {
       "id": "t47",
       "title": "BMI診断効果観測(4/17〜4/22)",
-      "column": "todo",
+      "column": "watching",
       "assignee": "CIO",
       "purpose": "3記事のPVFR 0.11%→0.80%到達検証、日次モニタリング",
       "impact": "",
@@ -626,7 +633,40 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-04-17",
-      "notes": ""
+      "notes": "",
+      "ball": "watching"
+    },
+    {
+      "id": "t48",
+      "title": "4/21インプット判断: 構造化3ステップ(@ysk_motoyama)",
+      "column": "todo",
+      "assignee": "",
+      "purpose": "design-diagnosisの問い方に「全体定義→分解→因果」を組み込むか判断",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-04-21",
+      "notes": "",
+      "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t49",
+      "title": "4/21インプット判断: AI駆動チーム10人→1人(@osaruproducer)",
+      "column": "todo",
+      "assignee": "",
+      "purpose": "おさるの『置き換えた業務リスト』精読→line-dashboard/seo-image-generator運用AI化に対応させるか判断",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-04-21",
+      "notes": "",
+      "ball": "ren",
+      "parent_id": ""
     }
   ]
 }
