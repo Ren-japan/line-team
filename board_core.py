@@ -43,6 +43,26 @@ PEOPLE_COLORS = {
 
 COL_KEYS = ["todo", "in_progress", "watching", "done"]
 
+# --- ball（ボール所在）メタ情報 ---
+BALL_META = {
+    "ren":      {"emoji": "🔴", "label": "renボール"},
+    "ceo":      {"emoji": "🟡", "label": "CEO作業中"},
+    "worker":   {"emoji": "🔵", "label": "担当者作業中"},
+    "external": {"emoji": "⏸",  "label": "外部待ち"},
+    "paused":   {"emoji": "⚠️", "label": "中断"},
+    "watching": {"emoji": "👀", "label": "観測中"},
+}
+# 個人ボード（マイボード）への集約マッピング
+BALL_TO_PERSONAL = {
+    "ren":      "me",       # Ren個人ボード → 自分ボール
+    "ceo":      "ai",
+    "worker":   "ai",
+    "external": "waiting",
+    "paused":   "waiting",
+    "watching": "waiting",
+}
+BALL_OPTIONS = ["ren", "ceo", "worker", "external", "paused", "watching"]
+
 # --- CSS ---
 COMMON_CSS = """
 <style>
@@ -119,6 +139,16 @@ COMMON_CSS = """
     .deadline-badge {
         font-size: 0.68rem;
         color: #A8A29E;
+    }
+    .overdue-badge {
+        display: inline-block;
+        background: #FEE2E2;
+        color: #DC2626;
+        font-size: 0.62rem;
+        font-weight: 700;
+        padding: 1px 6px;
+        border-radius: 8px;
+        margin-left: 4px;
     }
     .task-note-preview {
         font-size: 0.68rem;
@@ -337,6 +367,19 @@ def show_task_detail(task, columns_def, team_members, key_prefix):
     new_status = st.selectbox("ステータス", COL_KEYS, index=current_idx,
         format_func=lambda x: TEAM_COLUMNS[x]["label"], key=f"st_{pk}")
 
+    # ボール所在
+    current_ball = task.get("ball") or "ren"
+    if current_ball not in BALL_OPTIONS:
+        current_ball = "ren"
+    ball_label_map = {b: f'{BALL_META[b]["emoji"]} {BALL_META[b]["label"]}' for b in BALL_OPTIONS}
+    new_ball = st.selectbox(
+        "ボール所在",
+        BALL_OPTIONS,
+        index=BALL_OPTIONS.index(current_ball),
+        format_func=lambda b: ball_label_map[b],
+        key=f"ba_{pk}",
+    )
+
     member_names = [""] + [m["name"] for m in team_members]
     current_assignee_idx = member_names.index(assignee) if assignee in member_names else 0
     new_assignee = st.selectbox("担当者", member_names, index=current_assignee_idx, key=f"as_{pk}")
@@ -365,6 +408,8 @@ def show_task_detail(task, columns_def, team_members, key_prefix):
                         t["column"] = new_status
                     if new_assignee != t.get("assignee", ""):
                         t["assignee"] = new_assignee
+                    if new_ball != (t.get("ball") or ""):
+                        t["ball"] = new_ball
                     if new_note:
                         timestamp = datetime.now().strftime("%m/%d %H:%M")
                         note_line = f"[{timestamp}] {new_note}"
@@ -416,6 +461,23 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     impact_html = f'<div class="task-impact">{task["impact"]}</div>' if task.get("impact") else ""
     assignee_html = f'<span class="task-assignee"><span class="avatar-dot" style="background:{assignee_color}">{initial}</span>{display_name}</span>' if display_name else ""
 
+    # ball絵文字（タイトル左に付与）
+    ball = task.get("ball") or ""
+    ball_meta = BALL_META.get(ball)
+    ball_prefix = f'{ball_meta["emoji"]} ' if ball_meta else ""
+
+    # 期限超過バッジ
+    overdue_html = ""
+    if task.get("deadline") and task.get("column") != "done":
+        try:
+            from datetime import datetime as _dt
+            d = _dt.strptime(task["deadline"][:10], "%Y-%m-%d")
+            days = (_dt.now() - d).days
+            if days > 0:
+                overdue_html = f'<span class="overdue-badge">⚠️超過{days}d</span>'
+        except ValueError:
+            pass
+
     # コメントプレビュー（最新1行）
     note_preview = ""
     if task.get("notes"):
@@ -433,11 +495,11 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     # カード + 右下に ··· ボタン
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
-        f'<div class="task-title">{task["title"]}{approval_html}</div>'
+        f'<div class="task-title">{ball_prefix}{task["title"]}{approval_html}</div>'
         f'{"<div class=task-purpose>" + task["purpose"] + "</div>" if task.get("purpose") else ""}'
         f'{impact_html}'
         f'{note_preview}'
-        f'<div class="task-meta">{assignee_html}{deadline_html}</div>'
+        f'<div class="task-meta">{assignee_html}{deadline_html}{overdue_html}</div>'
         f'</div>',
         unsafe_allow_html=True
     )
@@ -466,6 +528,14 @@ def render_add_form(members):
             assignee = st.selectbox("担当者", member_names)
         with fc2:
             deadline = st.text_input("期限", placeholder="例: 4/15")
+        # ボール所在（必須）
+        ball_label_map = {b: f'{BALL_META[b]["emoji"]} {BALL_META[b]["label"]}' for b in BALL_OPTIONS}
+        ball = st.selectbox(
+            "ボール所在 *",
+            BALL_OPTIONS,
+            format_func=lambda b: ball_label_map[b],
+            help="誰のボール? ren=renの判断/作業待ち / ceo=CEO作業中 / worker=担当者作業中 / external=外部待ち / paused=中断中 / watching=観測中",
+        )
         impact = st.text_input("期待インパクト", placeholder="例: +50人/月")
         description = st.text_area("詳細", placeholder="詳細な説明...")
         needs_approval = st.checkbox("Renの承認が必要")
@@ -473,19 +543,53 @@ def render_add_form(members):
         if submitted:
             if not title:
                 st.error("タイトルは必須です")
-            else:
-                fresh_data = load_tasks()
-                new_id = next_id(fresh_data["tasks"])
-                fresh_data["tasks"].append({
-                    "id": new_id, "title": title, "column": "todo",
-                    "assignee": assignee, "purpose": purpose, "impact": impact,
-                    "description": description, "deadline": deadline,
-                    "needs_approval": needs_approval,
-                    "created_by": assignee or "App",
-                    "created_at": datetime.now().strftime("%Y-%m-%d"), "notes": "",
-                })
-                save_tasks(fresh_data, assignee or "App")
-                st.rerun()
+                return
+            # 類似タスク検知（UI版）
+            fresh_data = load_tasks()
+            similar = _find_similar(title, fresh_data["tasks"])
+            if similar and not st.session_state.get("force_add_" + title):
+                st.warning("⚠️ 類似タスクが既にあります:")
+                for score, t in similar[:5]:
+                    st.write(f"- ({score:.2f}) `{t['id']}` [{t['column']}] {t['title']}")
+                st.caption("別物として追加するなら、下のチェックを入れて再送信")
+                st.checkbox("別物として強行", key="force_add_" + title)
+                return
+            new_id = next_id(fresh_data["tasks"])
+            fresh_data["tasks"].append({
+                "id": new_id, "title": title, "column": "todo",
+                "assignee": assignee, "purpose": purpose, "impact": impact,
+                "description": description, "deadline": deadline,
+                "needs_approval": needs_approval,
+                "created_by": assignee or "App",
+                "created_at": datetime.now().strftime("%Y-%m-%d"), "notes": "",
+                "ball": ball,
+                "parent_id": "",
+            })
+            save_tasks(fresh_data, assignee or "App")
+            st.rerun()
+
+
+def _find_similar(title, tasks, threshold=0.5):
+    """タイトル類似度チェック（UI側・active task対象）"""
+    import re
+    def toks(s):
+        s = re.sub(r"[（）()\[\]「」【】、。,:：\-_/]+", " ", s or "")
+        return {x for x in s.split() if len(x) >= 2}
+    ta = toks(title)
+    if not ta:
+        return []
+    hits = []
+    for t in tasks:
+        if t.get("column") == "done":
+            continue
+        tb = toks(t.get("title", ""))
+        if not tb:
+            continue
+        score = len(ta & tb) / min(len(ta), len(tb))
+        if score >= threshold:
+            hits.append((score, t))
+    hits.sort(key=lambda x: -x[0])
+    return hits
 
 
 def get_personal_tasks(all_tasks, name):
@@ -500,14 +604,26 @@ def get_personal_tasks(all_tasks, name):
 
 
 def get_personal_tasks_by_ball(all_tasks, name):
-    """ownerベースでフィルタし、ballで分類した辞書を返す。"""
+    """ownerベースでフィルタし、ballで分類した辞書を返す（新ball値に対応）。"""
     my_tasks = get_personal_tasks(all_tasks, name)
-    return {
-        "me": [t for t in my_tasks if t.get("ball") == "me" and t["column"] not in ("done", "watching")],
-        "ai": [t for t in my_tasks if t.get("ball") == "ai" and t["column"] not in ("done", "watching")],
-        "waiting": [t for t in my_tasks if t.get("ball") == "waiting" or t["column"] == "watching"],
-        "done": [t for t in my_tasks if t["column"] == "done"],
-    }
+    result = {"me": [], "ai": [], "waiting": [], "done": []}
+    for t in my_tasks:
+        if t["column"] == "done":
+            result["done"].append(t)
+            continue
+        ball = t.get("ball") or ""
+        personal_col = BALL_TO_PERSONAL.get(ball)
+        if personal_col:
+            result[personal_col].append(t)
+        elif t["column"] == "watching":
+            result["waiting"].append(t)
+        else:
+            # ball未設定のフォールバック: 自分担当ならme、他はai
+            if (t.get("assignee") or "") == name:
+                result["me"].append(t)
+            else:
+                result["ai"].append(t)
+    return result
 
 
 def render_personal_kanban(all_tasks, name, team_members, key_prefix=""):
