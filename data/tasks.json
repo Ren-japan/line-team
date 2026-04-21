@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-21T14:34:38",
-  "updated_by": "CEO",
+  "last_updated": "2026-04-21T16:17:32",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -688,6 +688,38 @@
       "notes": "",
       "ball": "ceo",
       "parent_id": ""
+    },
+    {
+      "id": "t51",
+      "title": "数値感/課題の把握",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-04-21",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t52",
+      "title": "数値感/課題の把握",
+      "column": "in_progress",
+      "assignee": "Noa",
+      "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-04-21",
+      "notes": "",
+      "owner": "Noa",
+      "ball": "worker"
     }
   ]
 }
