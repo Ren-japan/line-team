@@ -68,34 +68,45 @@ COMMON_CSS = """
 <style>
     .block-container { padding-top: 1rem; padding-bottom: 1rem; }
 
-    /* カンバンカード */
+    /* カンバンカード（ミニマル: タイトル1行 + 右にメタだけ） */
     .task-card {
         background: #FFFFFF;
         border: 1px solid #E7E5E4;
-        border-radius: 10px;
-        padding: 12px 14px;
-        margin-bottom: 8px;
-        border-left: 4px solid;
+        border-radius: 8px;
+        padding: 6px 10px;
+        margin-bottom: 4px;
+        border-left: 3px solid;
         cursor: pointer;
-        transition: box-shadow 0.2s;
+        transition: box-shadow 0.15s;
     }
     .task-card:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .task-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
     }
     .task-title {
-        font-size: 0.85rem;
-        font-weight: 700;
-        margin-bottom: 4px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.3;
+        flex: 1;
+        min-width: 0;
         word-break: break-word;
-        overflow-wrap: break-word;
     }
-    .task-purpose {
-        font-size: 0.75rem;
+    .task-meta-inline {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+        font-size: 0.65rem;
         color: #78716C;
-        margin-bottom: 6px;
-        line-height: 1.4;
-        word-break: break-word;
-        overflow-wrap: break-word;
+    }
+    /* 旧クラス（互換維持用、使わない） */
+    .task-purpose {
+        display: none;
     }
     .task-meta {
         font-size: 0.7rem;
@@ -115,40 +126,36 @@ COMMON_CSS = """
         gap: 4px;
     }
     .avatar-dot {
-        width: 18px;
-        height: 18px;
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         color: white;
-        font-size: 0.6rem;
+        font-size: 0.55rem;
         font-weight: 700;
         flex-shrink: 0;
     }
     .approval-badge {
         display: inline-block;
-        background: #FEF3C7;
-        color: #D97706;
-        font-size: 0.6rem;
-        font-weight: 600;
-        padding: 1px 6px;
-        border-radius: 8px;
-        margin-left: 4px;
+        font-size: 0.65rem;
+        margin-left: 2px;
     }
     .deadline-badge {
-        font-size: 0.68rem;
+        font-size: 0.62rem;
         color: #A8A29E;
+        white-space: nowrap;
     }
     .overdue-badge {
         display: inline-block;
         background: #FEE2E2;
         color: #DC2626;
-        font-size: 0.62rem;
+        font-size: 0.58rem;
         font-weight: 700;
-        padding: 1px 6px;
-        border-radius: 8px;
-        margin-left: 4px;
+        padding: 0 4px;
+        border-radius: 6px;
+        white-space: nowrap;
     }
     .task-note-preview {
         font-size: 0.68rem;
@@ -456,10 +463,9 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     assignee_color = PEOPLE_COLORS.get(display_name, "#A8A29E")
     initial = display_name[0].upper() if display_name else ""
 
-    approval_html = '<span class="approval-badge">🔒 承認待ち</span>' if task.get("needs_approval") else ""
-    deadline_html = f'<span class="deadline-badge">{task["deadline"]}</span>' if task.get("deadline") else ""
-    impact_html = f'<div class="task-impact">{task["impact"]}</div>' if task.get("impact") else ""
-    assignee_html = f'<span class="task-assignee"><span class="avatar-dot" style="background:{assignee_color}">{initial}</span>{display_name}</span>' if display_name else ""
+    approval_html = '<span class="approval-badge">🔒</span>' if task.get("needs_approval") else ""
+    deadline_html = f'<span class="deadline-badge">{task["deadline"][5:] if len(task["deadline"])>=10 else task["deadline"]}</span>' if task.get("deadline") else ""
+    assignee_html = f'<span class="task-assignee"><span class="avatar-dot" style="background:{assignee_color}">{initial}</span></span>' if display_name else ""
 
     # ball絵文字（タイトル左に付与）
     ball = task.get("ball") or ""
@@ -474,16 +480,9 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
             d = _dt.strptime(task["deadline"][:10], "%Y-%m-%d")
             days = (_dt.now() - d).days
             if days > 0:
-                overdue_html = f'<span class="overdue-badge">⚠️超過{days}d</span>'
+                overdue_html = f'<span class="overdue-badge">⚠️{days}d</span>'
         except ValueError:
             pass
-
-    # コメントプレビュー（最新1行）
-    note_preview = ""
-    if task.get("notes"):
-        lines = [l.strip() for l in task["notes"].split("\n") if l.strip()]
-        if lines:
-            note_preview = f'<div class="task-note-preview">💬 {lines[-1]}</div>'
 
     # 詳細ダイアログ
     pk = f"{key_prefix}{task['id']}"
@@ -492,14 +491,13 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     def open_detail():
         show_task_detail(task, columns_def, team_members, key_prefix)
 
-    # カード + 右下に ··· ボタン
+    # カード: タイトル1行 + 右端にメタ（担当アイコン/期限/超過）
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
-        f'<div class="task-title">{ball_prefix}{task["title"]}{approval_html}</div>'
-        f'{"<div class=task-purpose>" + task["purpose"] + "</div>" if task.get("purpose") else ""}'
-        f'{impact_html}'
-        f'{note_preview}'
-        f'<div class="task-meta">{assignee_html}{deadline_html}{overdue_html}</div>'
+        f'<div class="task-title-row">'
+        f'<span class="task-title">{ball_prefix}{task["title"]}{approval_html}</span>'
+        f'<span class="task-meta-inline">{assignee_html}{deadline_html}{overdue_html}</span>'
+        f'</div>'
         f'</div>',
         unsafe_allow_html=True
     )
