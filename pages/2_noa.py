@@ -29,7 +29,7 @@ with tab_team:
 
 with tab_me:
     my_tasks = get_personal_tasks(tasks, MY_NAME)
-    active = len([t for t in my_tasks if t["column"] != "done"])
+    active = len([t for t in my_tasks if t["column"] in ("todo", "in_progress")])
     st.caption(f"アクティブ {active}件")
     render_personal_kanban(tasks, MY_NAME, members, key_prefix="nm_")
 
