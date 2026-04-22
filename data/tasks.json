@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T16:17:32",
+  "last_updated": "2026-04-22T15:47:22",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -720,6 +720,37 @@
       "notes": "",
       "owner": "Noa",
       "ball": "worker"
+    },
+    {
+      "id": "t53",
+      "title": "BMI PU: replace body-type PUs with new test candidates",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "CTR 13pct target +74 friends. Delete 3 body-type PUs, add candidate A to both sites. Add candidate C after v6 brief confirmed.",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-04-22",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t54",
+      "title": "BMI PU差し替え：体型系3本削除・新規テスト候補設置",
+      "column": "todo",
+      "assignee": "Noa",
+      "ball": "worker",
+      "purpose": "CTR基準13%達成してポテンシャル+74人を回収する。体型系3本（太りやすい人間か・体型気になる・太りすぎチェック）を削除し、候補A「体重より体質、気になる？」を両サイトに設置。診断v6設計書確認後に候補Cも追加。",
+      "impact": "+74人（ポテンシャル）",
+      "description": "参照: research-2026-04-21.html 施策設計セクション",
+      "deadline": "",
+      "needs_approval": true,
+      "created_by": "Noa",
+      "created_at": "2026-04-22",
+      "notes": ""
     }
   ]
 }
