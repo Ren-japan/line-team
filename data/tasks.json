@@ -751,6 +751,28 @@
       "created_by": "Noa",
       "created_at": "2026-04-22",
       "notes": ""
+    },
+    {
+      "id": "t55",
+      "title": "PU改善: こいずみ_日本人1番痩せる（CTR改善・案A設置）",
+      "column": "todo",
+      "assignee": "Noa",
+      "ball": "worker",
+      "purpose": "CTR 11.9%→13%以上に改善。現状PU「自分に合ったダイエット方法」が記事結論と同義で刺さっていない。案A「食事・運動・薬、あなたに効くのはどれ？体質タイプ診断」に差し替え。ポテンシャル+11人。太りやすさタイプ診断v6設計書確認後に「体質タイプ」文言を最終確定してから実施。",
+      "needs_approval": true,
+      "created_by": "Noa",
+      "created_at": "2026-04-22"
+    },
+    {
+      "id": "t56",
+      "title": "LP改善調査: こいずみ_日本人1番痩せる（追加率 7.1% 問題）",
+      "column": "todo",
+      "assignee": "Noa",
+      "ball": "worker",
+      "purpose": "追加率7.1%（基準11%）のボトルネック特定。CTRは改善できてもLP側の構造問題が残る。LP遷移先の確認・LP内容とPU訴求の乖離チェックが目的。",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-04-22"
     }
   ]
 }
