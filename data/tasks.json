@@ -785,6 +785,20 @@
       "notes": [
         "設計書: data/output/briefs/PU改善-ダイエットパッチ.md"
       ]
+    },
+    {
+      "id": "t58",
+      "title": "食欲を抑える薬 LP改善（渋谷）",
+      "purpose": "追加率7.5%→11%改善。ダイエットパッチと同じ専用LINE追加LP構造を設定し+4人/月を狙う",
+      "assignee": "Ren",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": true,
+      "notes": [
+        "原因: PUクリック後の遷移先がダイエットパッチの専用LP（btn.html）と異なる弱い導線",
+        "対処: 食欲を抑える薬用の専用LINE追加LP作成 + PUの遷移先を変更",
+        "参考: ダイエットパッチの diet_patch_btn.html 構造"
+      ]
     }
   ]
 }
