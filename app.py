@@ -5,7 +5,7 @@ URL: line-team.streamlit.app
 import streamlit as st
 from board_core import *
 
-st.set_page_config(page_title="LINE Team", page_icon="📋", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="LINE Team", page_icon="🦖", layout="wide", initial_sidebar_state="collapsed")
 st.markdown(COMMON_CSS, unsafe_allow_html=True)
 
 # データ
