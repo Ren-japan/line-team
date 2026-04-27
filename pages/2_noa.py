@@ -20,6 +20,7 @@ team = load_json("team.json")
 members = team["members"]
 
 st.markdown("## 🟢 Noa")
+render_standup(tasks)
 render_team_bar(tasks, members)
 
 tab_team, tab_me, tab_add = st.tabs(["📋 チーム全体", "🟢 マイボード", "➕ タスク追加"])
