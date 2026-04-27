@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T16:30:51",
+  "last_updated": "2026-04-27T16:43:49",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -692,7 +692,7 @@
     {
       "id": "t51",
       "title": "数値感/課題の把握",
-      "column": "todo",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする",
       "impact": "",
@@ -708,7 +708,7 @@
     {
       "id": "t52",
       "title": "数値感/課題の把握",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする",
       "impact": "",
@@ -724,7 +724,7 @@
     {
       "id": "t53",
       "title": "BMI PU: replace body-type PUs with new test candidates",
-      "column": "todo",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "CTR 13pct target +74 friends. Delete 3 body-type PUs, add candidate A to both sites. Add candidate C after v6 brief confirmed.",
       "impact": "",
