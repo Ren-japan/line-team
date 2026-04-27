@@ -548,7 +548,7 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     # 目的（1行のみ表示、溢れたら...で省略）
     purpose_html = f'<div class="task-purpose-line">{task["purpose"]}</div>' if task.get("purpose") else ""
 
-    # 経過日数バッジ（status_changed_at → created_at の順でフォールバック）
+    # 日付バッジ（status_changed_at → created_at の順でフォールバック）
     age_html = ""
     age_src = task.get("status_changed_at") or task.get("created_at")
     if age_src and task.get("column") != "done":
@@ -557,7 +557,8 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
             d = _dt2.strptime(age_src[:10], "%Y-%m-%d")
             days = (_dt2.now() - d).days
             css_cls = "fresh" if days <= 7 else ("mid" if days <= 14 else "old")
-            age_html = f'<span class="task-age-badge {css_cls}">{days}日</span>'
+            label = f'{d.month}/{d.day}'
+            age_html = f'<span class="task-age-badge {css_cls}">{label}</span>'
         except ValueError:
             pass
 
