@@ -145,21 +145,123 @@ body{background:#FAF8F5;color:#292524;font-family:-apple-system,"Hiragino Sans",
 <script>
 // ===BUILD_MARKER_START===
 var TASKS = [
-  {"id": "t1", "title": "FCVR設計レビュー", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ダイエットFCVR 1.7%→3%にする", "impact": "売上+¥400K/月", "description": "「本気で痩せたい」記事（96人/CV 0）向け診断設計のレビュー。設計書はbriefs/に保存済み。", "created_by": "CEO(AI)", "created_at": "3/26", "needs_approval": true},
-  {"id": "t2", "title": "archives CSV投入指示", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "今週", "purpose": "PU未設置10記事にPUが設置されてる状態にする", "impact": "+500人/月", "description": "渋谷サイトのarchives記事10本以上にPU未設置。Noahに引き継ぎ予定。手順書作成中。", "created_by": "CEO(AI)", "created_at": "3/26", "needs_approval": true},
-  {"id": "t3", "title": "archives CSV投入", "column": "in_progress", "assignee": "Noah", "assignee_color": "#2563EB", "deadline": "4/4", "purpose": "PU未設置10記事にPUが設置されてる状態にする", "impact": "+500人/月", "description": "手順書に沿ってスプシにデータ投入。投入後にPU表示を確認。", "created_by": "Ren", "created_at": "3/31", "needs_approval": false},
-  {"id": "t4", "title": "断食PU撤去", "column": "in_progress", "assignee": "Noah", "assignee_color": "#2563EB", "deadline": "今週", "purpose": "CV出ないPU②がなくなってる状態にする", "impact": "", "description": "16時間断食のPU②を撤去。PU①「自分に1番合う方法」はCV実績ありで温存。", "created_by": "Ren", "created_at": "3/31", "needs_approval": false},
-  {"id": "t5", "title": "re.cosme LINE導線設置", "column": "in_progress", "assignee": "Kate", "assignee_color": "#EC4899", "deadline": "今週", "purpose": "Instaからの友だち獲得が始まってる状態にする", "impact": "月100〜300人", "description": "re.cosmeのプロフィールにLINEリンクを設置。既存診断（方法診断）を使ってテスト。", "created_by": "Ren", "created_at": "3/31", "needs_approval": false},
-  {"id": "t6", "title": "ED精力剤PU 2本目", "column": "watching", "assignee": "", "assignee_color": "", "deadline": "判定4/4", "purpose": "追加率3.3%→11%に改善されてる状態にする", "impact": "+34人/月", "description": "3/30差し替え完了。「精力剤？ED薬？ あなたに合う対処法を30秒で診断」。5日間データ蓄積後に判定。", "created_by": "CEO(AI)", "created_at": "3/19", "needs_approval": false},
-  {"id": "t7", "title": "RW ワークマンPU差し替え", "column": "watching", "assignee": "", "assignee_color": "", "deadline": "判定4/4", "purpose": "追加率2.87%→11%に改善されてる状態にする", "impact": "+191人/月", "description": "3/30にPU3本差し替え完了。A/B 2パターン。ワークマン口コミ記事のLP imp 17K。", "created_by": "CEO(AI)", "created_at": "3/26", "needs_approval": false},
-  {"id": "t8", "title": "kasei判定PASS", "column": "done", "assignee": "", "assignee_color": "", "deadline": "", "purpose": "包茎kasei PU効果検証→基準クリア確認済み", "impact": "", "description": "包茎kasei記事のPU効果判定PASS。PVFR 0.98%で基準クリア。", "created_by": "CIO(AI)", "created_at": "3/26", "needs_approval": false},
-  {"id": "t10", "title": "新人研修資料作成", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "出張前", "purpose": "出張4日間で新人ちゃんがLINEマーケを自走できる状態にする", "impact": "チーム戦力+1名", "description": "HTML草案28枚完成済み（docs/training-slides-draft.html）。Canvaで完全版を仕上げる。既存アド研修+数値施策研修のCanvaをLINE版にカスタマイズ。", "created_by": "Ren", "created_at": "4/2", "needs_approval": false},
-  {"id": "t9", "title": "メンバーGitHub招待", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "Noah/Kate/RinonがPrivateリポにアクセスできる状態にする", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
-  {"id": "t11", "title": "sutekihサイトPVFR改善（0.46%→0.80%）", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "PV4万あるのに友だち184人しか取れてない効率ギャップを解消する", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
-  {"id": "t12", "title": "CIOデータ取得ゲートスキル導入完了", "column": "done", "assignee": "", "assignee_color": "", "deadline": "", "purpose": "全分析でダッシュボードと同じ数字が出る状態にする", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
-  {"id": "t13", "title": "3月総括（確定値ベース）", "column": "in_progress", "assignee": "CEO(AI)", "assignee_color": "#A8A29E", "deadline": "", "purpose": "3月の実績を正しいデータで総括して4月計画の土台にする", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
-  {"id": "t14", "title": "ダイエットPV減少分析（正データで再実行）", "column": "in_progress", "assignee": "CEO(AI)", "assignee_color": "#A8A29E", "deadline": "", "purpose": "PV減少の犯人と友だち損失を正確に把握する", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/2", "needs_approval": false},
-  {"id": "t15", "title": "セットアップ完了確認", "column": "done", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "git clone〜タスクボード操作が一通りできることを確認", "impact": "", "description": "", "created_by": "Ren", "created_at": "4/6", "needs_approval": false}
+  {"id": "t5", "title": "ICL診断 立ち上げ進行", "column": "in_progress", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "ICL診断を立ち上げ → 友だち計測開始", "impact": "", "description": "ICLジャンルで友だち追加増加。ジャンル横断1診断の設計・設置完了まで", "created_by": "Noa", "created_at": "4/9", "needs_approval": false},
+  {"id": "t6", "title": "PU未設置検知（archives系含む）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-04-04", "purpose": "archives全記事にPU設置 → +500人/月", "impact": "+500人/月（全記事PVFR1%試算）", "description": "渋谷サイトのarchives記事10本以上にPU未設置。合計GSC PV 50,000超。既存の方法診断を設置するだけで+500人の理論値
+
+---
+renがCSV入れて反映したら検知開始。3/30名称統一", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t7", "title": "X収益化リサーチ（20事例・各ジャンル3事例）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-04-10", "purpose": "X収益化事例20件まとめ → 来週ディベート用草案", "impact": "自前PV源構築 → SEO依存からの脱却", "description": "SEO依存脱却の第2エンジン。note/X/オーガニックの事例・導線設計・自動化を毎日リサーチ。来週ディベート用に草案まとめる
+
+---
+リサーチャースキル作成完了。初回リサーチ開始", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t8", "title": "包茎 kasei・toha PU戻し", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "包茎 kasei/toha PU を旧「治し方診断」に戻す", "impact": "+59人/月（元試算）", "description": "新PU（治療必要度チェック）が旧PUより全指標悪化。元の治し方診断に戻す。shinsei/kantonは好調で継続
+
+---
+悪化判定。追加率9.0%→5.6%、日均-50%。再設計検討中", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t9", "title": "「本気で痩せたい」imp計測データ欠損の修正", "column": "todo", "assignee": "CTO", "assignee_color": "#A8A29E", "deadline": "2026-04-02", "purpose": "imp列補完 → スコアリング誤検知ゼロ化", "impact": "正確なファネル指標の算出。スコアリング精度向上", "description": "友だちは毎日4〜14人来てる（PUは動いてる）がlp_imp/pu_imp/pu_clickが全て0。スプシdayデータにimp列が入ってない。スコアリングエンジンが「PU見えてない」と誤検知する原因
+
+---
+renが指摘。dayデータでimp全0を確認済み（3/26）", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t10", "title": "ED 精力剤PU2本目 差し替え", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-03-28", "purpose": "ED精力剤PU2本目を新文言へ入稿", "impact": "+34人/月（追加率11%試算）", "description": "旧PU FAIL（追加率3.3%）→ 差し替え文言確定: 「精力剤？ED薬？ あなたに合う対処法を30秒で診断」
+
+---
+悪化判定。追加率5.6%→4.4%、日均-56%。再設計検討中", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t11", "title": "ダイエットパッチ PU2撤去→PU1集約 効果観測", "column": "watching", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-04-18", "purpose": "PU2撤去→PU1集約で友だち純増", "impact": "変更前: PU1友だち5人+PU2友だち1人=計6人/11日。PU2のimp（11日で229）がPU1に流れれば友だち増の余地あり", "description": "4月PV日均60（3月138から-56%）。PU1の率は大幅改善中だがPU2が足を引っ張ってた。PU2撤去でPU1にimp集約→友だち純増を狙う
+
+---
+【変更内容】4/13にPU2「楽に痩せられる方法」を撤去。PU1「自分に1番合う方法」のみに絞った
+【変更前の数値（4月11日間）】
+  PU1: imp222 / CTR14.0% / 追加率16.1% / 友だち5人 ← 全指標基準超え
+  PU2: imp229 / CTR7.9% / 追加率5.6% / 友だち1人 ← 全指標基準割れ
+【効果判定基準】4/18にCIOデータ取得
+  成功: PU1のimp増加+友だち増加が確認できる（日均0.45人→0.7人以上）
+  失敗: imp変わらずor友だち減少 → PU1文言改善を検討
+【背景】PV-56%は順位下落。率でカバーするしかない状況。PU1のPVFR0.76%は基準(0.80%)に迫ってる", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t12", "title": "16時間断食 PU②撤去", "column": "in_progress", "assignee": "external", "assignee_color": "#A8A29E", "deadline": "", "purpose": "16時間断食 PU② 撤去（PU①温存）", "impact": "+12人/月（追加率11%試算）", "description": "PU②撤去。PU①「自分に1番合う方法」はCV実績あり(2月2件)で温存。専用診断はFCVR後
+
+---
+16時間断食PU②撤去→インターンに依頼済み", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t13", "title": "リテンション現状把握（Winut調査）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-04-02", "purpose": "CVしない97%の離脱構造を特定 → 配信設計材料化", "impact": "FCVR改善の構造的ボトルネック特定", "description": "CVしなかった97%の友だちへのステップ配信が白紙。FCVR 2.6%の構造的原因の可能性
+
+---
+別チャットで進行中", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t14", "title": "RW ワークマン口コミ改善（親: PU差し替え+診断再設計+SEO改修）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ワークマン口コミPU 新3本×2パターンに全差し替え", "impact": "追加率2.87%→11%で+XX人/月（PV確認後試算）", "description": "既存4PU→新3PUに差し替え。A/B 2パターン（ボタン変更型/はいいいえ型）× 3本 = 6枚。デザイナー依頼書作成済み
+
+---
+悪化判定。CTR 20.3%→16.1%、日均-41%。再設計検討中", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t15", "title": "FCVR改善（親: 出口改修+リテンション設計+Winut調査）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "本気で痩せたい記事の FCVR 2.6% → 4%", "impact": "FCVR 2.17%→3%で+¥332K/月", "description": "「本気で痩せたい」記事（96人/月、CV 0）。新診断不要→既存方法診断の出口改修+リテンション設計の2本立て。引き継ぎ書あり
+
+---
+方針転換済み。引き継ぎ書: briefs/FCVR改善_引き継ぎ書.md。別チャットでリテンション設計と合流して進行", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t16", "title": "PU改善オペレーション仕組み化（スコアリングエンジン含む）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "PU改善フローを誰でも回せる形に標準化", "impact": "スケーラブルな友だち増加基盤", "description": "スコアリングエンジン（Phase1完了）+ CIO検証フロー整備済み。次: 誰でも回せるフロー標準化
+
+---
+Phase1完了（エンジン稼働中）。Phase2運用標準化は4月以降", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t17", "title": "SC API サービスアカウント分離", "column": "done", "assignee": "external", "assignee_color": "#A8A29E", "deadline": "", "purpose": "手動レビュー時の芋づる式チェック回避。アカウント分離完了、チームへ依頼済み（3/17）", "impact": "リスク軽減（手動ペナ時の他サイト巻き込み防止）", "description": "アカウント分離完了。チームへ依頼済み（3/17）", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t18", "title": "X（Twitter）チャネル開拓 — 戦略設計+自動化", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "X運用の戦略書を書く → renレビュー → GO判断", "impact": "新チャネル開拓（LINEに次ぐ第2のCVチャネル）", "description": "社長オーダー。ジャンルごとのXアカウント運用→商材CV導線→自動化。renのインフルエンサーマーケ経験がベース
+
+---
+3/27 社長オーダー。renと戦略MTG予定", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t19", "title": "Star Team Streamlit本実装+Cloud デプロイ", "column": "done", "assignee": "CTO", "assignee_color": "#A8A29E", "deadline": "2026-04-07", "purpose": "チームボード（タスクカンバン+担当者ビュー+詳細パネル）+ renビュー（GOAL→GAP→事業課題→指標推移）をStreamlitで実装。Streamlit Cloudデプロイで全員アクセス可能に", "impact": "チーム全員のタスク可視化。renの判断スピード向上", "description": "モックv4完成。Streamlit化+デプロイが次ステップ", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t20", "title": "re.cosme LINE導線設置テスト", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-04-04", "purpose": "re.cosmeプロフにLINEリンク設置 → 友だち計測開始", "impact": "月100〜300人の友だち（新チャネル）", "description": "re.cosme（5万フォロワー）のプロフにLINEリンク設置。既存診断で反応テスト。月100-300人の友だち見込み
+
+---
+Kateがプロフリンク設置→CTA投稿テスト", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t21", "title": "BMI隠れ肥満度チェック デザイン上がり待ち", "column": "watching", "assignee": "external", "assignee_color": "#A8A29E", "deadline": "", "purpose": "BMI隠れ肥満度チェック デザイン受領", "impact": "", "description": "BMI系記事のPVFR重症。隠れ肥満度チェック診断で改善狙い。体脂肪系53万vol、カロリー成功構造と同型
+
+---
+【状態】デザイナーに発注済み（4/13）。24枚（PU6+表紙2+設問4+結果12）。デザイン上がり待ち
+【設計書】briefs/診断-隠れ肥満度チェックBMI.md
+【依頼書】briefs/依頼書_隠れ肥満度チェックBMI.md
+【次のアクション】デザイン納品→設置→効果観測（設置から5日間）", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t22", "title": "ED精力剤PU再設計（親: 10選再設計+個別差し替え）", "column": "watching", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ED精力剤 追加率 3.9% → 11% で月¥100万寄与", "impact": "3月ペースなら+22CV/月、+¥897K/月。4月ペースでも+2-3CV/月、+¥100K/月", "description": "3月CV 9件、FCVR 52.9%（全記事トップ）。PU CTR 14%あるのに追加率3.9%で詰まる。追加率を基準11%に上げれば単独で月GOAL¥100万寄与
+
+---
+【状態】CMOに再設計依頼中（4/13）
+【検索意図】「精力剤10選」= 市販品志向層。現行PUはED薬診断誘導で検索意図とミスマッチ
+【現状数値】4月: PU CTR 13.95% / 追加率 3.90% / 友だち3人（13日）
+【3月実績】PU CTR 14.35% / 追加率 3.17% / 友だち17人 / CV9件 / FCVR 52.9%
+【成果物】briefs/PU改善-ED精力剤10選.md", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t23", "title": "sutekih PVFR改善（PV35%→友だち22%の効率ギャップ解消）", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "", "impact": "", "description": "sutekihサイトのPVFR 0.92%が低い。防風通聖散(2.19%)以外の記事群（BMI系0.3%、16時間0.98%）のPU効率改善。PV構成比35%に対し友だち構成比22%", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t25", "title": "スターターキット配布準備", "column": "done", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "", "impact": "", "description": "フォルダ完成。renの中身確認待ち。OK出たらZIP化+配布URL作成", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": true},
+  {"id": "t26", "title": "Streamlit タスクボード", "column": "done", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "", "impact": "", "description": "star-team/app.pyをStreamlit Cloudデプロイ。全員がブラウザでタスク閲覧・編集できる状態にする。期限4/7", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t27", "title": "新人研修資料作成（出張用）", "column": "done", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "", "impact": "", "description": "HTML草案v2完成（docs/training-slides-draft.html）。口調・事業構造・レバー数字・DBリンク反映済み。renのFB後にCanva完全版作成", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": true},
+  {"id": "t28", "title": "GAS「新デイリー回答データ」自動収集復旧", "column": "in_progress", "assignee": "CTO", "assignee_color": "#A8A29E", "deadline": "2026-04-08", "purpose": "MCV日次GAS収集を復旧 → 週次報告の空欄解消", "impact": "週次報告のMCV/MCVR/実CVR列が正常化", "description": "MCVデータ（診断ファネル）のGAS自動収集が3/20で停止。3/21以降のMCVが取れず週次報告のMCV列が空欄になっている
+
+---
+CTO起動して復旧させる。週次報告で発覚", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t29", "title": "いびき LINE実装（あいたクリニック）", "column": "in_progress", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "いびきSEO記事にLINE PU設置 → 月200-300人/月", "impact": "要PV確認。リス実績: 3月242人/CV19件", "description": "いびき治療ジャンルのSEO記事にLINE導線（PU）を設置。リスでは月200-300人友だち・CV13-26件の実績あるジャンル。SEOチャネル未実装
+
+---
+インパクト確認中", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t30", "title": "タスクボード連携テスト", "column": "done", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "CEOからmanage.py経由でタスク追加→ボード反映を確認", "impact": "", "description": "", "created_by": "CEO(AI)", "created_at": "4/9", "needs_approval": false},
+  {"id": "t31", "title": "目標設定（4月GOAL）", "column": "done", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "2026-04-10 10:00", "purpose": "4月の目標設定を完了する", "impact": "", "description": "", "created_by": "CEO", "created_at": "4/9", "needs_approval": false},
+  {"id": "t32", "title": "CEO直接作業を物理ブロックするhook導入 判断", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "CEO直接作業ブロックhook 導入GO/NG判断", "impact": "", "description": "4/10にCEOがmind.md違反でload_unified_data()を直接叩いた。memoryだけだと自制任せで再発リスク高。PreToolUseフックでBashコマンドを正規表現マッチしてデータアクセス系を拒否する構造的対策。ブロック対象6パターン候補とスコープ設計をren判断。詳細: roles/ceo/pending-decisions.md ④", "created_by": "CEO", "created_at": "4/10", "needs_approval": false},
+  {"id": "t33", "title": "pending-decisions.md 廃止 → line-team一本化", "column": "done", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "roles/ceo/pending-decisions.md が機能していない（renは見に行かない、line-team一元管理方針と二重管理）。ceo-flow.md Phase 0の「判断キュー=pending-decisions.md」記述を書き換え、既存中身（FCVR設計書レビュー等）をline-team Renボールに移行してpending-decisions.md廃止。一旦ファイルは残しで段階移行。CLAUDE.mdとceo-flow.mdの矛盾解消が目的", "impact": "", "description": "", "created_by": "CEO", "created_at": "4/10", "needs_approval": false},
+  {"id": "t34", "title": "RW急落原因調査(-47%)", "column": "done", "assignee": "CMO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "リカバリーウェア日均1.57→0.83人、追加率4.3%の原因特定と打ち手設計", "impact": "", "description": "", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t35", "title": "GAP埋め追加打ち手設計(GAP 326人)", "column": "done", "assignee": "CMO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "4月GOAL月末着地674人予測。残15日で+326人必要。既存4施策+新規3〜5本の設計", "impact": "", "description": "", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t36", "title": "包茎PU改修(追加率5.1%→11%)", "column": "in_progress", "assignee": "CMO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "包茎PU 追加率 5.1% → 11%", "impact": "", "description": "包茎(seo_phimo)記事の追加率ボトルネック解消。友だち+売上W効果の最優先レバー。3月は包茎CV 3件/¥225K、4月は0件なので売上GAPの本丸", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t37", "title": "BMI隠れ肥満度チェックPU横展開(GLP-1 AVA太りやすさ系)", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "BMI診断PU を GLP-1 AVA 太りやすさ系に横展開", "impact": "", "description": "BMI新診断をGLP-1 AVAの太りやすさチェック系PUにも横展開。診断本体は流用、PU設置のみ。2日工数", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t38", "title": "方法診断遷移率改善(追加率9.4%→13%)", "column": "in_progress", "assignee": "CMO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "GLP-1方法診断 追加率 9.4% → 13%（+49人/13日）", "impact": "", "description": "GLP-1方法診断のあと一歩改善。自分に1番合う方法(imp1555追加率9.5%)+自分に合ったダイエット方法(imp1548追加率9.3%)のPU/診断入口をテコ入れ。残13日+49人期待", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t39", "title": "CIO発注: ピル/GLP-1記事別PV/PUマッピング", "column": "done", "assignee": "CIO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "打ち手D(ピルPU追加)の前提データ+GLP-1水平展開候補特定(5月準備)", "impact": "", "description": "", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t40", "title": "RW打ち手A: ワークマン口コミPU文言微調整", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ワークマン口コミ PU文言を微調整", "impact": "", "description": "追加率3.0%→4.5%目標、1営業日実装、+5人/15日", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t41", "title": "RW打ち手B: ワークマン口コミ診断実体再設計(疲れタイプ×予算)", "column": "todo", "assignee": "CMO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "診断再設計で 追加率 3.0% → 8.0%（+36人/月）", "impact": "", "description": "追加率3.0%→8.0%目標、5営業日、+18人/15日(月+36人)※本命", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t42", "title": "RW打ち手C: ワークマン口コミSEO内部改修(JMROライター)", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ワークマン口コミSEO内部改修（JMRO）", "impact": "", "description": "LP imp +15-20%回復狙い、3営業日、+12人/15日", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t43", "title": "CTO依頼: 4月GSCのrank-checker同期復旧", "column": "todo", "assignee": "CTO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "4月GSC の rank-checker 同期復旧", "impact": "", "description": "RW SEO分析データ不足の解消", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t45", "title": "渋谷_本気で痩せたいPU新設(カロリー系流用)", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "渋谷 本気で痩せたいPU 新設（カロリー流用）", "impact": "", "description": "バナー/ボタンで29人取れてるのにPU未設置、+8人/15日", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t46", "title": "ピル値段PU差し替え(低用量ピル種類型流用)", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "ピル値段PU 差し替え（種類型流用）", "impact": "", "description": "CTR 8.9→18%期待、+6人/15日", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t47", "title": "BMI診断効果観測(4/17〜4/22)", "column": "watching", "assignee": "CIO", "assignee_color": "#A8A29E", "deadline": "", "purpose": "BMI診断効果観測（4/17〜4/22） 判定", "impact": "", "description": "3記事のPVFR 0.11%→0.80%到達検証、日次モニタリング", "created_by": "CEO", "created_at": "4/17", "needs_approval": false},
+  {"id": "t48", "title": "4/21インプット判断: 構造化3ステップ(@ysk_motoyama)", "column": "todo", "assignee": "", "assignee_color": "", "deadline": "", "purpose": "構造化3ステップをdesign-diagnosisに組込むGO/NG判断", "impact": "", "description": "design-diagnosisの問い方に「全体定義→分解→因果」を組み込むか判断", "created_by": "CEO", "created_at": "4/21", "needs_approval": false},
+  {"id": "t49", "title": "4/21インプット判断: AI駆動チーム10人→1人(@osaruproducer)", "column": "todo", "assignee": "", "assignee_color": "", "deadline": "", "purpose": "おさる業務リスト精読 → 自動化対応GO/NG判断", "impact": "", "description": "おさるの『置き換えた業務リスト』精読→line-dashboard/seo-image-generator運用AI化に対応させるか判断", "created_by": "CEO", "created_at": "4/21", "needs_approval": false},
+  {"id": "t50", "title": "BMI隠れ肥満度チェック（親: デザイン→横展開→観測）", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "BMI親: デザイン→横展開→観測 の3フェーズ管理", "impact": "", "description": "子t21/t37/t47の全体進捗管理。デザイン上がり → PU横展開 → 効果観測 の3フェーズ", "created_by": "CEO", "created_at": "4/21", "needs_approval": false},
+  {"id": "t51", "title": "数値感/課題の把握", "column": "todo", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする", "impact": "", "description": "", "created_by": "Noa", "created_at": "4/21", "needs_approval": false},
+  {"id": "t52", "title": "数値感/課題の把握", "column": "in_progress", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする", "impact": "", "description": "", "created_by": "Noa", "created_at": "4/21", "needs_approval": false},
+  {"id": "t53", "title": "BMI PU: replace body-type PUs with new test candidates", "column": "todo", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "CTR 13pct target +74 friends. Delete 3 body-type PUs, add candidate A to both sites. Add candidate C after v6 brief confirmed.", "impact": "", "description": "", "created_by": "Noa", "created_at": "4/22", "needs_approval": false},
+  {"id": "t54", "title": "BMI PU差し替え：体型系3本削除・新規テスト候補設置", "column": "todo", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "CTR基準13%達成してポテンシャル+74人を回収する。体型系3本（太りやすい人間か・体型気になる・太りすぎチェック）を削除し、候補A「体重より体質、気になる？」を両サイトに設置。診断v6設計書確認後に候補Cも追加。", "impact": "+74人（ポテンシャル）", "description": "参照: research-2026-04-21.html 施策設計セクション", "created_by": "Noa", "created_at": "4/22", "needs_approval": true},
+  {"id": "t55", "title": "PU改善: こいずみ_日本人1番痩せる（CTR改善・案A設置）", "column": "watching", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "CTR 11.9%→13%以上に改善。仮説：検索者の本当の問いは「方法選択」ではなく「原因究明（なぜ自分は痩せられないのか）」。現状PUは記事結論と同義で刺さっていない。推奨案A「痩せない理由、自分の体質から知りたい！」に差し替え（はい/いいえ形式）。ポテンシャル+11人。太りやすさタイプ診断v6設計書確認後に体質タイプとの整合を確認してから実施。", "impact": "", "description": "", "created_by": "Noa", "created_at": "4/22", "needs_approval": true},
+  {"id": "t56", "title": "LP改善調査: こいずみ_日本人1番痩せる（追加率 7.1% 問題）", "column": "todo", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "追加率7.1%（基準11%）のボトルネック特定。CTRは改善できてもLP側の構造問題が残る。LP遷移先の確認・LP内容とPU訴求の乖離チェックが目的。", "impact": "", "description": "", "created_by": "Noa", "created_at": "4/22", "needs_approval": false},
+  {"id": "t57", "title": "ダイエットパッチ PU差し替え（渋谷）", "column": "watching", "assignee": "Noa", "assignee_color": "#10B981", "deadline": "", "purpose": "CTR 10.6%→13%改善。推奨文言「あなたに効く方法、60秒で特定できる」に差し替えて+4人/月を狙う", "impact": "", "description": "", "created_by": "Noa", "created_at": "", "needs_approval": true},
+  {"id": "t58", "title": "食欲を抑える薬 LP改善（渋谷）", "column": "todo", "assignee": "Ren", "assignee_color": "#D97706", "deadline": "", "purpose": "追加率7.5%→11%改善。ダイエットパッチと同じ専用LINE追加LP構造を設定し+4人/月を狙う", "impact": "", "description": "", "created_by": "Noa", "created_at": "", "needs_approval": true}
 ];
 
 var COLUMNS = {
@@ -171,7 +273,6 @@ var COLUMNS = {
 
 var PEOPLE = [
   {"key": "Ren", "name": "Ren", "initial": "R", "color": "#D97706", "statusLabel": "判断待ち"},
-  {"key": "Noah", "name": "Noah", "initial": "N", "color": "#2563EB", "statusLabel": "作業中"},
   {"key": "Kate", "name": "Kate", "initial": "K", "color": "#EC4899", "statusLabel": "作業中"},
   {"key": "Rinon", "name": "Rinon", "initial": "R", "color": "#8B5CF6", "statusLabel": "次回4/2"},
   {"key": "Noa", "name": "Noa", "initial": "N", "color": "#10B981", "statusLabel": "作業中"}

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T15:47:22",
+  "last_updated": "2026-04-27T09:08:29",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -755,13 +755,14 @@
     {
       "id": "t55",
       "title": "PU改善: こいずみ_日本人1番痩せる（CTR改善・案A設置）",
-      "column": "todo",
+      "column": "watching",
       "assignee": "Noa",
       "ball": "worker",
       "purpose": "CTR 11.9%→13%以上に改善。仮説：検索者の本当の問いは「方法選択」ではなく「原因究明（なぜ自分は痩せられないのか）」。現状PUは記事結論と同義で刺さっていない。推奨案A「痩せない理由、自分の体質から知りたい！」に差し替え（はい/いいえ形式）。ポテンシャル+11人。太りやすさタイプ診断v6設計書確認後に体質タイプとの整合を確認してから実施。",
       "needs_approval": true,
       "created_by": "Noa",
-      "created_at": "2026-04-22"
+      "created_at": "2026-04-22",
+      "notes": "[04/27 09:08] 2026-04-25(金)にPU差し替え実施済み。2026-04-30(木)に数値確認予定（1週間目安）"
     },
     {
       "id": "t56",
@@ -780,10 +781,11 @@
       "purpose": "CTR 10.6%→13%改善。推奨文言「あなたに効く方法、60秒で特定できる」に差し替えて+4人/月を狙う",
       "assignee": "Noa",
       "created_by": "Noa",
-      "column": "todo",
+      "column": "watching",
       "needs_approval": true,
       "notes": [
-        "設計書: data/output/briefs/PU改善-ダイエットパッチ.md"
+        "設計書: data/output/briefs/PU改善-ダイエットパッチ.md",
+        "2026-04-25(金)にPU差し替え実施済み。2026-04-30(木)に数値確認予定（1週間目安）"
       ]
     },
     {
