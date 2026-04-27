@@ -117,13 +117,11 @@ COMMON_CSS = """
         border-radius: 8px;
         padding: 10px 14px;
         margin-bottom: 14px;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        align-items: baseline;
     }
-    .standup-date { font-size: 0.7rem; color: #A8A29E; margin-right: 4px; }
-    .standup-member { font-size: 0.78rem; font-weight: 600; margin-right: 6px; }
+    .standup-date { font-size: 0.7rem; color: #A8A29E; display: block; margin-bottom: 6px; }
+    .standup-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+    .standup-row:last-child { margin-bottom: 0; }
+    .standup-member { font-size: 0.78rem; font-weight: 600; min-width: 40px; }
     .standup-task-chip {
         display: inline-block;
         background: white;
@@ -131,7 +129,6 @@ COMMON_CSS = """
         border-radius: 4px;
         padding: 1px 6px;
         font-size: 0.72rem;
-        margin-right: 4px;
     }
     .task-title {
         font-size: 0.8rem;
@@ -595,19 +592,19 @@ def render_standup(tasks):
         return  # 全員空なら表示しない
 
     task_map = {t["id"]: t for t in tasks}
-    items_html = f'<span class="standup-date">📅 今日の着手</span>'
+    rows_html = '<span class="standup-date">📅 今日の着手</span>'
 
     for member, task_ids in members_data.items():
         if not task_ids:
             continue
         color = PEOPLE_COLORS.get(member, "#666")
         chips = "".join(
-            f'<span class="standup-task-chip">{tid} {task_map[tid]["title"][:18] + "…" if tid in task_map and len(task_map[tid]["title"]) > 18 else task_map.get(tid, {}).get("title", tid)}</span>'
+            f'<span class="standup-task-chip">{tid} {task_map[tid]["title"][:20] + "…" if tid in task_map and len(task_map[tid]["title"]) > 20 else task_map.get(tid, {}).get("title", tid)}</span>'
             for tid in task_ids
         )
-        items_html += f'<span class="standup-member" style="color:{color}">{member}</span>{chips}'
+        rows_html += f'<div class="standup-row"><span class="standup-member" style="color:{color}">{member}</span>{chips}</div>'
 
-    st.markdown(f'<div class="standup-bar">{items_html}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="standup-bar">{rows_html}</div>', unsafe_allow_html=True)
 
 
 def render_team_bar(tasks, members):
