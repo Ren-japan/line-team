@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T16:43:49",
+  "last_updated": "2026-04-27T16:47:43",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -704,22 +704,6 @@
       "notes": "",
       "ball": "worker",
       "parent_id": ""
-    },
-    {
-      "id": "t52",
-      "title": "数値感/課題の把握",
-      "column": "done",
-      "assignee": "Noa",
-      "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする",
-      "impact": "",
-      "description": "",
-      "deadline": "",
-      "needs_approval": false,
-      "created_by": "Noa",
-      "created_at": "2026-04-21",
-      "notes": "",
-      "owner": "Noa",
-      "ball": "worker"
     },
     {
       "id": "t53",
