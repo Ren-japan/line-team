@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T18:04:39",
+  "last_updated": "2026-04-27T18:23:00",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -832,7 +832,7 @@
       "created_by": "Noa",
       "created_at": "2026-04-27",
       "status_changed_at": "2026-04-27",
-      "notes": "",
+      "notes": "[04/27 18:23] 優先度低め。PV 1,530と母数小さくMAX+10人/月。インパクト大きい案が出たら後回し。",
       "ball": "worker",
       "parent_id": ""
     }
