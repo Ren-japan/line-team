@@ -16,6 +16,7 @@ COLUMN_LABELS = {
     "in_progress": "🔵 進行中",
     "watching": "⏳ 観測中",
     "done": "✅ 完了",
+    "ideas": "💡 インプット/判断",
 }
 
 VALID_COLUMNS = list(COLUMN_LABELS.keys())

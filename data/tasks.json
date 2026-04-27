@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T17:45:09",
+  "last_updated": "2026-04-27T17:58:19",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -21,7 +21,7 @@
     {
       "id": "t6",
       "title": "PU未設置検知（archives系含む）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "archives全記事にPU設置 → +500人/月",
       "impact": "+500人/月（全記事PVFR1%試算）",
@@ -30,7 +30,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "archives URLなので記事内容の確認が先。管轄外ジャンル（ピル等）が混じってる可能性あり。ecはピルの可能性高い\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
+      "notes": "archives URLなので記事内容の確認が先。管轄外ジャンル（ピル等）が混じってる可能性あり。ecはピルの可能性高い\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [CLOSE] 期限大幅超過・死亡判定 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "ren"
     },
@@ -46,7 +46,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断\n[04/17 11:06] 2026-04-17: researcher起動。X収益化事例20本・各ジャンル3事例収集開始\n[04/17 11:12] 2026-04-17: 第3回リサーチ完了。薬機法が医療系X発信の最大の壁と判明。看護転職・ドライバー転職が評価トップ（薬機法リスクなし×CV単価高）。レポート: projects/line-marketing/research/x-income-research-2026-04-17.md\n[04/17 11:55] 2026-04-17: 実地調査完了（Claude in Chrome経由でX.com直接閲覧）。美容系大規模匿名(丸の内OL71.3万F/るる23.7万F/らむね18.1万F)はIG誘導型・PR案件型。しろくまちゃん9.5万Fは紹介コード(iHerb)型。GLP-1体験記は純粋個人記録型でマネタイズなし。【重要】X→LINE→CV型の個人成功例は発見できず。うちは型を自作する必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
+      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断\n[04/17 11:06] 2026-04-17: researcher起動。X収益化事例20本・各ジャンル3事例収集開始\n[04/17 11:12] 2026-04-17: 第3回リサーチ完了。薬機法が医療系X発信の最大の壁と判明。看護転職・ドライバー転職が評価トップ（薬機法リスクなし×CV単価高）。レポート: projects/line-marketing/research/x-income-research-2026-04-17.md\n[04/17 11:55] 2026-04-17: 実地調査完了（Claude in Chrome経由でX.com直接閲覧）。美容系大規模匿名(丸の内OL71.3万F/るる23.7万F/らむね18.1万F)はIG誘導型・PR案件型。しろくまちゃん9.5万Fは紹介コード(iHerb)型。GLP-1体験記は純粋個人記録型でマネタイズなし。【重要】X→LINE→CV型の個人成功例は発見できず。うちは型を自作する必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [統合] t18(X戦略MTG)を本タスクに統合 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "paused"
     },
@@ -69,7 +69,7 @@
     {
       "id": "t9",
       "title": "「本気で痩せたい」imp計測データ欠損の修正",
-      "column": "todo",
+      "column": "done",
       "assignee": "CTO",
       "purpose": "imp列補完 → スコアリング誤検知ゼロ化",
       "impact": "正確なファネル指標の算出。スコアリング精度向上",
@@ -78,7 +78,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
+      "notes": "PU表示乖離ではなくデータ欠損。PU自体は正常稼働中。CTOにスプシ側のデータ入力確認を依頼\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [CLOSE] 期限大幅超過・死亡判定 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "worker"
     },
@@ -102,7 +102,7 @@
     {
       "id": "t11",
       "title": "ダイエットパッチ PU2撤去→PU1集約 効果観測",
-      "column": "watching",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "PU2撤去→PU1集約で友だち純増",
       "impact": "変更前: PU1友だち5人+PU2友だち1人=計6人/11日。PU2のimp（11日で229）がPU1に流れれば友だち増の余地あり",
@@ -111,7 +111,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "[04/13] PU2撤去実施。効果判定4/18。3月FCVR22.2%だった記事なので友だちの質も追跡する\n[04/17 10:18] 4/17朝暫定判定: 悪化シグナル(追加率26.87→14.29%、-12.58pt / 日均友だち-28%)。4/18本判定で5日分確定、ロールバック判断予定",
+      "notes": "[04/13] PU2撤去実施。効果判定4/18。3月FCVR22.2%だった記事なので友だちの質も追跡する\n[04/17 10:18] 4/17朝暫定判定: 悪化シグナル(追加率26.87→14.29%、-12.58pt / 日均友だち-28%)。4/18本判定で5日分確定、ロールバック判断予定\n[04/27 17:58] [CLOSE] PU2撤去観測完了。次手はt57(ダイエットパッチPU差し替え)で独立 (4/27 CEO整理)",
       "owner": "watching",
       "ball": "watching"
     },
@@ -134,7 +134,7 @@
     {
       "id": "t13",
       "title": "リテンション現状把握（Winut調査）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "CVしない97%の離脱構造を特定 → 配信設計材料化",
       "impact": "FCVR改善の構造的ボトルネック特定",
@@ -143,7 +143,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "Winutに入って今何が配信されてるか実態把握。pending-decisions ④\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/21 12:35] 🧩親t15(FCVR改善)の子。Winut調査はFCVR改善の一環",
+      "notes": "Winutに入って今何が配信されてるか実態把握。pending-decisions ④\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/21 12:35] 🧩親t15(FCVR改善)の子。Winut調査はFCVR改善の一環\n[04/27 17:58] [CLOSE] 期限大幅超過・死亡判定 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "paused",
       "parent_id": "t15"
@@ -214,7 +214,7 @@
     {
       "id": "t18",
       "title": "X（Twitter）チャネル開拓 — 戦略設計+自動化",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "X運用の戦略書を書く → renレビュー → GO判断",
       "impact": "新チャネル開拓（LINEに次ぐ第2のCVチャネル）",
@@ -223,7 +223,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "大枠: ①ジャンル別アカウント設計 ②投稿戦略（ロングテキスト活用）③商材CV導線設計 ④自動化。renと要MTG",
+      "notes": "大枠: ①ジャンル別アカウント設計 ②投稿戦略（ロングテキスト活用）③商材CV導線設計 ④自動化。renと要MTG\n[04/27 17:58] [CLOSE] t7(X収益化リサーチ)に統合 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "ren"
     },
@@ -245,7 +245,7 @@
     {
       "id": "t20",
       "title": "re.cosme LINE導線設置テスト",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "re.cosmeプロフにLINEリンク設置 → 友だち計測開始",
       "impact": "月100〜300人の友だち（新チャネル）",
@@ -254,7 +254,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "chie.money（13万フォロワー）は後追い。まずre.cosmeで検証\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
+      "notes": "chie.money（13万フォロワー）は後追い。まずre.cosmeで検証\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [CLOSE] 期限大幅超過・死亡判定 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "ren"
     },
@@ -355,7 +355,7 @@
     {
       "id": "t28",
       "title": "GAS「新デイリー回答データ」自動収集復旧",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "CTO",
       "purpose": "MCV日次GAS収集を復旧 → 週次報告の空欄解消",
       "impact": "週次報告のMCV/MCVR/実CVR列が正常化",
@@ -364,7 +364,7 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close",
+      "notes": "analysis_engine.py の _load_daily_answer_raw() が読む「新デイリー回答データ」タブが3/20で最終。GASトリガーの確認・復旧が必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [CLOSE] 期限大幅超過・死亡判定 (4/27 CEO整理)",
       "owner": "Ren",
       "ball": "worker"
     },
@@ -417,7 +417,7 @@
     {
       "id": "t32",
       "title": "CEO直接作業を物理ブロックするhook導入 判断",
-      "column": "todo",
+      "column": "ideas",
       "assignee": "Ren",
       "purpose": "CEO直接作業ブロックhook 導入GO/NG判断",
       "impact": "",
@@ -644,7 +644,7 @@
     {
       "id": "t48",
       "title": "4/21インプット判断: 構造化3ステップ(@ysk_motoyama)",
-      "column": "todo",
+      "column": "ideas",
       "assignee": "",
       "purpose": "構造化3ステップをdesign-diagnosisに組込むGO/NG判断",
       "impact": "",
@@ -660,7 +660,7 @@
     {
       "id": "t49",
       "title": "4/21インプット判断: AI駆動チーム10人→1人(@osaruproducer)",
-      "column": "todo",
+      "column": "ideas",
       "assignee": "",
       "purpose": "おさる業務リスト精読 → 自動化対応GO/NG判断",
       "impact": "",
@@ -687,38 +687,6 @@
       "created_at": "2026-04-21",
       "notes": "",
       "ball": "ceo",
-      "parent_id": ""
-    },
-    {
-      "id": "t51",
-      "title": "数値感/課題の把握",
-      "column": "done",
-      "assignee": "Noa",
-      "purpose": "現状の数値（PV・友達追加・CV等）を把握し課題を特定する。施策の優先順位判断ができる状態にする",
-      "impact": "",
-      "description": "",
-      "deadline": "",
-      "needs_approval": false,
-      "created_by": "Noa",
-      "created_at": "2026-04-21",
-      "notes": "",
-      "ball": "worker",
-      "parent_id": ""
-    },
-    {
-      "id": "t53",
-      "title": "BMI PU: replace body-type PUs with new test candidates",
-      "column": "done",
-      "assignee": "Noa",
-      "purpose": "CTR 13pct target +74 friends. Delete 3 body-type PUs, add candidate A to both sites. Add candidate C after v6 brief confirmed.",
-      "impact": "",
-      "description": "",
-      "deadline": "",
-      "needs_approval": false,
-      "created_by": "Noa",
-      "created_at": "2026-04-22",
-      "notes": "",
-      "ball": "worker",
       "parent_id": ""
     },
     {

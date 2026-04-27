@@ -20,6 +20,7 @@ TASKS_FILE = DATA_DIR / "tasks.json"
 
 # --- チーム全体の列 ---
 TEAM_COLUMNS = {
+    "ideas": {"label": "💡 インプット/判断", "color": "#A78BFA"},
     "todo": {"label": "📌 TODO", "color": "#94A3B8"},
     "in_progress": {"label": "🔵 進行中", "color": "#2563EB"},
     "watching": {"label": "⏳ 観測中", "color": "#D97706"},
@@ -41,7 +42,7 @@ PEOPLE_COLORS = {
     "Noa": "#10B981",
 }
 
-COL_KEYS = ["todo", "in_progress", "watching", "done"]
+COL_KEYS = ["ideas", "todo", "in_progress", "watching", "done"]
 
 # --- ball（ボール所在）メタ情報 ---
 BALL_META = {
