@@ -88,6 +88,17 @@ COMMON_CSS = """
         align-items: center;
         gap: 6px;
     }
+    .task-id-badge {
+        font-size: 0.6rem;
+        font-weight: 700;
+        color: #A8A29E;
+        background: #F5F5F4;
+        border: 1px solid #E7E5E4;
+        border-radius: 3px;
+        padding: 1px 4px;
+        flex-shrink: 0;
+        letter-spacing: 0.02em;
+    }
     .task-title {
         font-size: 0.8rem;
         font-weight: 600;
@@ -510,6 +521,7 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
         f'<div class="task-title-row">'
+        f'<span class="task-id-badge">{task["id"]}</span>'
         f'<span class="task-title">{ball_prefix}{task["title"]}{approval_html}</span>'
         f'<span class="task-meta-inline">{assignee_html}{deadline_html}{overdue_html}</span>'
         f'</div>'
