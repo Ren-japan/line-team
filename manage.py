@@ -224,6 +224,7 @@ def cmd_add(args):
         sys.exit(2)
 
     new_id = next_id(data["tasks"])
+    today = datetime.now().strftime("%Y-%m-%d")
     new_task = {
         "id": new_id,
         "title": args.title,
@@ -235,7 +236,8 @@ def cmd_add(args):
         "deadline": args.deadline or "",
         "needs_approval": args.needs_approval or False,
         "created_by": user,
-        "created_at": datetime.now().strftime("%Y-%m-%d"),
+        "created_at": today,
+        "status_changed_at": today,
         "notes": "",
         "ball": ball,
         "parent_id": getattr(args, "parent_id", None) or "",
@@ -268,6 +270,7 @@ def cmd_update(args):
             sys.exit(1)
         old = task["column"]
         task["column"] = args.column
+        task["status_changed_at"] = datetime.now().strftime("%Y-%m-%d")
         changes.append(f"列: {old} → {args.column}")
 
     if args.assignee is not None:
@@ -406,6 +409,36 @@ def cmd_delete(args):
     print(f"削除: {args.id} — {task['title']}")
 
 
+STANDUP_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "standup.json")
+
+
+def cmd_today(args):
+    """今日の着手タスクを宣言（standup.json に記録）"""
+    user = get_user(args.assignee)
+    if not user:
+        print("エラー: --assignee を指定するか、環境変数 STAR_TEAM_USER を設定してください")
+        sys.exit(1)
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    if os.path.exists(STANDUP_FILE):
+        with open(STANDUP_FILE, "r", encoding="utf-8") as f:
+            standup = json.load(f)
+    else:
+        standup = {"date": today, "members": {}}
+
+    # 日付が変わっていたら全員リセット
+    if standup.get("date") != today:
+        standup = {"date": today, "members": {}}
+
+    standup["members"][user] = args.task_ids
+
+    with open(STANDUP_FILE, "w", encoding="utf-8") as f:
+        json.dump(standup, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+    print(f"今日の着手 ({user}): {', '.join(args.task_ids) if args.task_ids else '(なし)'}")
+
+
 def cmd_overdue(args):
     """期限超過タスクを一覧表示（死亡疑い検知）"""
     data = load_tasks()
@@ -455,7 +488,7 @@ def main():
     p_add.add_argument("--title", required=True, help="タスクタイトル")
     p_add.add_argument("--ball", required=True, help="ボール所在（ren/ceo/worker/external/paused/watching）")
     p_add.add_argument("--assignee", help="担当者")
-    p_add.add_argument("--purpose", help="一言ゴール（20字前後、数字入り推奨。例『追加率5%→11%』。現状説明は--descriptionへ）")
+    p_add.add_argument("--purpose", help="一言ゴール（20字前後、数字入り推奨。現状説明は--descriptionへ）")
     p_add.add_argument("--impact", help="期待インパクト")
     p_add.add_argument("--description", help="詳細説明")
     p_add.add_argument("--deadline", help="期限")
@@ -497,6 +530,11 @@ def main():
     # overdue
     sub.add_parser("overdue", help="期限超過タスクを表示（死亡疑い検知）")
 
+    # today
+    p_today = sub.add_parser("today", help="今日の着手タスクを宣言")
+    p_today.add_argument("task_ids", nargs="*", help="今日着手するタスクID（例: t56 t59）")
+    p_today.add_argument("--assignee", help="担当者（未指定時は環境変数 STAR_TEAM_USER）")
+
     args = parser.parse_args()
 
     if not args.command:
@@ -512,6 +550,7 @@ def main():
         "show": cmd_show,
         "delete": cmd_delete,
         "overdue": cmd_overdue,
+        "today": cmd_today,
     }
     commands[args.command](args)
 

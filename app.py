@@ -16,6 +16,7 @@ members = team["members"]
 
 # ヘッダー
 st.markdown("## 📋 LINE Team")
+render_standup(tasks)
 render_team_bar(tasks, members)
 
 # タブ: チーム全体 + 各メンバー + タスク追加

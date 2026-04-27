@@ -99,6 +99,40 @@ COMMON_CSS = """
         flex-shrink: 0;
         letter-spacing: 0.02em;
     }
+    .task-age-badge {
+        font-size: 0.6rem;
+        color: #78716C;
+        background: #F5F5F4;
+        border-radius: 3px;
+        padding: 1px 4px;
+        flex-shrink: 0;
+    }
+    .task-age-badge.fresh { color: #059669; background: #ECFDF5; }
+    .task-age-badge.mid   { color: #D97706; background: #FFFBEB; }
+    .task-age-badge.old   { color: #DC2626; background: #FEF2F2; }
+    /* スタンドアップバー */
+    .standup-bar {
+        background: #F9F9F8;
+        border: 1px solid #E7E5E4;
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-bottom: 14px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .standup-date { font-size: 0.7rem; color: #A8A29E; margin-right: 4px; }
+    .standup-member { font-size: 0.78rem; font-weight: 600; margin-right: 6px; }
+    .standup-task-chip {
+        display: inline-block;
+        background: white;
+        border: 1px solid #E7E5E4;
+        border-radius: 4px;
+        padding: 1px 6px;
+        font-size: 0.72rem;
+        margin-right: 4px;
+    }
     .task-title {
         font-size: 0.8rem;
         font-weight: 600;
@@ -517,13 +551,26 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     # 目的（1行のみ表示、溢れたら...で省略）
     purpose_html = f'<div class="task-purpose-line">{task["purpose"]}</div>' if task.get("purpose") else ""
 
+    # 経過日数バッジ（status_changed_at → created_at の順でフォールバック）
+    age_html = ""
+    age_src = task.get("status_changed_at") or task.get("created_at")
+    if age_src and task.get("column") != "done":
+        try:
+            from datetime import datetime as _dt2
+            d = _dt2.strptime(age_src[:10], "%Y-%m-%d")
+            days = (_dt2.now() - d).days
+            css_cls = "fresh" if days <= 7 else ("mid" if days <= 14 else "old")
+            age_html = f'<span class="task-age-badge {css_cls}">{days}日</span>'
+        except ValueError:
+            pass
+
     # カード: タイトル行 + 目的1行 + 右端にメタ
     st.markdown(
         f'<div class="task-card" style="border-left-color:{col_info["color"]}">'
         f'<div class="task-title-row">'
         f'<span class="task-id-badge">{task["id"]}</span>'
         f'<span class="task-title">{ball_prefix}{task["title"]}{approval_html}</span>'
-        f'<span class="task-meta-inline">{assignee_html}{deadline_html}{overdue_html}</span>'
+        f'<span class="task-meta-inline">{age_html}{assignee_html}{deadline_html}{overdue_html}</span>'
         f'</div>'
         f'{purpose_html}'
         f'</div>',
@@ -531,6 +578,36 @@ def render_card(task, col_info, columns_def, team_members, key_prefix, use_owner
     )
     if st.button("···", key=f"open_{pk}"):
         open_detail()
+
+
+def render_standup(tasks):
+    """今日の着手セクションをボード上部に表示"""
+    standup_path = DATA_DIR / "standup.json"
+    if not standup_path.exists():
+        return
+    standup = json.load(open(standup_path, encoding="utf-8"))
+    today = datetime.now().strftime("%Y-%m-%d")
+    if standup.get("date") != today:
+        return  # 今日のデータがなければ表示しない
+
+    members_data = standup.get("members", {})
+    if not any(ids for ids in members_data.values()):
+        return  # 全員空なら表示しない
+
+    task_map = {t["id"]: t for t in tasks}
+    items_html = f'<span class="standup-date">📅 今日の着手</span>'
+
+    for member, task_ids in members_data.items():
+        if not task_ids:
+            continue
+        color = PEOPLE_COLORS.get(member, "#666")
+        chips = "".join(
+            f'<span class="standup-task-chip">{tid} {task_map[tid]["title"][:18] + "…" if tid in task_map and len(task_map[tid]["title"]) > 18 else task_map.get(tid, {}).get("title", tid)}</span>'
+            for tid in task_ids
+        )
+        items_html += f'<span class="standup-member" style="color:{color}">{member}</span>{chips}'
+
+    st.markdown(f'<div class="standup-bar">{items_html}</div>', unsafe_allow_html=True)
 
 
 def render_team_bar(tasks, members):
