@@ -497,8 +497,9 @@ def show_task_detail(task, columns_def, team_members, key_prefix):
 # カンバン描画
 # ============================================
 def render_kanban(task_list, columns_def, team_members, key_prefix="", use_owner=True):
-    cols = st.columns(4)
-    for i, col_key in enumerate(COL_KEYS):
+    col_keys = [k for k in COL_KEYS if k in columns_def]
+    cols = st.columns(len(col_keys))
+    for i, col_key in enumerate(col_keys):
         col_info = columns_def[col_key]
         col_tasks = [t for t in task_list if t["column"] == col_key]
         with cols[i]:
