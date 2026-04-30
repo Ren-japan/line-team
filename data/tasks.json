@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T15:46:20",
+  "last_updated": "2026-04-30T15:51:10",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -37,7 +37,7 @@
     {
       "id": "t7",
       "title": "X収益化リサーチ（20事例・各ジャンル3事例）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "X収益化事例20件まとめ → 来週ディベート用草案",
       "impact": "自前PV源構築 → SEO依存からの脱却",
@@ -46,9 +46,10 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断\n[04/17 11:06] 2026-04-17: researcher起動。X収益化事例20本・各ジャンル3事例収集開始\n[04/17 11:12] 2026-04-17: 第3回リサーチ完了。薬機法が医療系X発信の最大の壁と判明。看護転職・ドライバー転職が評価トップ（薬機法リスクなし×CV単価高）。レポート: projects/line-marketing/research/x-income-research-2026-04-17.md\n[04/17 11:55] 2026-04-17: 実地調査完了（Claude in Chrome経由でX.com直接閲覧）。美容系大規模匿名(丸の内OL71.3万F/るる23.7万F/らむね18.1万F)はIG誘導型・PR案件型。しろくまちゃん9.5万Fは紹介コード(iHerb)型。GLP-1体験記は純粋個人記録型でマネタイズなし。【重要】X→LINE→CV型の個人成功例は発見できず。うちは型を自作する必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [統合] t18(X戦略MTG)を本タスクに統合 (4/27 CEO整理)",
+      "notes": "renと来週ディベート予定。ジャンル選定+初期設計まで持っていく\n[04/17 11:04] 2026-04-17: スコープを「X収益化の方向性確定」に絞り込み。設計書: projects/line-marketing/x-channel-research-plan.md。W2までに20事例収集、W3でジャンル推奨・renGO判断\n[04/17 11:06] 2026-04-17: researcher起動。X収益化事例20本・各ジャンル3事例収集開始\n[04/17 11:12] 2026-04-17: 第3回リサーチ完了。薬機法が医療系X発信の最大の壁と判明。看護転職・ドライバー転職が評価トップ（薬機法リスクなし×CV単価高）。レポート: projects/line-marketing/research/x-income-research-2026-04-17.md\n[04/17 11:55] 2026-04-17: 実地調査完了（Claude in Chrome経由でX.com直接閲覧）。美容系大規模匿名(丸の内OL71.3万F/るる23.7万F/らむね18.1万F)はIG誘導型・PR案件型。しろくまちゃん9.5万Fは紹介コード(iHerb)型。GLP-1体験記は純粋個人記録型でマネタイズなし。【重要】X→LINE→CV型の個人成功例は発見できず。うちは型を自作する必要\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/27 17:58] [統合] t18(X戦略MTG)を本タスクに統合 (4/27 CEO整理)\n[04/30 15:51] [CLOSE 4/30] renが常に回してる継続案件。タスクボード管理対象外に (CEO)",
       "owner": "Ren",
-      "ball": "paused"
+      "ball": "paused",
+      "status_changed_at": "2026-04-30"
     },
     {
       "id": "t8",
@@ -85,7 +86,7 @@
     {
       "id": "t10",
       "title": "ED 精力剤PU2本目 差し替え",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "ED精力剤PU2本目を新文言へ入稿",
       "impact": "+34人/月（追加率11%試算）",
@@ -94,10 +95,11 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "既存PU（CV月5-6件）は温存。2本目の差し替えのみ。PU画像完成済み\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/21 12:35] 🧩親t22(ED精力剤PU再設計)の子に統合。生死確認: 生きてる→t22で統括 / 終わってる→done",
+      "notes": "既存PU（CV月5-6件）は温存。2本目の差し替えのみ。PU画像完成済み\n[04/21 12:17] ⚠️死亡疑い（期限大幅超過）。生死確認お願い: 生きてる→期限リセット / 終わってる→close\n[04/21 12:35] 🧩親t22(ED精力剤PU再設計)の子に統合。生死確認: 生きてる→t22で統括 / 終わってる→done\n[04/30 15:51] [CLOSE 4/30] t22で完全統括済み (CEO)",
       "owner": "Ren",
       "ball": "ren",
-      "parent_id": "t22"
+      "parent_id": "t22",
+      "status_changed_at": "2026-04-30"
     },
     {
       "id": "t11",
@@ -835,6 +837,23 @@
       "created_at": "2026-04-27",
       "status_changed_at": "2026-04-27",
       "notes": "[04/27 18:23] 優先度低め。PV 1,530と母数小さくMAX+10人/月。インパクト大きい案が出たら後回し。",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t64",
+      "title": "リテンション設計v3 HTML作成（デザイナー発注用＋ren確認用）",
+      "column": "todo",
+      "assignee": "",
+      "purpose": "発注効率UP＋ren視覚確認用に v2(3/31)→v3(4/22デザイン依頼書反映)HTML作成。CMO担当",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-04-30",
+      "status_changed_at": "2026-04-30",
+      "notes": "",
       "ball": "worker",
       "parent_id": ""
     }
