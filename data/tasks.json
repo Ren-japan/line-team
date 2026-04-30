@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T15:51:10",
+  "last_updated": "2026-04-30T15:56:34",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -162,9 +162,9 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "依頼書: data/output/briefs/依頼書_RW_PU差し替え.md。CMOブリッジテスト導入後の初成果物\n[04/21 12:17] 🧩親タスク化: 子 t40(PU文言) / t41(診断再設計 CMO) / t42(SEO改修)",
+      "notes": "依頼書: data/output/briefs/依頼書_RW_PU差し替え.md。CMOブリッジテスト導入後の初成果物\n[04/21 12:17] 🧩親タスク化: 子 t40(PU文言) / t41(診断再設計 CMO) / t42(SEO改修)\n[04/30 15:56] [04/30 CEO] renボール解除→子t40/t41/t42で進行管理。CEOが子の進捗追う",
       "owner": "Ren",
-      "ball": "ren"
+      "ball": "worker"
     },
     {
       "id": "t15",
@@ -178,14 +178,14 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "3/31方針転換: リサーチで「方法診断は合ってる（友だち取れてる）、出口が壊れてる」と判明。新診断不要。出口改修+リテンション設計に集中",
+      "notes": "3/31方針転換: リサーチで「方法診断は合ってる（友だち取れてる）、出口が壊れてる」と判明。新診断不要。出口改修+リテンション設計に集中\n[04/30 15:56] [04/30 CEO] renボール解除→別チャット進行待ち。最終アウトプット出たら本タスクに戻す",
       "owner": "Ren",
-      "ball": "ren"
+      "ball": "paused"
     },
     {
       "id": "t16",
       "title": "PU改善オペレーション仕組み化（スコアリングエンジン含む）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "PU改善フローを誰でも回せる形に標準化",
       "impact": "スケーラブルな友だち増加基盤",
@@ -194,9 +194,10 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "3/26 CTOがslug→KWブリッジ修正済み。candidates再スコアリング要",
+      "notes": "3/26 CTOがslug→KWブリッジ修正済み。candidates再スコアリング要\n[04/30 15:56] [CLOSE 04/30] Phase1完了で実用稼働中。Phase2標準化は5月再起動。GOAL直結度低いので一旦下ろす (CEO判断)",
       "owner": "Ren",
-      "ball": "ren"
+      "ball": "ren",
+      "status_changed_at": "2026-04-30"
     },
     {
       "id": "t17",
@@ -296,7 +297,7 @@
     {
       "id": "t23",
       "title": "sutekih PVFR改善（PV35%→友だち22%の効率ギャップ解消）",
-      "column": "todo",
+      "column": "done",
       "assignee": "Ren",
       "purpose": null,
       "impact": null,
@@ -305,9 +306,10 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": null,
+      "notes": "[04/30 15:56] [CLOSE 04/30] purpose/impact空でタスク不成立。本気でやるならCIOにsutekih全記事のPVFR分析を振り直す。今は他レバーを優先 (CEO判断)",
       "owner": "Ren",
-      "ball": "ren"
+      "ball": "ren",
+      "status_changed_at": "2026-04-30"
     },
     {
       "id": "t25",
@@ -373,7 +375,7 @@
     {
       "id": "t29",
       "title": "いびき LINE実装（あいたクリニック）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Ren",
       "purpose": "いびきSEO記事にLINE PU設置 → 月200-300人/月",
       "impact": "要PV確認。リス実績: 3月242人/CV19件",
@@ -382,9 +384,10 @@
       "needs_approval": false,
       "created_by": "CEO(AI)",
       "created_at": "2026-04-09",
-      "notes": "あいたクリニックのインパクト確認が先。SEO記事のPV・本数の把握が必要。現在管轄外リストに入っているため、管轄追加の判断も含む",
+      "notes": "あいたクリニックのインパクト確認が先。SEO記事のPV・本数の把握が必要。現在管轄外リストに入っているため、管轄追加の判断も含む\n[04/30 15:56] [CLOSE 04/30] あいたクリニックのSEO記事PV・本数の前提情報なし。前提揃ってから再起動。今は管轄ジャンル(BMI/RW/ED/包茎)に集中 (CEO判断)",
       "owner": "Ren",
-      "ball": "ren"
+      "ball": "ren",
+      "status_changed_at": "2026-04-30"
     },
     {
       "id": "t30",
