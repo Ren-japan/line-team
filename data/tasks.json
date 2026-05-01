@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-30T15:56:34",
+  "last_updated": "2026-05-01T16:31:05",
   "updated_by": "CEO",
   "tasks": [
     {
       "id": "t5",
       "title": "ICL診断 立ち上げ進行",
-      "column": "in_progress",
+      "column": "watching",
       "assignee": "Noa",
       "purpose": "ICL診断を立ち上げ → 友だち計測開始",
       "impact": "",
@@ -14,9 +14,10 @@
       "needs_approval": false,
       "created_by": "Noa",
       "created_at": "2026-04-09",
-      "notes": "[04/09 03:19] おはよう / [04/09 12:19] TODO: ①ICL記事一覧の収集 ②ジャンル横断診断コンセプトの確定 ③壁打ち継続\n[2026-04-30] デザイン作成完了。現在入稿作業中（タグ追加進行中）。",
+      "notes": "[04/09 03:19] おはよう / [04/09 12:19] TODO: ①ICL記事一覧の収集 ②ジャンル横断診断コンセプトの確定 ③壁打ち継続\n[2026-04-30] デザイン作成完了。現在入稿作業中（タグ追加進行中）。\n[05/01 16:31] 5/7（GW明け）に数値確認予定。CTR・追加率・友達追加数をチェック",
       "owner": "Noa",
-      "ball": "worker"
+      "ball": "worker",
+      "status_changed_at": "2026-05-01"
     },
     {
       "id": "t6",
