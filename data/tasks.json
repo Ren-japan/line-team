@@ -860,6 +860,23 @@
       "notes": "",
       "ball": "worker",
       "parent_id": ""
+    },
+    {
+      "id": "t65",
+      "title": "こいずみダイエット未設置記事にバナー挿入",
+      "purpose": "未設置3記事（BMI・間食・medicine）にバナーを入れて友だち+40人/月を回収する",
+      "description": "優先順: ①BMI(+20.5人) ②間食(+15.6人) ③medicine(+4.3人)。既存バナー（カロリー診断 or BMI診断）を流用。PU差し替え(t54)とは別タスク。",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "in_progress",
+      "ball": "worker",
+      "needs_approval": false,
+      "impact": "+40人/月（最優先3記事合計）",
+      "deadline": "",
+      "created_at": "2026-05-07",
+      "status_changed_at": "2026-05-07",
+      "notes": "[05/07] 未設置検知（こいずみ・ダイエット）から抽出。全17記事中10記事が未設置。",
+      "owner": "Noa"
     }
   ]
 }
