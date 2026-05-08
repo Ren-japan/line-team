@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-01T16:31:05",
-  "updated_by": "CEO",
+  "last_updated": "2026-05-08T10:25:07",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -877,6 +877,23 @@
       "status_changed_at": "2026-05-07",
       "notes": "[05/07] 未設置検知（こいずみ・ダイエット）から抽出。全17記事中10記事が未設置。",
       "owner": "Noa"
+    },
+    {
+      "id": "t66",
+      "title": "太りやすさタイプ診断バナー 配置記事決定・設置",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "バナー文言確定済み（「なんで私、こんなに太りやすいんだろう」）。配置記事を決めてデザイナーに依頼→設置まで完了させる",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-08",
+      "status_changed_at": "2026-05-08",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
     }
   ]
 }
