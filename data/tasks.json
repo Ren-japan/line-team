@@ -1,11 +1,6 @@
 {
-<<<<<<< Updated upstream
-  "last_updated": "2026-05-08T11:14:58",
-  "updated_by": "Noa",
-=======
-  "last_updated": "2026-05-07T19:03:46",
+  "last_updated": "2026-05-08T11:59:47",
   "updated_by": "CEO",
->>>>>>> Stashed changes
   "tasks": [
     {
       "id": "t5",
@@ -885,34 +880,36 @@
     },
     {
       "id": "t66",
-<<<<<<< Updated upstream
       "title": "太りやすさタイプ診断バナー 配置記事決定・設置",
       "column": "todo",
       "assignee": "Noa",
       "purpose": "バナー文言確定済み（「なんで私、こんなに太りやすいんだろう」）。配置記事を決めてデザイナーに依頼→設置まで完了させる",
-=======
-      "title": "[A]GLP-1 BMI系3記事のPU+診断刷新（CMO設計中）",
-      "column": "todo",
-      "assignee": "",
-      "purpose": "本気で痩せたい/摂取カロリー/bmiの診断を顕在度判定フロー化。+¥346K/月想定",
->>>>>>> Stashed changes
       "impact": "",
       "description": "",
       "deadline": "",
       "needs_approval": false,
-<<<<<<< Updated upstream
       "created_by": "Noa",
       "created_at": "2026-05-08",
       "status_changed_at": "2026-05-08",
       "notes": "",
       "ball": "worker",
-=======
+      "parent_id": ""
+    },
+    {
+      "id": "t67",
+      "title": "診断画像ジェネレーター MVP完成",
+      "column": "doing",
+      "assignee": "Ren",
+      "purpose": "5枚カルーセル一括生成MVP完成",
+      "impact": "",
+      "description": "ChatGPTで作ってた診断カルーセル5枚を一括生成するStreamlitツール。/Users/kudouren/Desktop/claude-projects/diagnostic-image-generator/ に新規作成。スタイル2種(ダイエット系/看護系) × レイアウト5種(結果発表/構造解説/深刻さ訴求/解決方向/未来CTA) × テキスト入力 → 2:3縦長画像5枚出力。アンカー画像でテイスト統一可能。起動: cd ~/Desktop/claude-projects/diagnostic-image-generator && source .venv/bin/activate && streamlit run app.py。残: 実生成テスト(API課金あり)。",
+      "deadline": "",
+      "needs_approval": false,
       "created_by": "CEO",
-      "created_at": "2026-05-07",
-      "status_changed_at": "2026-05-07",
-      "notes": "[05/07 19:03] CMO設計完了→ren GO判断待ち。Q1-Q4顕在度判定+3分岐+リテンションv4接続",
+      "created_at": "2026-05-08",
+      "status_changed_at": "2026-05-08",
+      "notes": "",
       "ball": "ren",
->>>>>>> Stashed changes
       "parent_id": ""
     }
   ]
