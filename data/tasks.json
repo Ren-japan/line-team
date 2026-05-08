@@ -939,6 +939,39 @@
       "created_by": "Noa",
       "needs_approval": false,
       "notes": []
+    },
+    {
+      "id": "t70",
+      "title": "メガ（mega-clinic.com）ほくろPU遷移先URL修正確認",
+      "purpose": "hokuro-tapeのPU追加率0%の原因（URL飛んでいる疑い）をRenに確認し、修正GO/NGを判断する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": false,
+      "created_at": "2026-05-08",
+      "notes": "2026-05-08セッション中にメガ未設置検知スプシ作成時に発覚。renへの確認待ち。"
+    },
+    {
+      "id": "t71",
+      "title": "メガ シミ/エラボトックス/クマ用LINEアカウント有無確認",
+      "purpose": "ほくろ以外のジャンル（シミ・エラボトックス・クマ）にLINEアカウントがあるか確認し、未設置検知の対象範囲を確定する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": false,
+      "created_at": "2026-05-08",
+      "notes": "2026-05-08セッション中にメガ未設置検知スプシ作成時に発覚。genre-insights.mdに未確認と記録済み。"
+    },
+    {
+      "id": "t72",
+      "title": "あいた（いびき）未設置記事へのPU設置計画・優先順位確定",
+      "purpose": "未設置検知スプシ（あいたタブ）をもとに、設置優先記事を選定しRenに提案する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": true,
+      "created_at": "2026-05-08",
+      "notes": "2026-05-08セッション中にNoaがCSVデータを共有し未設置検知スプシを新規作成。友だち見込み上位: serotonin-sunlight(4.1人/月)・sleep-medical-clinic(2.9人/月)。現PU3件は追加率ほぼ0でURL/LINE設定問題の疑いあり。"
     }
   ]
 }
