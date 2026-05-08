@@ -928,6 +928,17 @@
       "notes": "",
       "ball": "worker",
       "parent_id": ""
+    },
+    {
+      "id": "t69",
+      "title": "渋谷「食欲を抑える薬」薬診断バナー デザイナー依頼",
+      "purpose": "薬診断バナーのデザインを依頼し、渋谷の食欲を抑える薬記事に設置してLINE友達追加を増やす",
+      "ball": "worker",
+      "column": "todo",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "needs_approval": false,
+      "notes": []
     }
   ]
 }
