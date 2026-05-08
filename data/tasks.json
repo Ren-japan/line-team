@@ -1,6 +1,11 @@
 {
+<<<<<<< Updated upstream
   "last_updated": "2026-05-08T11:14:58",
   "updated_by": "Noa",
+=======
+  "last_updated": "2026-05-07T19:03:46",
+  "updated_by": "CEO",
+>>>>>>> Stashed changes
   "tasks": [
     {
       "id": "t5",
@@ -880,19 +885,34 @@
     },
     {
       "id": "t66",
+<<<<<<< Updated upstream
       "title": "太りやすさタイプ診断バナー 配置記事決定・設置",
       "column": "todo",
       "assignee": "Noa",
       "purpose": "バナー文言確定済み（「なんで私、こんなに太りやすいんだろう」）。配置記事を決めてデザイナーに依頼→設置まで完了させる",
+=======
+      "title": "[A]GLP-1 BMI系3記事のPU+診断刷新（CMO設計中）",
+      "column": "todo",
+      "assignee": "",
+      "purpose": "本気で痩せたい/摂取カロリー/bmiの診断を顕在度判定フロー化。+¥346K/月想定",
+>>>>>>> Stashed changes
       "impact": "",
       "description": "",
       "deadline": "",
       "needs_approval": false,
+<<<<<<< Updated upstream
       "created_by": "Noa",
       "created_at": "2026-05-08",
       "status_changed_at": "2026-05-08",
       "notes": "",
       "ball": "worker",
+=======
+      "created_by": "CEO",
+      "created_at": "2026-05-07",
+      "status_changed_at": "2026-05-07",
+      "notes": "[05/07 19:03] CMO設計完了→ren GO判断待ち。Q1-Q4顕在度判定+3分岐+リテンションv4接続",
+      "ball": "ren",
+>>>>>>> Stashed changes
       "parent_id": ""
     }
   ]
