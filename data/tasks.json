@@ -1020,6 +1020,21 @@
       "notes": "t60完了を待って着手すること",
       "owner": "Noa",
       "ball": "worker"
+    },
+    {
+      "id": "t76",
+      "title": "週次報告資料作成",
+      "purpose": "毎週月曜に先週分の数値をまとめた週次報告を作成する。KPI一覧・ジャンル別実績・前週比・ネクストアクションを含める",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "created_at": "2026-05-12",
+      "notes": [],
+      "needs_approval": false,
+      "tags": [
+        "weekly",
+        "定期"
+      ]
     }
   ]
 }
