@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-08T16:07:38",
-  "updated_by": "CEO",
+  "last_updated": "2026-05-11T18:26:24",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -972,6 +972,54 @@
       "needs_approval": true,
       "created_at": "2026-05-08",
       "notes": "2026-05-08セッション中にNoaがCSVデータを共有し未設置検知スプシを新規作成。友だち見込み上位: serotonin-sunlight(4.1人/月)・sleep-medical-clinic(2.9人/月)。現PU3件は追加率ほぼ0でURL/LINE設定問題の疑いあり。"
+    },
+    {
+      "id": "t73",
+      "title": "ピル未設置記事スプシ作成 + PU設置",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "MFビューティ・GYNの未設置29記事をスプシ可視化しPU設置完了 → ピルジャンルの友だち獲得を拡大",
+      "impact": "+XX人/月（サチコCSV取得後に試算。追加率15.9%で3ジャンル中最高効率）",
+      "description": "CIO分析(2026-05-11)でピルが最大インパクトと判定。\n手順: ①MFビューティ・GYNのサチコCSVを用意 → ②add_pill_sheet.py作成 → ③スプシにタブ追加 → ④PU設置",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-11",
+      "notes": "",
+      "owner": "Noa",
+      "ball": "worker"
+    },
+    {
+      "id": "t74",
+      "title": "包茎 未設置5記事スプシ追加 + PU設置",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "clinic/zoudai/kiranai/itai/shippaiの5記事をスプシ追加しPU設置完了 → +25〜35人/月",
+      "impact": "+25〜35人/月（設置済み記事の平均12人/記事ベース試算）",
+      "description": "包茎設置済み10記事から月62人（2〜4月平均）。未設置ノウハウ5本が残存。\n対象: clinic（手術おすすめ）/ zoudai（増大術）/ kiranai（切らない）/ itai（痛い）/ shippai（失敗）\n商標記事（abc/ueno/menslife）はPU対象外。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-11",
+      "notes": "",
+      "owner": "Noa",
+      "ball": "worker"
+    },
+    {
+      "id": "t75",
+      "title": "ED 未設置14記事 PU設置（t60完了後）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "t60（友達追加画面改善）完了後、未設置14記事にPU設置 → ED友だち獲得を本格化",
+      "impact": "CTR16.2%（3ジャンル最高）。追加率5.8%→11%改善後に最大化",
+      "description": "現状の追加率5.8%（基準11%の半分）のまま設置しても効率低。t60解決が前提条件。\n未設置14記事: ed-kikanai/ed-cause/ed-care/ed-nomitsudukeru/ed-normal/ed-viagra/ed-cialis/ed-levitra/ed-levcli/ed-nanika/ed-cialis-mainichi/ed-cialis-info/ed-morenova/ed-aphrodisiac",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-11",
+      "notes": "t60完了を待って着手すること",
+      "owner": "Noa",
+      "ball": "worker"
     }
   ]
 }
