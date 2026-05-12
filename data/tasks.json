@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-11T18:26:24",
-  "updated_by": "Noa",
+  "last_updated": "2026-05-12T10:24:58",
+  "updated_by": "CEO",
   "tasks": [
     {
       "id": "t5",
@@ -1035,6 +1035,23 @@
         "weekly",
         "定期"
       ]
+    },
+    {
+      "id": "t77",
+      "title": "SEOチーム向け記事改修候補スプシ作成",
+      "column": "doing",
+      "assignee": "CIO",
+      "purpose": "PV落ち×ファネル効率良好な記事を抽出、3月ピーク戻り時のインパクト試算",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-05-12",
+      "status_changed_at": "2026-05-12",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
     }
   ]
 }
