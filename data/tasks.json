@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T17:51:28",
+  "last_updated": "2026-05-12T18:13:41",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -991,8 +991,8 @@
     },
     {
       "id": "t74",
-      "title": "包茎 未設置5記事スプシ追加 + PU設置",
-      "column": "todo",
+      "title": "包茎 未設置5記事 バナー設置（優先: zoudai/shippai/itai/kiranai/clinic）",
+      "column": "in_progress",
       "assignee": "Noa",
       "purpose": "clinic/zoudai/kiranai/itai/shippaiの5記事をスプシ追加しPU設置完了 → +25〜35人/月",
       "impact": "+25〜35人/月（設置済み記事の平均12人/記事ベース試算）",
@@ -1003,7 +1003,8 @@
       "created_at": "2026-05-11",
       "notes": "",
       "owner": "Noa",
-      "ball": "worker"
+      "ball": "worker",
+      "status_changed_at": "2026-05-12"
     },
     {
       "id": "t75",
