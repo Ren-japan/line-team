@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-12T18:32:21",
-  "updated_by": "CEO",
+  "last_updated": "2026-05-14T18:21:18",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -1087,6 +1087,74 @@
       "status_changed_at": "2026-05-12",
       "notes": "",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t80",
+      "title": "EDバナー設置依頼（ginza）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "EDバナー未設置記事のデザイン依頼を完了し、バナー設置に進める状態にする",
+      "impact": "",
+      "description": "",
+      "deadline": "2026-05-15",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-14",
+      "status_changed_at": "2026-05-14",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t81",
+      "title": "包茎バナー挿入（茅ヶ崎）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "包茎記事5本にバナーを挿入し友達追加導線を確立する",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-14",
+      "status_changed_at": "2026-05-14",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t82",
+      "title": "記事改修：産後シミ（mega-clinic）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "KW産後シミ増えた・産後シミいつ消えるで上位表示できるよう改修しPU設置まで完了する",
+      "impact": "",
+      "description": "URL: https://mega-clinic.com/howto/shimi-sango/ KW: 産後 シミ増えた・産後 シミ いつ消える",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-14",
+      "status_changed_at": "2026-05-14",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t83",
+      "title": "記事改修：ほくろ除去ダウンタイム（mega-clinic）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "KWほくろ除去ダウンタイムで上位表示できるよう改修しPU設置まで完了する",
+      "impact": "",
+      "description": "URL: https://mega-clinic.com/howto/hokuro-downtime/ KW: ほくろ除去 ダウンタイム",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-14",
+      "status_changed_at": "2026-05-14",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
