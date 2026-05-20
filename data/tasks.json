@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T12:42:09",
+  "last_updated": "2026-05-20T12:44:25",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1257,7 +1257,7 @@
       "column": "in_progress",
       "needs_approval": false,
       "created_at": "2026-05-20",
-      "notes": "午前LINE施策・午後記事改修の日も発生する想定。週次でどの記事を改修するか判断"
+      "notes": "午前LINE施策・午後記事改修の日も発生する想定。改修だけでなく新規製作になるケースもあり。対象記事の選定ソースはRenに確認中"
     }
   ]
 }
