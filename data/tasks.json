@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T11:52:10",
+  "last_updated": "2026-05-20T12:03:08",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -868,7 +868,7 @@
       "description": "優先順: ①BMI(+20.5人) ②間食(+15.6人) ③medicine(+4.3人)。既存バナー（カロリー診断 or BMI診断）を流用。PU差し替え(t54)とは別タスク。",
       "assignee": "Noa",
       "created_by": "Noa",
-      "column": "in_progress",
+      "column": "done",
       "ball": "worker",
       "needs_approval": false,
       "impact": "+40人/月（最優先3記事合計）",
@@ -1109,7 +1109,7 @@
     {
       "id": "t81",
       "title": "包茎バナー挿入（茅ヶ崎）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "包茎記事5本にバナーを挿入し友達追加導線を確立する",
       "impact": "",
