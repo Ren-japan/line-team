@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T12:21:49",
+  "last_updated": "2026-05-20T12:27:42",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -779,8 +779,8 @@
     {
       "id": "t60",
       "title": "ED バイアグラ飲み方 — 遷移先調査・Ren報告",
-      "column": "in_progress",
-      "assignee": "Noa",
+      "column": "todo",
+      "assignee": "Ren",
       "purpose": "CTR 17.6%なのに追加率1.0%の原因特定。遷移先LINEアカウント設定ミスを調査しRenへ報告。+21人/月ポテンシャル回収。",
       "impact": "",
       "description": "",
@@ -1092,7 +1092,7 @@
     {
       "id": "t80",
       "title": "EDバナー設置依頼（ginza）",
-      "column": "watching",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "EDバナー未設置記事のデザイン依頼を完了し、バナー設置に進める状態にする",
       "impact": "",
