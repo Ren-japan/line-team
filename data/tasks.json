@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T10:50:03",
+  "last_updated": "2026-05-20T11:52:10",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1226,23 +1226,6 @@
       "parent_id": ""
     },
     {
-      "id": "t88",
-      "title": "バナータグ設定確認（こいずみBMI/リベルサス/注射・ED精力剤）",
-      "column": "todo",
-      "assignee": "Noa",
-      "purpose": "4記事のバナーリンクURLにWINUTタグが設定されているか確認。タグなし→発行して差し替え。計測できていない可能性あり",
-      "impact": "",
-      "description": "",
-      "deadline": "",
-      "needs_approval": false,
-      "created_by": "Noa",
-      "created_at": "2026-05-20",
-      "status_changed_at": "2026-05-20",
-      "notes": "",
-      "ball": "worker",
-      "parent_id": ""
-    },
-    {
       "id": "t89",
       "title": "バナータグ設定確認（こいずみBMI/リベルサス/注射・ED精力剤）",
       "purpose": "4記事のバナーリンクURLにWINUTタグが設定されているか確認。タグなし→発行して差し替え。計測できていない可能性あり",
@@ -1253,6 +1236,17 @@
       "needs_approval": false,
       "notes": [],
       "created_at": "2026-05-20"
+    },
+    {
+      "id": "t90",
+      "title": "ワークマン口コミ バナー設置（マイピック/リカバリーウェア）",
+      "purpose": "バナー設置で+35人/月を獲得。リカバリーウェアLINEアカウントあり・即着手可能",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": false,
+      "created_at": "2026-05-20",
+      "notes": []
     }
   ]
 }
