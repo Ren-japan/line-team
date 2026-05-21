@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-21T12:34:10",
-  "updated_by": "CEO",
+  "last_updated": "2026-05-21T00:00:00",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -780,7 +780,7 @@
       "id": "t60",
       "title": "ED バイアグラ飲み方 — 遷移先調査・Ren報告",
       "column": "in_progress",
-      "assignee": "Noa",
+      "assignee": "Ren",
       "purpose": "CTR 17.6%なのに追加率1.0%の原因特定。遷移先LINEアカウント設定ミスを調査しRenへ報告。+21人/月ポテンシャル回収。",
       "impact": "",
       "description": "",
@@ -789,8 +789,8 @@
       "created_by": "Noa",
       "created_at": "2026-04-27",
       "status_changed_at": "2026-04-27",
-      "notes": "",
-      "ball": "worker",
+      "notes": "[2026-05-21] クライアント都合によりRen移管 (Noa)",
+      "ball": "ren",
       "parent_id": ""
     },
     {
@@ -992,7 +992,7 @@
     {
       "id": "t74",
       "title": "包茎 未設置5記事 バナー設置（優先: zoudai/shippai/itai/kiranai/clinic）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "clinic/zoudai/kiranai/itai/shippaiの5記事をスプシ追加しPU設置完了 → +25〜35人/月",
       "impact": "+25〜35人/月（設置済み記事の平均12人/記事ベース試算）",
@@ -1001,7 +1001,7 @@
       "needs_approval": false,
       "created_by": "Noa",
       "created_at": "2026-05-11",
-      "notes": "",
+      "notes": "[2026-05-21] zoudai/shippai=記事内容で困難、itai/kiranai/clinic=インパクト<1人/月で見送り。完了 (Noa)",
       "owner": "Noa",
       "ball": "worker",
       "status_changed_at": "2026-05-12"
@@ -1110,7 +1110,7 @@
     {
       "id": "t81",
       "title": "包茎バナー挿入（茅ヶ崎）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "包茎記事5本にバナーを挿入し友達追加導線を確立する",
       "impact": "",
@@ -1120,7 +1120,7 @@
       "created_by": "Noa",
       "created_at": "2026-05-14",
       "status_changed_at": "2026-05-14",
-      "notes": "",
+      "notes": "[2026-05-21] 完了 (Noa)",
       "ball": "worker",
       "parent_id": ""
     },
@@ -1242,6 +1242,51 @@
       "notes": "",
       "ball": "ren",
       "parent_id": ""
+    },
+    {
+      "id": "t89",
+      "title": "バナータグ設定確認（こいずみBMI/リベルサス/注射・ED精力剤）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "WINUTタグ未設定疑いを確認し、計測漏れをゼロにする",
+      "impact": "",
+      "description": "こいずみBMI/リベルサス/注射・ED精力剤のバナータグがWINUTに未設定の疑い",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-21",
+      "notes": "",
+      "ball": "worker"
+    },
+    {
+      "id": "t90",
+      "title": "ワークマン口コミ バナー設置（マイピック/リカバリーウェア）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "バナー設置で友だち追加+35人/月を実現する",
+      "impact": "+35人/月",
+      "description": "マイピック/リカバリーウェア ワークマン口コミ記事へのバナー設置。最優先インパクト",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-21",
+      "notes": "",
+      "ball": "worker"
+    },
+    {
+      "id": "t91",
+      "title": "記事改修サイクル運用（週1-2本）",
+      "column": "in_progress",
+      "assignee": "Noa",
+      "purpose": "週1-2本ペースで改修・新規製作を継続し、SEO経由友だち数を増やす",
+      "impact": "",
+      "description": "改修だけでなく新規製作もあり。午前LINE・午後記事改修の日も発生。対象記事選定ソースはRenに確認中",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-21",
+      "notes": "[2026-05-21] 対象記事選定ソースをRenに確認中",
+      "ball": "worker"
     }
   ]
 }
