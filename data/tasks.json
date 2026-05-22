@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T00:00:00",
+  "last_updated": "2026-05-22T16:09:39",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1287,6 +1287,40 @@
       "created_at": "2026-05-21",
       "notes": "[2026-05-21] 対象記事選定ソースをRenに確認中",
       "ball": "worker"
+    },
+    {
+      "id": "t92",
+      "title": "【将来案】食事管理→サプリ導線の設計",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "BMI×食事回数系コンテンツを入口にしたサプリCTA導線を設計する。参考：YT Shorts「BMIと最適な食事回数〜自分に合った食事法が分かる〜」。今回の隠れ肥満診断とは別軸。",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-22",
+      "status_changed_at": "2026-05-22",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t93",
+      "title": "shourai: shokuji-kanri sapu-ru dosen",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "BMI x shokuji-kaisuu content wo iriguchi ni shita supplement CTA dosen. Betsu-jiku.",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-22",
+      "status_changed_at": "2026-05-22",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
     }
   ]
 }
