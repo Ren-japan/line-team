@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T16:09:39",
+  "last_updated": "2026-05-22T16:17:07",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1311,6 +1311,23 @@
       "column": "todo",
       "assignee": "Noa",
       "purpose": "BMI x shokuji-kaisuu content wo iriguchi ni shita supplement CTA dosen. Betsu-jiku.",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-22",
+      "status_changed_at": "2026-05-22",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t94",
+      "title": "将来案：BMI別ダイエットアドバイス系コンテンツ→LINE導線",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "BMIを軸にダイエット悩みを細分化したコンテンツからLINE登録を促す導線。参考動画：痩せるためにやるべきことBMI別（https://youtu.be/pKpV1PHiz6w）。t92食事管理→サプリとは別軸。",
       "impact": "",
       "description": "",
       "deadline": "",
