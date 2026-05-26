@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T18:54:16",
+  "last_updated": "2026-05-26T19:00:38",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1355,6 +1355,60 @@
       "notes": "",
       "ball": "ren",
       "parent_id": ""
+    },
+    {
+      "id": "t96",
+      "title": "こいずみ 薬診断バナー設置（diet-medicine）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "Renから許可が出た。バナー素材完成後にdiet-medicine記事へ薬診断バナーを設置し、スプシのバナー設置日を記録する",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-26",
+      "status_changed_at": "2026-05-26",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t97",
+      "title": "koizumi yakushindan banner",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "diet-medicine article banner setup after asset completion",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-26",
+      "status_changed_at": "2026-05-26",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t98",
+      "title": "こいずみ 薬診断バナー設置（diet-medicine）",
+      "purpose": "Renから許可が出た。バナー素材完成後にdiet-medicine記事へ薬診断バナーを設置し、スプシのバナー設置日を記録する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "ball": "worker",
+      "needs_approval": false
+    },
+    {
+      "id": "t99",
+      "title": "ICL診断 設計書修正続き（適性チェック・不同視チェック）",
+      "purpose": "診断-ICL適性チェック.md・診断-不同視チェック.mdの設計書修正を完成させ、push・noa-docsに反映する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "ball": "worker",
+      "needs_approval": false
     }
   ]
 }
