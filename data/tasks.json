@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T19:00:38",
+  "last_updated": "2026-05-28T11:16:29",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1409,6 +1409,35 @@
       "column": "todo",
       "ball": "worker",
       "needs_approval": false
+    },
+    {
+      "id": "t100",
+      "title": "こいずみにボタン設置",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "こいずみサイトにボタンを設置して友達追加導線を強化する",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-05-28",
+      "status_changed_at": "2026-05-28",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t101",
+      "title": "こいずみにボタン設置",
+      "purpose": "こいずみサイトにボタンを設置して友達追加導線を強化する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "ball": "worker",
+      "column": "todo",
+      "needs_approval": false,
+      "added": "2026-05-28",
+      "notes": ""
     }
   ]
 }
