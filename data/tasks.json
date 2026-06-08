@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-08T15:54:14",
-  "updated_by": "CEO",
+  "last_updated": "2026-06-08T18:52:30",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -1455,6 +1455,34 @@
       "notes": "",
       "ball": "ren",
       "parent_id": ""
+    },
+    {
+      "id": "t103",
+      "title": "MF 生理遅らせる記事 PUデザイン修正",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "コピーを「ピルは興味あるけど不安、、な人へ／30秒で出来るピル適性診断を受ける！」に差し替え。診断名もピル適性診断に変更。記事URL: https://www.mf-beautyclinic.com/pill/pill-delaymenstruation/",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-08",
+      "status_changed_at": "2026-06-08",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t104",
+      "title": "MF 生理遅らせる記事 PUデザイン修正",
+      "purpose": "コピーを「ピルは興味あるけど不安、、な人へ／30秒で出来るピル適性診断を受ける！」に差し替え。診断名もピル適性診断に変更。記事URL: https://www.mf-beautyclinic.com/pill/pill-delaymenstruation/",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "ball": "worker",
+      "column": "todo",
+      "needs_approval": false,
+      "notes": []
     }
   ]
 }
