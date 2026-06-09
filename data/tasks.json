@@ -934,7 +934,7 @@
       "title": "渋谷「食欲を抑える薬」薬診断バナー デザイナー依頼",
       "purpose": "薬診断バナーのデザインを依頼し、渋谷の食欲を抑える薬記事に設置してLINE友達追加を増やす",
       "ball": "worker",
-      "column": "todo",
+      "column": "done",
       "assignee": "Noa",
       "created_by": "Noa",
       "needs_approval": false,
@@ -1342,7 +1342,7 @@
     {
       "id": "t96",
       "title": "こいずみ 薬診断バナー設置（diet-medicine）",
-      "column": "todo",
+      "column": "watching",
       "assignee": "Noa",
       "purpose": "Renから許可が出た。バナー素材完成後にdiet-medicine記事へ薬診断バナーを設置し、スプシのバナー設置日を記録する",
       "impact": "",
@@ -1369,7 +1369,7 @@
     {
       "id": "t100",
       "title": "こいずみにボタン設置",
-      "column": "todo",
+      "column": "watching",
       "assignee": "Noa",
       "purpose": "こいずみサイトにボタンを設置して友達追加導線を強化する",
       "impact": "",
@@ -1403,7 +1403,7 @@
     {
       "id": "t103",
       "title": "MF 生理遅らせる記事 PUデザイン修正",
-      "column": "todo",
+      "column": "watching",
       "assignee": "Noa",
       "purpose": "コピーを「ピルは興味あるけど不安、、な人へ／30秒で出来るピル適性診断を受ける！」に差し替え。診断名もピル適性診断に変更。記事URL: https://www.mf-beautyclinic.com/pill/pill-delaymenstruation/",
       "impact": "",
