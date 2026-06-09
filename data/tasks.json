@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T11:57:08",
+  "last_updated": "2026-06-09T12:07:25",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1497,8 +1497,8 @@
       "created_by": "CEO",
       "created_at": "2026-06-09",
       "status_changed_at": "2026-06-09",
-      "notes": "",
-      "ball": "ceo",
+      "notes": "[06/09 12:07] ツール完成(quadrant_sheet.py)。SAに編集権限付与待ち=line-dashboard@coastal-walker-466905-p2.iam.gserviceaccount.com を編集者で共有",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
