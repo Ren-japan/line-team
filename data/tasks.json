@@ -1144,7 +1144,7 @@
     {
       "id": "t83",
       "title": "記事改修：ほくろ除去ダウンタイム（mega-clinic）",
-      "column": "done",
+      "column": "in_progress",
       "assignee": "Noa",
       "purpose": "KWほくろ除去ダウンタイムで上位表示できるよう改修しPU設置まで完了する",
       "impact": "",
