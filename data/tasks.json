@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T14:20:35",
+  "last_updated": "2026-06-09T14:22:04",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1480,9 +1480,10 @@
       "assignee": "Noa",
       "created_by": "Noa",
       "ball": "worker",
-      "column": "todo",
+      "column": "done",
       "needs_approval": false,
-      "notes": []
+      "notes": [],
+      "status_changed_at": "2026-06-09"
     },
     {
       "id": "t105",
