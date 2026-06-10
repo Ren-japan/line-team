@@ -1494,6 +1494,19 @@
       "notes": "t108完了後に着手。現状CTR4.6%🔴が最大ボトルネック。",
       "ball": "worker",
       "parent_id": ""
+    },
+    {
+      "id": "t110",
+      "title": "ピル「吐き気」記事PU差し替え（ぴったりの種類→吐き気が出にくいピル）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "imp=939で友達ゼロのPUを改修。吐き気悩みに直接刺さる文言に変えてCTR・友達追加を改善する。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-10",
+      "notes": "旧:「ぴったりの種類を知りたい」→ 新:「吐き気が出にくいピル、自分に合う種類がある」\n参照: pu-kaishuu-pill-2026-06-08.html",
+      "ball": "worker"
     }
   ]
 }
