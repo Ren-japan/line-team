@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-09T14:22:04",
-  "updated_by": "CEO",
+  "last_updated": "2026-06-10",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -1445,6 +1445,28 @@
       "notes": "[06/09 12:07] ツール完成(quadrant_sheet.py)。SAに編集権限付与待ち=line-dashboard@coastal-walker-466905-p2.iam.gserviceaccount.com を編集者で共有\n[06/09 14:20] 記事4象限(配置図・記事単位)＋ジャンル4象限、LINEDBスプシに稼働。次:cron自動更新・しきい値調整・GOALヘッダ",
       "ball": "ren",
       "parent_id": ""
+    },
+    {
+      "id": "t106",
+      "title": "コスメ領域の記事企画案を整理（小柳さんMTGまで）",
+      "purpose": "6/15週の小柳さんMTGまでに、コスメ（ファンデ/クレンジング）の記事企画方向性を決める。どのジャンルから着手するか・どんな記事が必要かを整理した状態でMTGに臨む",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": false,
+      "created_at": "2026-06-10",
+      "notes": []
+    },
+    {
+      "id": "t107",
+      "title": "メンズ脱毛・マウスピース矯正の状況確認",
+      "purpose": "6月中着手の可能性あり。現状のジャンル状況・LINEアカウント有無・着手可否の判断材料を集める",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": false,
+      "created_at": "2026-06-10",
+      "notes": []
     }
   ]
 }
