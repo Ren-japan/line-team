@@ -1507,6 +1507,19 @@
       "created_at": "2026-06-10",
       "notes": "旧:「ぴったりの種類を知りたい」→ 新:「吐き気が出にくいピル、自分に合う種類がある」\n参照: pu-kaishuu-pill-2026-06-08.html",
       "ball": "worker"
+    },
+    {
+      "id": "t111",
+      "title": "GYNピル値段記事 PU一新（タグ設定修正＋文言差し替え）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "ID1783タグ設定ミス（1タグのみ）によりimp=0だったPUを修正・一新。「毎月続けやすいピル、自分はどれ？」に文言変更して友達追加を開始させる。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-10",
+      "notes": "参照: pu-kaishuu-pill-2026-06-08.html\nID 1783 タグ複数設定に修正してからPU文言差し替え",
+      "ball": "worker"
     }
   ]
 }
