@@ -705,7 +705,7 @@
       "impact": "+74人（ポテンシャル）",
       "description": "参照: research-2026-04-21.html 施策設計セクション",
       "deadline": "",
-      "needs_approval": true,
+      "needs_approval": false,
       "created_by": "Noa",
       "created_at": "2026-04-22",
       "notes": "[2026-06-10] サプリ診断をBMI記事に実装予定。BMI記事はPVFR 0.10%・友達ほぼゼロと壊滅的なため、サプリ展開と合わせてPU改修を進める方針。友達追加効率の改善が先決。",
