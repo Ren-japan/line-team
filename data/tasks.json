@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10",
+  "last_updated": "2026-06-12T14:30:56",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1546,6 +1546,34 @@
       "needs_approval": false,
       "notes": "",
       "ball": "worker"
+    },
+    {
+      "id": "t114",
+      "title": "AGAポップ設置候補選定（松平・池袋・あさみ）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "3サイトのAGA記事をPV規模・相性・CVつながりで選定し、設置優先順を確定する",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-12",
+      "status_changed_at": "2026-06-12",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t114",
+      "title": "AGAポップ設置候補選定（松平・池袋・あさみ）",
+      "purpose": "3サイトのAGA記事をPV規模・相性・CVつながりで選定し、設置優先順を確定する",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "ball": "worker",
+      "column": "todo",
+      "needs_approval": false,
+      "created_at": "2026-06-12"
     }
   ]
 }
