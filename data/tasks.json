@@ -1550,7 +1550,7 @@
     {
       "id": "t114",
       "title": "AGAポップ設置候補選定（松平・池袋・あさみ）",
-      "column": "todo",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "3サイトのAGA記事をPV規模・相性・CVつながりで選定し、設置優先順を確定する",
       "impact": "",
@@ -1560,20 +1560,23 @@
       "created_by": "Noa",
       "created_at": "2026-06-12",
       "status_changed_at": "2026-06-12",
-      "notes": "",
+      "notes": "[2026-06-12] 選定完了：池袋1記事・アサミ2記事が設置予定確定。松平は設置候補なし。",
       "ball": "worker",
       "parent_id": ""
     },
     {
-      "id": "t114",
-      "title": "AGAポップ設置候補選定（松平・池袋・あさみ）",
-      "purpose": "3サイトのAGA記事をPV規模・相性・CVつながりで選定し、設置優先順を確定する",
+      "id": "t115",
+      "title": "AGA/FAGA PUイラスト作成・タグ設置（池袋・アサミ）",
+      "column": "in_progress",
       "assignee": "Noa",
-      "created_by": "Noa",
-      "ball": "worker",
-      "column": "todo",
+      "purpose": "設置予定3記事へのPU設置完了。①イラスト作成（Noa）→②WINUTタグ新規作成→③GTM設定→④スプシ更新。対象：池袋_女性の抜け毛がひどい(FAGA)・アサミ_はげのタイプ3種類(AGA)・アサミ_びまん性脱毛症(FAGA)",
+      "deadline": "2026-06-12",
       "needs_approval": false,
-      "created_at": "2026-06-12"
+      "created_by": "Noa",
+      "created_at": "2026-06-12",
+      "notes": "今日中に進める予定（Noa）。既存コピー流用・イラストのみ新規作成。",
+      "ball": "worker",
+      "parent_id": ""
     }
   ]
 }
