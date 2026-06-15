@@ -1589,6 +1589,18 @@
       "needs_approval": false,
       "notes": "",
       "ball": "worker"
+    },
+    {
+      "id": "t117",
+      "title": "コスメ案件 SEO・リス整理",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "コスメ案件（クレンジング/ファンデ等）のSEO記事・リスティング広告の現状を整理し、PU設置候補とLINE導線の設計方針を明確にする",
+      "created_by": "Noa",
+      "created_at": "2026-06-15",
+      "needs_approval": false,
+      "notes": "",
+      "ball": "worker"
     }
   ]
 }
