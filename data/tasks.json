@@ -1577,6 +1577,18 @@
       "notes": "今日中に進める予定（Noa）。既存コピー流用・イラストのみ新規作成。\n[2026-06-12] WINUTタグ作成完了。GTMタグ設定は週明けにアカウント確認後に実施。",
       "ball": "worker",
       "parent_id": ""
+    },
+    {
+      "id": "t116",
+      "title": "W24週次分析・報告（6/8〜6/14）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "W24（6/8〜6/14）の友達追加数・ジャンル別KPI・前週比を集計し、週次報告スプシに書き込み・Docsに分析レポートを作成。t109（摂取カロリーPU 7日分判定）も同時実施。",
+      "created_by": "Noa",
+      "created_at": "2026-06-15",
+      "needs_approval": false,
+      "notes": "",
+      "ball": "worker"
     }
   ]
 }
