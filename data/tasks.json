@@ -265,7 +265,7 @@
     {
       "id": "t21",
       "title": "BMI隠れ肥満度チェック デザイン上がり待ち",
-      "column": "watching",
+      "column": "done",
       "assignee": "external",
       "purpose": "BMI隠れ肥満度チェック デザイン受領",
       "impact": "",
