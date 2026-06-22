@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19",
+  "last_updated": "2026-06-22T11:45:20",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1603,6 +1603,23 @@
       "needs_approval": false,
       "notes": "",
       "ball": "worker"
+    },
+    {
+      "id": "t118",
+      "title": "週次分析W25・週次報告作成（6/15〜6/21）",
+      "column": "done",
+      "assignee": "Noa",
+      "purpose": "W25週次データ分析・スプシ6/23タブ記入・Docsレポート作成完了",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-22",
+      "status_changed_at": "2026-06-22",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
     }
   ]
 }
