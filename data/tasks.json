@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T17:21:09",
+  "last_updated": "2026-06-22T18:08:18",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1636,6 +1636,23 @@
       "status_changed_at": "2026-06-22",
       "notes": "",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t120",
+      "title": "SEO案件整理資料→小柳さんへ共有",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "コスメ案件・提携KWの方向性を小柳さんと確認。夕会（6/22）で確定した次アクション",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-22",
+      "status_changed_at": "2026-06-22",
+      "notes": "",
+      "ball": "ceo",
       "parent_id": ""
     }
   ]
