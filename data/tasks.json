@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T18:08:18",
+  "last_updated": "2026-06-23T16:50:51",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1484,17 +1484,17 @@
     {
       "id": "t109",
       "title": "摂取カロリーPU 次の訴求案を検討・設置",
-      "column": "in_progress",
+      "column": "watching",
       "assignee": "Noa",
       "purpose": "「1日で食べていい量」のPVFR 0.86%をさらに改善する新訴求案を設計・ABテスト設置。CTR4.6%が基準13%を大きく下回っているためCTR改善が本丸。",
       "deadline": "",
       "needs_approval": false,
       "created_by": "Noa",
       "created_at": "2026-06-10",
-      "notes": "t108完了後に着手。現状CTR4.6%🔴が最大ボトルネック。 | 2026-06-19: 確定文言「あなただけの適正カロリー、計算します」ボタン「計算してもらう/いい」。デザイン作成中→本日実装予定。設計書: noa-docs/pu-kaishuu-calorie-t109-2026-06-19.html",
+      "notes": "t108完了後に着手。現状CTR4.6%🔴が最大ボトルネック。 | 2026-06-19: 確定文言「あなただけの適正カロリー、計算します」ボタン「計算してもらう/いい」。デザイン作成中→本日実装予定。設計書: noa-docs/pu-kaishuu-calorie-t109-2026-06-19.html\n[06/23 16:50] 2026-06-23 文言変更実装完了。「1日で食べていい量」→「一日で食べていいのは何㎉？」に変更。1週間後（6/30）にCTR・PVFR確認予定。\n2026-06-23 実装完了: 1日で食べていい量 -> 一日で食べていいのは何kcal? に変更。6/30にCTR・PVFR確認。",
       "ball": "worker",
       "parent_id": "",
-      "status_changed_at": "2026-06-19"
+      "status_changed_at": "2026-06-23"
     },
     {
       "id": "t110",
