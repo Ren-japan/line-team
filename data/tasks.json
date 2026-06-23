@@ -1654,6 +1654,22 @@
       "notes": "",
       "ball": "ceo",
       "parent_id": ""
+    },
+    {
+      "id": "t121",
+      "title": "AGA/FAGA PU数値確認（6月効果検証）",
+      "purpose": "PU設置（t115）完了後の初回効果確認。PVFR・友達数が基準値（0.80%）に対してどの水準かを把握する。",
+      "assignee": "Noa",
+      "created_by": "Noa",
+      "column": "todo",
+      "needs_approval": false,
+      "tags": [
+        "AGA",
+        "FAGA",
+        "効果検証"
+      ],
+      "notes": "6/15設置済み（t115 done）。7月入ってから1ヶ月分蓄積されたタイミングで確認。",
+      "created_at": "2026-06-23"
     }
   ]
 }
