@@ -1454,10 +1454,10 @@
       "purpose": "6/15週の小柳さんMTGまでに、コスメ（ファンデ/クレンジング）の記事企画方向性を決める。どのジャンルから着手するか・どんな記事が必要かを整理した状態でMTGに臨む",
       "assignee": "Noa",
       "created_by": "Noa",
-      "column": "in_progress",
+      "column": "done",
       "needs_approval": false,
       "created_at": "2026-06-10",
-      "notes": "[2026-06-15] クレンジング選び診断 作成中"
+      "notes": "[2026-06-15] クレンジング選び診断 作成中 / 2026-06-26: クレンジング診断リリース完了（設計・構築・実装）"
     },
     {
       "id": "t107",
@@ -1597,13 +1597,13 @@
     {
       "id": "t117",
       "title": "コスメ案件 SEO・リス整理",
-      "column": "todo",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "コスメ案件（クレンジング/ファンデ等）のSEO記事・リスティング広告の現状を整理し、PU設置候補とLINE導線の設計方針を明確にする",
       "created_by": "Noa",
       "created_at": "2026-06-15",
       "needs_approval": false,
-      "notes": "",
+      "notes": "2026-06-26: t120で実質カバー済み（SEO案件整理→小柳さんへ共有完了）",
       "ball": "worker"
     },
     {
