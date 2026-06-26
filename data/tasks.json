@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T14:07:36",
+  "last_updated": "2026-06-26T14:09:05",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1676,7 +1676,7 @@
     {
       "id": "t122",
       "title": "コスメ クレンジング記事 導線導入（初期選定範囲）",
-      "column": "todo",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "選定した約23本にPU/診断リンクを設置しコスメファネルへの流入を開始する",
       "impact": "",
@@ -1693,7 +1693,7 @@
     {
       "id": "t123",
       "title": "LINE Console 施策分析ページ 数値紐づけ",
-      "column": "todo",
+      "column": "in_progress",
       "assignee": "Noa",
       "purpose": "ジャンルごとのポップアップ・バナー施策結果をコンソールに正しく紐づける",
       "impact": "",
@@ -1727,7 +1727,7 @@
     {
       "id": "t125",
       "title": "コスメ スキンケア診断作成",
-      "column": "todo",
+      "column": "in_progress",
       "assignee": "Noa",
       "purpose": "クレンジング診断に続くスキンケア診断のフロー・文言を設計・実装する",
       "impact": "",
