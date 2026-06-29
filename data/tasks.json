@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T14:09:05",
+  "last_updated": "2026-06-29T09:13:40",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1755,6 +1755,23 @@
       "created_at": "2026-06-26",
       "status_changed_at": "2026-06-26",
       "notes": "[06/26 14:07] 対象記事7本: ingredient-vitamin-c-derivative / skincare-shisei-oily / skincare-kurozumi / skincare-hikishime / skincare-shishunki / lotion-nikibi（carenacosmetic.co.jp/cosme/）。変更内容: ①ビーグレンリンク→https://www.bglen.net/ ②画像差し替え(Drive: 1BpFMdGUmDO1rVR4EMARlWmdRkigK01GF) ③トライアルセット記載削除→製品訴求に変更。6/29までに変更箇所まとめ、6/30-7/1で対応。",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t127",
+      "title": "週次分析W26・週次報告作成（6/22〜6/28）",
+      "column": "in_progress",
+      "assignee": "Noa",
+      "purpose": "W26のKPIを分析し週次報告スプシに記録する。施策の効果検証と翌週アクションを確定する",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-06-29",
+      "status_changed_at": "2026-06-29",
+      "notes": "",
       "ball": "worker",
       "parent_id": ""
     }
