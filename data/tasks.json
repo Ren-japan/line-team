@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T09:13:40",
+  "last_updated": "2026-06-29T16:37:04",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1761,7 +1761,7 @@
     {
       "id": "t127",
       "title": "週次分析W26・週次報告作成（6/22〜6/28）",
-      "column": "in_progress",
+      "column": "done",
       "assignee": "Noa",
       "purpose": "W26のKPIを分析し週次報告スプシに記録する。施策の効果検証と翌週アクションを確定する",
       "impact": "",
