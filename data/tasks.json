@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-02T14:48:30",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-02T14:56:28",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -1824,6 +1824,57 @@
       "status_changed_at": "2026-07-02",
       "notes": "",
       "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t131",
+      "title": "ファンデーション記事移管（アリーコスメ→カレーナ）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "アリーコスメにあるファンデーション記事をカレーナへ移管完了させる。1日2記事ペースで進行、全記事移管完了がゴール",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-02",
+      "status_changed_at": "2026-07-02",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t132",
+      "title": "肌タイプ診断 設計着手（化粧水案件用）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "化粧水案件につなげるための肌タイプ診断を新規設計する。CMOのブリッジテスト＋ものさしフレームワークで初期設計書をbriefsに出力するのがゴール",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-02",
+      "status_changed_at": "2026-07-02",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t133",
+      "title": "純CV記事への転換棚卸し（売上回復方針）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "現状のLINE設置記事構成をジャンル別・記事別に棚卸しし、純CV/地域/商標記事への転換候補と優先順位をCV・売上インパクト付きで特定するのがゴール（7/2朝会：ノウハウ記事0.6%FCVR vs 純CV記事6-7%FCVRの方針転換を受けて）",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-02",
+      "status_changed_at": "2026-07-02",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
