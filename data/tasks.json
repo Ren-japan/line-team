@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T15:09:10",
+  "last_updated": "2026-07-02T15:19:21",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -1180,7 +1180,7 @@
     {
       "id": "t92",
       "title": "【将来案】食事管理→サプリ導線の設計",
-      "column": "todo",
+      "column": "in_progress",
       "assignee": "Noa",
       "purpose": "BMI×食事回数系コンテンツを入口にしたサプリCTA導線を設計する。参考：YT Shorts「BMIと最適な食事回数〜自分に合った食事法が分かる〜」。今回の隠れ肥満診断とは別軸。",
       "impact": "",
@@ -1189,8 +1189,8 @@
       "needs_approval": false,
       "created_by": "Noa",
       "created_at": "2026-05-22",
-      "status_changed_at": "2026-05-22",
-      "notes": "",
+      "status_changed_at": "2026-07-02",
+      "notes": "[07/02 15:19] 2026-07-02: ダイエット友だち減少分析（LP流入減）を受けて具体化。医療ダイエットでCVR低い記事（BMI等）にサプリ導線を取り入れる方針に。詳細: https://plussaitounoa-lgtm.github.io/noa-docs/diet-decline-report-2026-07-02.html",
       "ball": "ceo",
       "parent_id": ""
     },
