@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T13:56:56",
+  "last_updated": "2026-07-03T14:34:48",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1845,7 +1845,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-03",
       "status_changed_at": "2026-07-03",
-      "notes": "",
+      "notes": "[07/03 14:34] ren指摘で射程整理: テンプレ流し込みが効くのは診断カル（構造固定）。PRは商材特有=推し要素選定が0-1の本体なので、テンプレ化は文法(毎枚CTA・密度)まで。PRは3段フロー(要素棚卸し→テキストでカード割り合意→絵)に。diagnosis-generator Step5への組込みGO/NGもrenに提示中",
       "ball": "ren",
       "parent_id": ""
     }
