@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T11:16:31",
+  "last_updated": "2026-07-03T11:21:42",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1829,6 +1829,23 @@
       "created_at": "2026-07-03",
       "status_changed_at": "2026-07-03",
       "notes": "[07/03 10:39] 事前準備で判明: OpenAI APIが課金上限到達(billing_hard_limit)。7/7テストまでに上限解除 or Geminiデフォルト切替の判断要。7/3サンプル生成はGeminiフォールバックで実施\n[07/03 10:46] 7/3先行サンプル3枚生成(Gemini・実物カルーセル参照)。Card1/3=ほぼ合格・誤字ゼロ。Card5=参照画像の文言混入バグ(未指定の上部帯にダイエット診断の文言が入った)。対策=プロンプトに参照文言コピー禁止を追加 or 全カードで帯まで指定。7/7までに修正予定\n[07/03 11:01] OpenAIキー問題解決: ローカル.envのキーが古かっただけ(Streamlit Cloud secretsに生きたキーあり)。新キーを3ツールの.envに反映・課金確認済み。gpt-image-2でCard5再生成テスト中(混入対策プロンプト入り)\n[07/03 11:03] Card5再生成(gpt-image-2)合格: 混入バグ解消・誤字ゼロ。対策=①全カードで帯の中身まで指定②プロンプトに参照文言コピー禁止を明記。この2点をアプリ本体のテンプレに反映するのが7/7までの残タスク",
+      "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t138",
+      "title": "診断カルーセルのテンプレ流し込み方式の構築判断",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "AI画像生成のガチャ(誤字・参照文言混入)を構造で消す。テンプレをHTML/CSS化し文字はコード挿入→画像書き出し(ど感動インスタのPlaywright基盤流用)。AIはイラスト素材のみ担当。7/7のAI方式テスト結果を見てGO/NG",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": true,
+      "created_by": "CEO",
+      "created_at": "2026-07-03",
+      "status_changed_at": "2026-07-03",
+      "notes": "",
       "ball": "ren",
       "parent_id": ""
     }
