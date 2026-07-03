@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T09:16:01",
+  "last_updated": "2026-07-03T10:32:01",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1813,6 +1813,23 @@
       "status_changed_at": "2026-07-03",
       "notes": "",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t137",
+      "title": "line-image-generator実戦テスト 7/7(火)19:30〜",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "シミ進行度チェック診断(brief=診断-シミ進行度チェック.md、最新v4・20枚構成)をカルーセル生成に流し込み、現行クオリティを実戦判定。判定軸=①デザイントーン再現②日本語テキスト正確性③シリーズ統一感",
+      "impact": "",
+      "description": "",
+      "deadline": "2026-07-07",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-03",
+      "status_changed_at": "2026-07-03",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
