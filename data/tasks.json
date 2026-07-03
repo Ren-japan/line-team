@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T09:12:04",
+  "last_updated": "2026-07-03T09:16:01",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1794,8 +1794,8 @@
       "created_by": "CEO",
       "created_at": "2026-07-02",
       "status_changed_at": "2026-07-02",
-      "notes": "",
-      "ball": "ceo",
+      "notes": "[07/03 09:16] 設計完了(v3): fueta=シミ進行度チェック(3ビート型・思想⑫適用)+地域系=何回で消えるv2+共通PR確定。renのGO待ち→/orderで依頼書化。要確認3点=fueta総PV/0円クーポン条件/genre値",
+      "ball": "ren",
       "parent_id": ""
     },
     {
