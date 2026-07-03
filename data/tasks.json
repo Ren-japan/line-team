@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T10:39:51",
+  "last_updated": "2026-07-03T10:46:04",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1828,7 +1828,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-03",
       "status_changed_at": "2026-07-03",
-      "notes": "[07/03 10:39] 事前準備で判明: OpenAI APIが課金上限到達(billing_hard_limit)。7/7テストまでに上限解除 or Geminiデフォルト切替の判断要。7/3サンプル生成はGeminiフォールバックで実施",
+      "notes": "[07/03 10:39] 事前準備で判明: OpenAI APIが課金上限到達(billing_hard_limit)。7/7テストまでに上限解除 or Geminiデフォルト切替の判断要。7/3サンプル生成はGeminiフォールバックで実施\n[07/03 10:46] 7/3先行サンプル3枚生成(Gemini・実物カルーセル参照)。Card1/3=ほぼ合格・誤字ゼロ。Card5=参照画像の文言混入バグ(未指定の上部帯にダイエット診断の文言が入った)。対策=プロンプトに参照文言コピー禁止を追加 or 全カードで帯まで指定。7/7までに修正予定",
       "ball": "ren",
       "parent_id": ""
     }
