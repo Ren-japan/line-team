@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T14:56:16",
+  "last_updated": "2026-07-06T15:10:48",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1983,6 +1983,23 @@
       "status_changed_at": "2026-07-06",
       "notes": "",
       "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t147",
+      "title": "リテンション構造改修（プロ型: 毎日5通×不安分解×行動トリガー×締切×追撃）",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "外部実例リサーチ(2026-07-06)のプロの型とうちの実測(Day3以降死亡・直通83%)を統合したリテ改修。ren GO後にcraftで設計",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": true,
+      "created_by": "CEO",
+      "created_at": "2026-07-06",
+      "status_changed_at": "2026-07-06",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
