@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T15:49:34",
+  "last_updated": "2026-07-06T15:50:26",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1998,7 +1998,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-06",
       "status_changed_at": "2026-07-06",
-      "notes": "",
+      "notes": "[07/06 15:50] 医療ダイエット3通=完成(craft経由・初見レビュー差し戻し1回・ゲート通過)。設計書=briefs/シナリオ改修-MCV追撃_医療ダイエット.md。renに文面提示済み・Winut実装はren側。AGA=リサーチ+設計進行中",
       "ball": "ren",
       "parent_id": ""
     }
