@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T18:01:20",
+  "last_updated": "2026-07-06T09:22:28",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1932,6 +1932,23 @@
       "status_changed_at": "2026-07-03",
       "notes": "[07/03 18:01] v2設計完了（読み手=マンジャロ非認知96%基準に組み直し）。表紙をベネフィット起点に修正。ren GO/NG待ち",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t144",
+      "title": "休眠再起動テストショット設計（ED+医療ダイエット約3,400人）",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "休眠プールの再起動率を実測する初回テストショットの座組み設計→配信文作成→ren承認→配信→30日測定",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-06",
+      "status_changed_at": "2026-07-06",
+      "notes": "",
+      "ball": "ceo",
       "parent_id": ""
     }
   ]
