@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T16:51:35",
+  "last_updated": "2026-07-06T17:08:25",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -2017,6 +2017,23 @@
       "status_changed_at": "2026-07-06",
       "notes": "[07/06 16:30] 構築完了: 間接シミュに『ショット管理』『ショットネタ帳』タブ新設(目次にも追記)。マンジャロv3.1を1行目起票、試しネタ3件投入(リバウンド研究/味覚変化研究/夏×代謝リセット)。毎日10時の定期タスクshot-ops-daily登録(ネタスキャン+配信7日後MCV/CV自動判定、判定基準=MCVR ◎0.45%超/○0.27-0.45/×未満)。残=マンジャロ配信後にrenが送信数を1セル入力",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t149",
+      "title": "売上スプシ18期にコスメMSブロック列を追加（CV計測穴）",
+      "column": "todo",
+      "assignee": "CTO",
+      "purpose": "コスメ(seo_cosme)は7/1新規計測開始しSEO母数に混入するが、18期MS売上ブロックにコスメ列が無くCVが出ても自動計上されない。load_cv_listのgenre自動判定にもコスメ分岐も無い。週次でコスメCV/売上を正しく拾うため両方の整備が必要",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-06",
+      "status_changed_at": "2026-07-06",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
