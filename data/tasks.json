@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-08T19:14:41",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-09T11:50:07",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -2119,6 +2119,74 @@
       "status_changed_at": "2026-07-08",
       "notes": "",
       "ball": "external",
+      "parent_id": ""
+    },
+    {
+      "id": "t155",
+      "title": "サプリ案件 構築依頼準備（啓音さん）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "遷移先LPが想定と異なる件を先方確認中。確認戻り次第、リンクとあわせて啓音さんに構築依頼を出す。完了条件: 構築依頼を出し啓音さんが着手できる状態",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-09",
+      "status_changed_at": "2026-07-09",
+      "notes": "",
+      "ball": "external",
+      "parent_id": ""
+    },
+    {
+      "id": "t156",
+      "title": "7月コスメ領域の目標・想定PV/CV整理",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "1on1でRenに相談するため、追加予定記事数・既存記事PV・想定CV数・友だち追加数・CVR等を整理する。完了条件: 相談時にそのまま出せる形の整理メモが完成",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-09",
+      "status_changed_at": "2026-07-09",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t157",
+      "title": "ショット配信の効率化案検討（予約送信・一括送信）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "現状50件ずつしか送れず2,500人規模で約50回手動送信が必要。予約送信・一括送信化の改善案を検討する。中長期テーマ、直近着手ではない。完了条件: 改善案をまとめて提案できる状態",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-09",
+      "status_changed_at": "2026-07-09",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t158",
+      "title": "齋藤さんの7月中1on1機会をねえさんに共有",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "齋藤さんが今月まだ通常の1on1機会がないため、7月中に相談の場を設ける旨をねえさんに伝える。完了条件: ねえさんに共有し、1on1の場が設定される",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-09",
+      "status_changed_at": "2026-07-09",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
