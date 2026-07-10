@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T12:49:44",
+  "last_updated": "2026-07-10T12:53:30",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -2195,6 +2195,23 @@
       "column": "todo",
       "assignee": "CEO",
       "purpose": "renメモ反映(誘導カル3枚の文字数/初出処理/食事制限vsリベ・方法診断の最終設問お金系除外と分岐付替え・確実系結果カルの厳しめ現実提示)＋検討層N1三重ロック反映。診断デザイナー設計中",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-10",
+      "status_changed_at": "2026-07-10",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t160",
+      "title": "バーティカル向け効率KWパッケージ（AGA/包茎/ED横展開）",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "ダイエットで実証したCVPV低=薬名×購入検討の勝ちKWパターンを全ジャンルに展開し、バーティカルチームに横展開素材として提供",
       "impact": "",
       "description": "",
       "deadline": "",
