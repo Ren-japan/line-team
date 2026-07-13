@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-10T18:35:46",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-13T09:36:35",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -2237,6 +2237,23 @@
       "created_at": "2026-07-10",
       "status_changed_at": "2026-07-10",
       "notes": "[07/10 18:35] 実装仕様確定(7/10): 配信対象タグはAND仕様でOR不可→統合タグ方式で解決。①新タグ『MCV追撃対象』作成 ②PR経由/FAQ経由それぞれのタグ付与ポイントに二重付与(経路別タグは分析用に維持) ③シナリオ開始条件=統合タグ1個 ④1通目送信時に『追撃済み』タグ付与し除外条件へ(2周防止) ⑤除外=CV済み/予約済み/追撃済み",
+      "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t162",
+      "title": "GAS新データ収集タブ funnel計測障害",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "7/7からのfunnelデータ欠損を復旧",
+      "impact": "",
+      "description": "スプシ「新データ収集」タブ（GAS/WINUT連携）で7/7からpu_clickが実質ゼロ化、7/11以降lp_imp/pu_imp収集が完全停止（友達数のみ別経路で計上継続）。原因はうちのPythonコード側ではなくスプシ側Apps Script/WINUT連携。RenがApps Scriptの実行ログ・トリガー状態・WINUT連携の認証状況を確認し復旧、可能なら欠損期間のデータをバックフィルする。CIO/CTO分析済み（2026-07-13）",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-13",
+      "status_changed_at": "2026-07-13",
+      "notes": "",
       "ball": "ren",
       "parent_id": ""
     }
