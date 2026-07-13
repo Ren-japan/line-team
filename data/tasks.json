@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-13T12:45:08",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-13T13:06:10",
+  "updated_by": "CMO",
   "tasks": [
     {
       "id": "t5",
@@ -2306,6 +2306,23 @@
       "status_changed_at": "2026-07-13",
       "notes": "",
       "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t166",
+      "title": "リテ再設計3点(薬MCV/薬通常/方法序盤)のGO判断→実装",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "医ダイのMCV改善。設計完了(briefs/リテ再設計3点_薬MCV_薬通常_方法序盤_20260713.md)。renのGO後: 薬通常リテ並べ替え(制作ゼロ)→返信③画像1枚+方法序盤10枚生成→タイプ別分岐の実装可否確認",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CMO",
+      "created_at": "2026-07-13",
+      "status_changed_at": "2026-07-13",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
