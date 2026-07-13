@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T15:51:35",
+  "last_updated": "2026-07-13T16:10:24",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -2340,6 +2340,23 @@
       "status_changed_at": "2026-07-13",
       "notes": "[07/13 15:51] CEO側で自力復旧に着手: BQ上流(renアカChrome経由)→Winut画面の順でクリック実値の回収を試行中。ダメなら先方報告に切替",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t168",
+      "title": "BQ pu_click収集穴の復旧(7/7-7/9欠損)",
+      "column": "todo",
+      "assignee": "CTO",
+      "purpose": "7/7-7/9のPUクリックがBQ_daily_dataで計測欠損(Click 10/9/7)。追加率・PU CTRが見かけ上高く出て信頼不可。収集穴を塞ぎ遡及補正できるか確認",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-13",
+      "status_changed_at": "2026-07-13",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
