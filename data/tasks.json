@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T16:10:24",
+  "last_updated": "2026-07-13T17:32:28",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -1801,7 +1801,7 @@
     {
       "id": "t136",
       "title": "CTO調査: pu_imp異常低下(lp_impの42%、通常95%+) 6/30〜継続",
-      "column": "todo",
+      "column": "watching",
       "assignee": "CTO",
       "purpose": "7/1のpu_imp=1,590 vs lp_imp=3,737。PU表示自体が半減しPVFR基準割れの主因。PVは正常→PU表示コード/タグの障害可能性",
       "impact": "",
@@ -1810,8 +1810,8 @@
       "needs_approval": false,
       "created_by": "CEO",
       "created_at": "2026-07-03",
-      "status_changed_at": "2026-07-03",
-      "notes": "",
+      "status_changed_at": "2026-07-13",
+      "notes": "[07/13 17:32] 7/13再調査で確定: 7/1 00:00を境に全ジャンル・全PUタグで一斉にPU imp/LP imp比が95-115%→40-50%に半減(既存タグのみでも同様、新規タグ希釈ではない)。友達数・PVFRへの実害なし。Noa仮説: 5/14仕様変更(通常PU+WINUT合算計上)がWINUT側で解除され単体計上に戻った可能性が高い(倍半分の変化幅と整合)。knowledge/funnel-model.mdに反映済み。Ren/WINUT側への正式裏取りは未実施だが業務判断は保留にしない方針",
       "ball": "worker",
       "parent_id": ""
     },
