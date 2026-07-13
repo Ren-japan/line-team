@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T12:37:21",
+  "last_updated": "2026-07-13T12:45:08",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -2280,6 +2280,23 @@
       "column": "todo",
       "assignee": "CEO",
       "purpose": "友だちデータはBQ_daily_dataタブで復旧済みだが、診断ファネル/MCV(方式B)の「新デイリー回答データ」タブも7/11以降凍結中。BQ popup_mart_v3.daily_user_log/account_sum_answerのスキーマ確認→同じConnected Sheets抽出を設置→load_daily_answer_data合流。週次レポのMCV数に影響するため月曜朝まで",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-13",
+      "status_changed_at": "2026-07-13",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t165",
+      "title": "リテ再設計3点（薬MCVリテ/薬通常リテ整理/方法序盤3通）",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "3層ペルソナ+リテファネルデータ準拠。①薬MCVリテ: 1通目お伺い型保持+2・3通目再設計 ②薬通常リテ: 座組診断+順番整理 ③方法通常リテ: 序盤3通作り直し(マイナス3連続の解消・タイプ名接続・4ブロック直撃)。CMO設計中",
       "impact": "",
       "description": "",
       "deadline": "",
