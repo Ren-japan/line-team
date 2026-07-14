@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T12:00:01",
+  "last_updated": "2026-07-14T12:15:06",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -2396,7 +2396,7 @@
     {
       "id": "t171",
       "title": "PUタグ収集シート登録の裏取り(bmi/houhien等・異常低PVFR)",
-      "column": "todo",
+      "column": "done",
       "assignee": "CTO",
       "purpose": "取りこぼしTOP=タグ漏れの見かけか実破損かを切り分け。タグ漏れなら登録修正で+約200人/月が作業ゼロで帳簿回復。CTO調査中",
       "impact": "",
@@ -2406,7 +2406,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-14",
       "status_changed_at": "2026-07-14",
-      "notes": "",
+      "notes": "[07/14 12:15] CTO裏取り完了: 友だちは母数から漏れてない(同一行収集・parse_tag無関与)。タグ漏れ仮説棄却。低PVFRはバナー流入による記事単位の帰属アーティファクト。実破損最有力=SEOほくろ除去テープ(445click→1人・プール0)",
       "ball": "worker",
       "parent_id": ""
     },
@@ -2423,7 +2423,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-14",
       "status_changed_at": "2026-07-14",
-      "notes": "",
+      "notes": "[07/14 12:15] 要改訂: 6本リストに誤検知混入(間食やめられない=実は優良変換5-6%/kasei=共有バナーで母数無傷の過少表示)。記事単位取りこぼし判定はバナー流入ジャンルで歪む。実破損確定はSEOほくろのみ。発注前にリスト精査必要",
       "ball": "ren",
       "parent_id": ""
     }
