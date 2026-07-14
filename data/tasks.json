@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T15:05:52",
+  "last_updated": "2026-07-14T15:32:02",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -2450,6 +2450,23 @@
       "column": "todo",
       "assignee": "CMO",
       "purpose": "放置プール月160人×客単価×CV化率10-20%=売上+¥438,000〜877,000/月。高単価×率0%放置の包茎・AGA優先で客単価防衛も兼ねる。売上目標の本命レバー",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-14",
+      "status_changed_at": "2026-07-14",
+      "notes": "[07/14 15:32] 第1弾=ダイエット(実装済・明日明後日稼働)+包茎(次・高単価¥75,000)の2本に確定。AGAは除外(友だち15人/放置5人でシナリオ作るコスパ皆無・課題は間口PVFR側)。目標FCVR6%(MCV転換10%狙い=6.8%着地)",
+      "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t175",
+      "title": "PV原資の頭打ち整理(準CVKW枯れ/ノウハウ枠)＋診断拡大＋ショット通数まとめ",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "率改善はPV原資増えないと頭打ち。自力=MCV刈り取り(ショット)+ジャンル診断拡大+ショット通数で既存PVを回し切る。PV供給(準CVKW)はSEO依存で別立て。当初想定vs実績でPV漸減を数値化し率改善の頭打ち時期を出す",
       "impact": "",
       "description": "",
       "deadline": "",
