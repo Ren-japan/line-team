@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T12:52:44",
+  "last_updated": "2026-07-15T13:08:13",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2508,7 +2508,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-15",
       "status_changed_at": "2026-07-15",
-      "notes": "",
+      "notes": "[07/15 13:08] 2026-07-15 renの判断で現行PWのまま新アカウントページ(plus-lineteam.github.io/winut/accounts/・閲覧PW付き)に掲載済み。旧PWはren-claude-code側のgit履歴に露出したままなのでローテは引き続き推奨",
       "ball": "ren",
       "parent_id": ""
     },
