@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-15T09:19:23",
-  "updated_by": "Noa",
+  "last_updated": "2026-07-15T09:40:39",
+  "updated_by": "CEO",
   "tasks": [
     {
       "id": "t5",
@@ -2493,6 +2493,23 @@
       "status_changed_at": "2026-07-15",
       "notes": "",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t177",
+      "title": "Winut全9アカウントのパスワード変更（公開リポ露出対応）",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "docs/winut/index.htmlに9ジャンル分の実ID/PWが6/18〜7/15公開状態だった。ページからは削除済みだがgit履歴に残存。Winut側でPW変更→Notion更新が根本対応",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-07-15",
+      "status_changed_at": "2026-07-15",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
