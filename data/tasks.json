@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T17:55:03",
+  "last_updated": "2026-07-15T18:56:17",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2542,7 +2542,7 @@
       "created_by": "Noa",
       "created_at": "2026-07-15",
       "status_changed_at": "2026-07-15",
-      "notes": "[07/15 12:32] マイダッシュ = https://plussaitounoa-lgtm-noa-dashboard-app-mcmhd9.streamlit.app/ (noa-dashboard、Streamlit)。最近使用頻度が落ちているため、Notionとの統合を検討中。具体的な統合方式(どのNotion DB/ページと連携するか)は未確定\n[07/15 15:33] [07/15] Noaがマイダッシュ全体(Streamlit)のNotion完全移行を確定。設計案: 動的データ(KPI/月次目標)はGitHub Actions cron+Notion API書き込みで真の自動化を新設(読み込み元は既存の新データ収集スプシのまま、新規スプシ作成なし)。静的テキスト系(タスク/焦点/サイト/LINE戦略/やりたいこと/パスワード制メモ)はNotion DB/ページ化。実装順序: ①静的テキスト系→②KPI自動化→③月次目標自動化(GitHub Secrets登録要)→④メモ権限設計→⑤1週間安定後にStreamlit版アーカイブ。合計3-4セッション目安。①から着手開始",
+      "notes": "[07/15 12:32] マイダッシュ = https://plussaitounoa-lgtm-noa-dashboard-app-mcmhd9.streamlit.app/ (noa-dashboard、Streamlit)。最近使用頻度が落ちているため、Notionとの統合を検討中。具体的な統合方式(どのNotion DB/ページと連携するか)は未確定\n[07/15 15:33] [07/15] Noaがマイダッシュ全体(Streamlit)のNotion完全移行を確定。設計案: 動的データ(KPI/月次目標)はGitHub Actions cron+Notion API書き込みで真の自動化を新設(読み込み元は既存の新データ収集スプシのまま、新規スプシ作成なし)。静的テキスト系(タスク/焦点/サイト/LINE戦略/やりたいこと/パスワード制メモ)はNotion DB/ページ化。実装順序: ①静的テキスト系→②KPI自動化→③月次目標自動化(GitHub Secrets登録要)→④メモ権限設計→⑤1週間安定後にStreamlit版アーカイブ。合計3-4セッション目安。①から着手開始\n[07/15 18:56] [07/15] MS departmentページ内で作業。実施済み: ①TODAY'S GOALSのテンプレ残骸(サンプルto-do6件)削除→空のto-do追加 ②MONTHLY GOALSセクション新規作成(TODAY'S GOALSと同じグレー背景+太字下線書式)、Noaが調整してcallout「371人/1200人(30.9%)」に整理 ③Docsボタン(→noa-docs index.html)・Site Mapボタン用のSite MapデータベースをMeeting Logと同階層に新規作成(39e8c3ae-ca4e-8170-b7a7-c1e14a32d6fe、sites.json内容1件登録済み)、ボタンへのリンク設定はNoaが手動で完了(Notion APIはbutton blockの読み書き非対応と判明) ④マイダッシュ子ページ作成済み(39e8c3ae-ca4e-813e-b684-fb737251f048、MS department直下)、中に「今の焦点」「LINE戦略」「メモ・アイデアストック」の3セクションをJSON内容ベースで移行済み。次回: タスク一覧(personal_tasks.json)・進捗サマリー(今日/今週/作業ログ)・やりたいこと(want-todo.json)の移行が未着手。「新卒フォロー」ページは新卒1ヶ月振り返り議事録と判明、触らない方針。装飾ブロック(embed時計/quote/image)もそのまま残す方針",
       "ball": "worker",
       "parent_id": ""
     },
