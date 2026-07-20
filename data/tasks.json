@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17T19:01:50",
+  "last_updated": "2026-07-17T19:12:54",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2627,7 +2627,7 @@
       "created_by": "Noa",
       "created_at": "2026-07-16",
       "status_changed_at": "2026-07-16",
-      "notes": "",
+      "notes": "[07/17 19:12] クレンジング診断・スキンケア診断のファネル数値をCIOで取得（累計/直近1週間、記事単位・PU単位フルドリルダウン、Artifact: cosme-pu-drilldown-2026-07-17.html）。記事内PU取捨選択の判断材料も作成、Noaと壁打ち中。判断はPVFR基準（CTRだけで優劣つけない）。最終カット案は未確定、確定後に啓音さんへのデザイン依頼書作成に進む（2026-07-17）",
       "ball": "worker",
       "parent_id": ""
     }
