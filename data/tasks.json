@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T09:20:08",
+  "last_updated": "2026-07-21T09:26:00",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2637,6 +2637,23 @@
       "column": "todo",
       "assignee": "Noa",
       "purpose": "シナリオ設計完了済みの案件(シミクリニック診断/カロリー診断/肌タイプ診断等)がデザイン依頼段階で詰まっている。デザイナーに制作の進め方をレクチャーしてもらい、Noaが自分で巻き取れる工程を明確にして依頼待ち時間を減らす。デザイナーには連携済み。完了条件=巻き取り可能な作業範囲が明確になり実際に1件以上自走できること",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-21",
+      "status_changed_at": "2026-07-21",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t187",
+      "title": "LINE Console ブラッシュアップ（KPIソート＋ジャンル別PUレポート）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "①トップページのジャンル別KPIテーブルで指標名をクリックするとその指標の好調順にソート表示、再タップで解除。②レポートのPUレポートをジャンルページ側にも設置し、そのジャンルのPUだけ絞り込んで見れるようにする。完了条件=両機能が実装されLINE Console上で動作すること",
       "impact": "",
       "description": "",
       "deadline": "",
