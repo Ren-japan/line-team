@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T09:26:00",
+  "last_updated": "2026-07-21T10:15:52",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2654,6 +2654,23 @@
       "column": "todo",
       "assignee": "Noa",
       "purpose": "①トップページのジャンル別KPIテーブルで指標名をクリックするとその指標の好調順にソート表示、再タップで解除。②レポートのPUレポートをジャンルページ側にも設置し、そのジャンルのPUだけ絞り込んで見れるようにする。完了条件=両機能が実装されLINE Console上で動作すること",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-21",
+      "status_changed_at": "2026-07-21",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t188",
+      "title": "クマ シナリオ設計（mega-clinic）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "mega-clinic.comのクマジャンル向けシナリオ設計を進める。完了条件=シナリオ設計完了、デザイン依頼できる状態にする",
       "impact": "",
       "description": "",
       "deadline": "",
