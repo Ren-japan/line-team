@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T22:47:00",
+  "last_updated": "2026-07-23T22:50:37",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2736,7 +2736,7 @@
     {
       "id": "t192",
       "title": "AGAショット「経験者の後悔は逆」GO/NG判断",
-      "column": "done",
+      "column": "todo",
       "assignee": "Ren",
       "purpose": "休眠988人再点火＋ショット再起動率の初実測。設計完了(briefs/ショット-AGA休眠再点火_経験者の後悔は逆.md)。GO後: 案件A LP/単価確定→専用MCVタグ設定→画像制作→Renテスト送信→21-22時配信",
       "impact": "",
@@ -2746,7 +2746,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-21",
       "status_changed_at": "2026-07-23",
-      "notes": "[07/23 22:46] 2026-07-23 ren GO。DMM/AGA同用途の正本4枚を参照して人物ゼロの1枚を生成。682x1024目視検品済み。採用候補: line-dashboard/data/output/briefs/images/aga_shot_early_regret_20260723/aga_shot_early_regret_final_682x1024.jpg",
+      "notes": "[07/23 22:46] 2026-07-23 ren GO。DMM/AGA同用途の正本4枚を参照して人物ゼロの1枚を生成。682x1024目視検品済み。採用候補: line-dashboard/data/output/briefs/images/aga_shot_early_regret_20260723/aga_shot_early_regret_final_682x1024.jpg\n[07/23 22:50] ren差し戻し: 単画像は綺麗だが魅力不足。既知の進行性説明では判断材料が弱い。初手4枚カルーセルへ変更し、「守る/生やすの2段階」を主軸に構成再設計。画像は構成合意まで停止。",
       "ball": "ren",
       "parent_id": ""
     },
