@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T18:52:35",
+  "last_updated": "2026-07-23T09:24:07",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2833,6 +2833,23 @@
       "status_changed_at": "2026-07-22",
       "notes": "",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t198",
+      "title": "デザイン作成ツールのアップデート・改修",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "デザイン待ちが複数案件(シミ診断/カロリー診断/肌タイプ診断等)のボトルネックになっているため、デザイン作成ツール自体をアップデート・改修し制作スピードを上げる。まず米原さんにAIを使った制作フローを確認するところから着手。完了条件=ツールが実際に稼働し、デザイン待ち案件の1件以上で制作に活用できること",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-23",
+      "status_changed_at": "2026-07-23",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
