@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T11:23:02",
+  "last_updated": "2026-07-23T11:35:34",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2858,6 +2858,23 @@
       "column": "todo",
       "assignee": "Noa",
       "purpose": "総合肌タイプ診断のリリース（7/27〜31週予定）と同時期にリッチメニューを設置する。診断に合わなかったユーザーも別案件へ誘導できる状態を作る。完了条件=リッチメニュー用画像・リンク準備完了→総合肌タイプ診断リリースと同時に実装・公開",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-23",
+      "status_changed_at": "2026-07-23",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t200",
+      "title": "line-image-generator 不要コード整理・改修",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "姉妹アプリ(seo-image-generator)からの残骸4件（workflow_guide.pyの誤情報・未使用lib2本・DEFAULT_CONFIG未使用15項目・image_postprocessor未使用関数）を削除し、READMEと実態を一致させる。完了=Ren-japan/line-image-generatorにpush済み",
       "impact": "",
       "description": "",
       "deadline": "",
