@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T18:37:08",
+  "last_updated": "2026-07-27T09:22:16",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2901,6 +2901,23 @@
       "status_changed_at": "2026-07-24",
       "notes": "[07/24 15:37] v2詰め完了(7/24): 設計書=briefs/ショット-包茎_半分正解_v2詰め.md。シート「包茎ショット_ネタ帳」A案行に反映済(D/F/I列)。修正=配信本文の病名除去(必須)+2枚目サイン差し替え。1・3枚目は現行流用。残=ren GO→2枚目再生成→Winut配信→ショット管理タブ起票",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t202",
+      "title": "週次分析・週次報告作成（7月W4想定）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "13時から着手。CIOでジャンル別・記事別ドリルダウン分析→週次報告スプシに書き込み完了で完了",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-27",
+      "status_changed_at": "2026-07-27",
+      "notes": "",
+      "ball": "ceo",
       "parent_id": ""
     }
   ]
