@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T18:07:26",
+  "last_updated": "2026-07-27T18:15:33",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2984,7 +2984,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-27",
       "status_changed_at": "2026-07-27",
-      "notes": "[07/27 16:51] GTM APIルート実証完了: SA=line-dashboard@coastal-walker-466905-p2、Tag Manager API有効化済み、トゥトゥモロウでタグ/停止状態/トリガー(記事URL)の読取確認OK。SA追加済=トゥトゥモロウのみ。残り4垢はren権限がユーザーで追加不可(管理者: 30クリ=k18390013@gmail.com / ikecli=info@plus-msteam.com,shinohara28shinya@gmail.com / tenpaku=xues32670@gmail.com / 小田=ishinkailab@gmail.com)。別Gアカ配下の残り約5垢は未着手",
+      "notes": "[07/27 16:51] GTM APIルート実証完了: SA=line-dashboard@coastal-walker-466905-p2、Tag Manager API有効化済み、トゥトゥモロウでタグ/停止状態/トリガー(記事URL)の読取確認OK。SA追加済=トゥトゥモロウのみ。残り4垢はren権限がユーザーで追加不可(管理者: 30クリ=k18390013@gmail.com / ikecli=info@plus-msteam.com,shinohara28shinya@gmail.com / tenpaku=xues32670@gmail.com / 小田=ishinkailab@gmail.com)。別Gアカ配下の残り約5垢は未着手\n[07/27 18:15] 台帳v1完成: ①スプシ2タブ自動生成(記事台帳/記事日次・tools/article_ledger.py) ②ダッシュボードに記事台帳ページ追加(pages/8_記事台帳.py)ローカル検証済 ③突合43/53(ジャンル制約+スラッグ第2パスで誤マッチ排除。BQ genre空行はtag_name先頭から補完) ④line-console=Ren-japan/line-dashboardデプロイと判明。開通7垢。残: 残り垢のSA追加(ren)/line-consoleへのデプロイ(GO待ち)/毎朝cron登録",
       "ball": "ceo",
       "parent_id": ""
     },
