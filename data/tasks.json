@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T18:50:19",
+  "last_updated": "2026-07-27T19:11:37",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2882,7 +2882,7 @@
       "created_by": "Noa",
       "created_at": "2026-07-23",
       "status_changed_at": "2026-07-23",
-      "notes": "[07/23 17:30] 不要コード4件（workflow_guide.py/article_analyzer.py/preset_manager.py/config未使用15項目+メソッド4つ/prompt_templates.py911行/image_postprocessor未使用関数4つ）削除完了。Streamlit起動確認(HTTP200・エラーなし)済み。Ren-japan/line-image-generatorにpush済み(b62e872)",
+      "notes": "[07/23 17:30] 不要コード4件（workflow_guide.py/article_analyzer.py/preset_manager.py/config未使用15項目+メソッド4つ/prompt_templates.py911行/image_postprocessor未使用関数4つ）削除完了。Streamlit起動確認(HTTP200・エラーなし)済み。Ren-japan/line-image-generatorにpush済み(b62e872)\n[07/27 19:11] 続けて診断設計書・依頼書の自動生成機能(t201)を実装。line-image-generatorの別ページとして追加、化粧水診断相当のデータで忠実度検証済み",
       "ball": "worker",
       "parent_id": ""
     },
@@ -3003,6 +3003,23 @@
       "status_changed_at": "2026-07-27",
       "notes": "",
       "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t208",
+      "title": "line-image-generator 診断設計書・依頼書の自動生成機能",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "米原さん(spec-image-generator)のtemplate+AI差分の発想を文書生成に転用。診断データJSON→house format準拠の設計書・デザイン依頼書を自動生成するページを実装。完了条件=実案件(化粧水診断相当の複雑度)で違和感なく使えると確認できたら次のGUIフォーム化検討へ",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-27",
+      "status_changed_at": "2026-07-27",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
