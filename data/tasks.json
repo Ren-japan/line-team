@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-27T16:51:48",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-27T18:07:26",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -2985,6 +2985,23 @@
       "created_at": "2026-07-27",
       "status_changed_at": "2026-07-27",
       "notes": "[07/27 16:51] GTM APIルート実証完了: SA=line-dashboard@coastal-walker-466905-p2、Tag Manager API有効化済み、トゥトゥモロウでタグ/停止状態/トリガー(記事URL)の読取確認OK。SA追加済=トゥトゥモロウのみ。残り4垢はren権限がユーザーで追加不可(管理者: 30クリ=k18390013@gmail.com / ikecli=info@plus-msteam.com,shinohara28shinya@gmail.com / tenpaku=xues32670@gmail.com / 小田=ishinkailab@gmail.com)。別Gアカ配下の残り約5垢は未着手",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t207",
+      "title": "8/4 三浦さんとの「8月にやりたいこと」共有に向けて準備",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "初動研修スケジュール8/4 10:00-11:00枠。バーティカルでやりたい方向性を簡潔に話せる状態にしておく",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-27",
+      "status_changed_at": "2026-07-27",
+      "notes": "",
       "ball": "ceo",
       "parent_id": ""
     }
