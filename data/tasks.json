@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T19:11:37",
+  "last_updated": "2026-07-27T19:12:13",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -2882,7 +2882,7 @@
       "created_by": "Noa",
       "created_at": "2026-07-23",
       "status_changed_at": "2026-07-23",
-      "notes": "[07/23 17:30] 不要コード4件（workflow_guide.py/article_analyzer.py/preset_manager.py/config未使用15項目+メソッド4つ/prompt_templates.py911行/image_postprocessor未使用関数4つ）削除完了。Streamlit起動確認(HTTP200・エラーなし)済み。Ren-japan/line-image-generatorにpush済み(b62e872)\n[07/27 19:11] 続けて診断設計書・依頼書の自動生成機能(t201)を実装。line-image-generatorの別ページとして追加、化粧水診断相当のデータで忠実度検証済み",
+      "notes": "[07/23 17:30] 不要コード4件（workflow_guide.py/article_analyzer.py/preset_manager.py/config未使用15項目+メソッド4つ/prompt_templates.py911行/image_postprocessor未使用関数4つ）削除完了。Streamlit起動確認(HTTP200・エラーなし)済み。Ren-japan/line-image-generatorにpush済み(b62e872)\n[07/27 19:11] 続けて診断設計書・依頼書の自動生成機能(t201)を実装。line-image-generatorの別ページとして追加、化粧水診断相当のデータで忠実度検証済み\n[07/27 19:12] 訂正: 直前メモの「t201」はt208の誤記",
       "ball": "worker",
       "parent_id": ""
     },
