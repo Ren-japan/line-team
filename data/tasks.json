@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-28T17:13:13",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-28T17:28:52",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -3054,6 +3054,40 @@
       "status_changed_at": "2026-07-28",
       "notes": "[07/28 16:53] 2026-07-28: 6ジャンル×5枚を画像1枚=1行で完全清書。初手LINE文6本・ビジュアル方向・公式注記・検証指標までGoogle Sheet「ショット6ジャンル_7月末」に反映。外部品質レビュー8点を修正済み。画像は未生成、RenのGO待ち。\n[07/28 17:13] 2026-07-28: 表紙6本を再清書してSheets反映。結論だけを突然置く型を廃止し、普段の関心→具体的不安→答えの順へ変更。Renから文言GO。次は画像作成GO待ち。",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t211",
+      "title": "SEOノウハウ記事3本作成",
+      "column": "in_progress",
+      "assignee": "Noa",
+      "purpose": "7/30(木)までに3本完成",
+      "impact": "",
+      "description": "SEOジャンル向けノウハウ記事を3本新規作成する。対象記事・ジャンルは着手時に確定。",
+      "deadline": "2026-07-30",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-28",
+      "status_changed_at": "2026-07-28",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t212",
+      "title": "お口プラス地域記事2本作成（千葉・仙台）",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "8月3日週に2本公開",
+      "impact": "",
+      "description": "森林裕貴さん依頼。マウスピース矯正の地域記事2本を新規作成：①マウスピース矯正 千葉 ②マウスピース矯正 仙台。サブKWは自分で決める。参考記事（既存フォーマット）：https://okuchiplus.jp/topics/orthodontics/orthodontics-tokyo/ https://okuchiplus.jp/topics/orthodontics/orthodontics-osaka/ 7/31(金)着手予定、8月3日週公開希望。",
+      "deadline": "2026-08-03",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-28",
+      "status_changed_at": "2026-07-28",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
