@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T17:28:52",
+  "last_updated": "2026-07-28T19:08:07",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3088,6 +3088,23 @@
       "status_changed_at": "2026-07-28",
       "notes": "",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t213",
+      "title": "美容医療(mega-clinic)クマ/シミのgenre値分離",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "クマ・シミの実績を分離集計可能にする",
+      "impact": "",
+      "description": "「新デイリー回答データ」タブで美容医療アカウントが_ACCOUNT_='クマ取り'に統合されており、2026-07-24/25のシミ診断テスト流入(shimi_seoタグ)がクマ取り扱いで混入していることを発見(2026-07-28)。t188クマ診断・t140シミ診断のリリース後、両ジャンルの効果を分離測定できるよう、genre値の分離をCTOに依頼する必要がある。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-28",
+      "status_changed_at": "2026-07-28",
+      "notes": "",
+      "ball": "ceo",
       "parent_id": ""
     }
   ]
