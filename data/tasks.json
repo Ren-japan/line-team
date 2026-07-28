@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-28T15:42:01",
-  "updated_by": "Noa",
+  "last_updated": "2026-07-28T16:03:52",
+  "updated_by": "CEO",
   "tasks": [
     {
       "id": "t5",
@@ -3037,6 +3037,23 @@
       "status_changed_at": "2026-07-28",
       "notes": "[07/28 14:21] 方針転換: Google Drive共有ドライブが組織ポリシー(株式会社PLUS)でフォルダ単位共有が弾かれる問題に繰り返し遭遇したため、Google Cloud/Workspace設定を全部やめてGitHub自動push方式(GitSyncStorage)に切替。ジャンル設定・参照画像の保存/削除のたびにline-image-generatorリポジトリへgit commit&pushする仕組みを実装(commit b61c095/3c8b49a/a678eec)。既存の広い権限のGitHub OAuthトークンを使い回す判断はNoa了承済み。実装中に発見した重大バグ: 開発側のコードpushとアプリの自動保存pushが同じmainブランチで競合すると、無条件にpush失敗を諦めてローカル保存だけで終わる設計だったため、次のコード更新時にStreamlit Cloudのgit pullでジャンル設定がリセットされ消えていた(実際に複数回発生)。pull --rebaseリトライ(最大3回)で解消、隔離環境で競合再現・修正確認済み。Noa実機確認で「大丈夫そう」と確認完了",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t210",
+      "title": "7月末6ジャンルショット方向性GO→清書・画像・配信文",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "ED4・ピル4・AGA1・FAGA3・ICL4・看護4件を狙う",
+      "impact": "",
+      "description": "方向性確認シート作成済み。Google Sheets「ショット6ジャンル_7月末」。Ren方向性GO後、公式情報確認→コピー清書→画像5枚×6ジャンル→初手LINEテキスト生成。現段階では画像未作成。",
+      "deadline": "2026-07-31",
+      "needs_approval": true,
+      "created_by": "CEO",
+      "created_at": "2026-07-28",
+      "status_changed_at": "2026-07-28",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
