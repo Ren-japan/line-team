@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T09:38:43",
+  "last_updated": "2026-07-28T09:44:39",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3018,7 +3018,24 @@
       "created_by": "Noa",
       "created_at": "2026-07-27",
       "status_changed_at": "2026-07-27",
-      "notes": "[07/27 19:45] ジャンル選択欄なし・全項目編集不可というNoaフィードバックを受けてページを全面改修。サイドバーのジャンル選択と連動(トンマナ色を自動補完)、設問・結果タイプ・カード・PU案・商材マッピング等を画面上のフォームで追加/削除・編集できるように変更。JSON貼り付けは初期データ流し込み用として残す。commit 1731a47・push済み\n[07/28 09:38] 結果カルーセル生成機能を新規実装(pages/06_result_carousel_generation.py)。診断カルーセル(表紙+設問+結果1枚)には結果カードを複数枚組・タイプ別で出す仕組みが無かったギャップに対応。参照画像カテゴリ「結果カルーセル」も追加。設計書ページのresult_typesデータをそのまま画像生成に流用可能。commit 5daf94f・push済み。サーバー起動確認済み(HTTP200・エラーなし)、実際のクリック操作は未確認",
+      "notes": "[07/27 19:45] ジャンル選択欄なし・全項目編集不可というNoaフィードバックを受けてページを全面改修。サイドバーのジャンル選択と連動(トンマナ色を自動補完)、設問・結果タイプ・カード・PU案・商材マッピング等を画面上のフォームで追加/削除・編集できるように変更。JSON貼り付けは初期データ流し込み用として残す。commit 1731a47・push済み\n[07/28 09:38] 結果カルーセル生成機能を新規実装(pages/06_result_carousel_generation.py)。診断カルーセル(表紙+設問+結果1枚)には結果カードを複数枚組・タイプ別で出す仕組みが無かったギャップに対応。参照画像カテゴリ「結果カルーセル」も追加。設計書ページのresult_typesデータをそのまま画像生成に流用可能。commit 5daf94f・push済み。サーバー起動確認済み(HTTP200・エラーなし)、実際のクリック操作は未確認\n[07/28 09:43] 重大発見：GOOGLE_DRIVE_FOLDER_ID未設定のため、ジャンル設定・参照画像がStreamlit Cloudコンテナのローカルディスク保存になっており、pushのたびに再デプロイでリセットされる(今日の複数pushで実際にNoaのジャンル登録が消失)。Noa方針=アプリの機能を先に固めてからGoogle Driveストレージ設定に着手。今セッションはpush停止\n[07/28 09:44] 訂正: Noaの「後でやる」はGoogle Drive設定の着手を後回しにする意味で、pushを止める話ではなかった。pushは通常通り継続する（Google Drive未設定の間は毎回ジャンル設定が消えるリスクはあるが、それを承知の上でアプリ機能を先に進める方針）。ストレージ設定自体はt209として別タスク化",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t209",
+      "title": "line-image-generator Google Driveストレージ設定",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "GOOGLE_DRIVE_FOLDER_ID未設定のため現状はpushのたびにジャンル設定・参照画像がリセットされる。Noaのフォルダ作成・Streamlit Cloud Secrets設定で恒久解決する。完了条件=push後もジャンル設定・参照画像が消えないと確認できたら",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-28",
+      "status_changed_at": "2026-07-28",
+      "notes": "",
       "ball": "worker",
       "parent_id": ""
     }
