@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T14:31:18",
+  "last_updated": "2026-07-29T14:35:29",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3105,6 +3105,23 @@
       "status_changed_at": "2026-07-28",
       "notes": "",
       "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t214",
+      "title": "売上管理スプシ「リファラ・発生管理」タブのSEO運用確認",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "ED分析中に発見。記事単位でCVを追える唯一の仕組みだが手動貼り付け運用でSEO分（特にED）が入っていない。運用に乗せるか要否をRenと確認し、乗せるなら運用ルール化する",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-29",
+      "status_changed_at": "2026-07-29",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
