@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-31T11:32:49",
-  "updated_by": "CEO",
+  "last_updated": "2026-07-31T15:08:59",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -2865,7 +2865,7 @@
       "created_by": "Noa",
       "created_at": "2026-07-23",
       "status_changed_at": "2026-07-23",
-      "notes": "[07/27 14:18] 7/24すり合わせ: 総合肌タイプ診断のリリースと同時期(来週目安)に設置",
+      "notes": "[07/27 14:18] 7/24すり合わせ: 総合肌タイプ診断のリリースと同時期(来週目安)に設置\n[07/31 15:07] 07/31朝会: コスメLINEリッチメニューは総合肌タイプ診断連動に加えて『診断一覧をまとめて見せる場所』として設計する方針。将来的にスキンケア/コスメでタブ分け、流入経路別の出し分けも視野。まずはシンプル構成から着手",
       "ball": "worker",
       "parent_id": ""
     },
@@ -3155,6 +3155,23 @@
       "created_at": "2026-07-31",
       "status_changed_at": "2026-07-31",
       "notes": "[07/31 11:32] 2026-07-31 Chrome拡張経由でWinut友だちCSVの1アカウントDL成功。生CSVはGit管理外 .private/winut-exports に隔離（dir700/file600）、個別行非表示のタグ集計スクリプトをshot-factoryへ追加。現在タブの選択アカウントが意図と違う場合があるため、次はファイル名によるアカウント照合→不一致時停止を運用。",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t217",
+      "title": "バナー挿入マニュアル作成",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "属人化解消。手順書完成でNoa以外も設置可能に",
+      "impact": "",
+      "description": "齋藤さん以外でもバナー設置を回せるようにするための移管準備。2026-07-31朝会で言及。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-07-31",
+      "status_changed_at": "2026-07-31",
+      "notes": "",
       "ball": "worker",
       "parent_id": ""
     }
