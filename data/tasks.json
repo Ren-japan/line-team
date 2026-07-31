@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T10:43:49",
+  "last_updated": "2026-07-31T11:32:49",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -3154,7 +3154,7 @@
       "created_by": "CEO",
       "created_at": "2026-07-31",
       "status_changed_at": "2026-07-31",
-      "notes": "",
+      "notes": "[07/31 11:32] 2026-07-31 Chrome拡張経由でWinut友だちCSVの1アカウントDL成功。生CSVはGit管理外 .private/winut-exports に隔離（dir700/file600）、個別行非表示のタグ集計スクリプトをshot-factoryへ追加。現在タブの選択アカウントが意図と違う場合があるため、次はファイル名によるアカウント照合→不一致時停止を運用。",
       "ball": "worker",
       "parent_id": ""
     }
