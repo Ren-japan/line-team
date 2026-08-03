@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-02T23:24:32",
-  "updated_by": "Noa",
+  "last_updated": "2026-08-03T09:35:56",
+  "updated_by": "CEO",
   "tasks": [
     {
       "id": "t5",
@@ -3173,6 +3173,40 @@
       "status_changed_at": "2026-07-31",
       "notes": "[08/02 23:24] 社員/インターンの担当範囲は要すり合わせ（Noa保留中）。技術手順の共通部分（WP記事特定→画像/メタリフのFTPアップロード→WP埋め込み→プレビュー確認）を先行して構成中。GA4計測IDはサイト単位固定、WINUT流入リンクは間接CV(LINE)チームから提供、ファイル名規則は{ジャンル}-{記事スラッグ}-shindan-line.html。FTP認証情報・サイト一覧はマニュアル本文には書かない方針",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t218",
+      "title": "8月データ供給停止の切り分け（CVリスト/回答データ/友だち）",
+      "column": "todo",
+      "assignee": "CTO",
+      "purpose": "8月実績を測れる状態に戻す",
+      "impact": "8月初動の判断材料が0のまま進むのを防ぐ",
+      "description": "CVリスト最終行が2026-07-30 14:53で以降0件。新デイリー回答データは8/1が1行のみでMCV0。友だちデータは8/1が医療ダイエット系のみ反映・8/2は6件。BQ daily_data/Connected Sheets/GAS収集のどこで止まっているか特定して復旧する。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-08-03",
+      "status_changed_at": "2026-08-03",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t219",
+      "title": "8月売上スプシにMS売上集計ブロックが無い",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "8月の間接CV売上の記録先を確定",
+      "impact": "記録先が無いと8月売上の集計不能",
+      "description": "18期売上スプシ(1c4H6JoM...)の7月タブはDE列以降が▼MS売上集計(FAGA/美容医療/AGA/包茎/医療ダイエット/ED/ピル/コスメ)。8月タブは同じ位置が▼テストマーケ(アド売上-給湯器/X広告-AGA)に差し替わり、MSブロックが存在しない。A-D列のLINEマーケ全体は残っているが7月まではMS合計と一致していた。8月の間接CVをどこに記録するか、スプシ管理側に確認が必要。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-08-03",
+      "status_changed_at": "2026-08-03",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
