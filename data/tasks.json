@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T12:23:37",
+  "last_updated": "2026-08-04T14:42:13",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -3035,7 +3035,7 @@
       "created_by": "Noa",
       "created_at": "2026-07-28",
       "status_changed_at": "2026-07-28",
-      "notes": "[07/28 14:21] 方針転換: Google Drive共有ドライブが組織ポリシー(株式会社PLUS)でフォルダ単位共有が弾かれる問題に繰り返し遭遇したため、Google Cloud/Workspace設定を全部やめてGitHub自動push方式(GitSyncStorage)に切替。ジャンル設定・参照画像の保存/削除のたびにline-image-generatorリポジトリへgit commit&pushする仕組みを実装(commit b61c095/3c8b49a/a678eec)。既存の広い権限のGitHub OAuthトークンを使い回す判断はNoa了承済み。実装中に発見した重大バグ: 開発側のコードpushとアプリの自動保存pushが同じmainブランチで競合すると、無条件にpush失敗を諦めてローカル保存だけで終わる設計だったため、次のコード更新時にStreamlit Cloudのgit pullでジャンル設定がリセットされ消えていた(実際に複数回発生)。pull --rebaseリトライ(最大3回)で解消、隔離環境で競合再現・修正確認済み。Noa実機確認で「大丈夫そう」と確認完了",
+      "notes": "[07/28 14:21] 方針転換: Google Drive共有ドライブが組織ポリシー(株式会社PLUS)でフォルダ単位共有が弾かれる問題に繰り返し遭遇したため、Google Cloud/Workspace設定を全部やめてGitHub自動push方式(GitSyncStorage)に切替。ジャンル設定・参照画像の保存/削除のたびにline-image-generatorリポジトリへgit commit&pushする仕組みを実装(commit b61c095/3c8b49a/a678eec)。既存の広い権限のGitHub OAuthトークンを使い回す判断はNoa了承済み。実装中に発見した重大バグ: 開発側のコードpushとアプリの自動保存pushが同じmainブランチで競合すると、無条件にpush失敗を諦めてローカル保存だけで終わる設計だったため、次のコード更新時にStreamlit Cloudのgit pullでジャンル設定がリセットされ消えていた(実際に複数回発生)。pull --rebaseリトライ(最大3回)で解消、隔離環境で競合再現・修正確認済み。Noa実機確認で「大丈夫そう」と確認完了\n[08/04 14:42] 最終確認完了(2026-08-04)。根本原因はStreamlit Cloudコンテナにgitのuser.name/user.emailが未設定で、commit自体がrc=128(Please tell me who you are)で毎回失敗してた(push以前の問題)。commitコマンドに-c user.name/-c user.emailを明示するよう修正(lib/storage.py)、隔離環境で再現・修正確認済み。実際にconfigs/carenacosmetic.jsonがGitHub上に実在することを直接確認、正常に永続化されることを確定できた",
       "ball": "worker",
       "parent_id": ""
     },
