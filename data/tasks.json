@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-05T20:32:01",
+  "last_updated": "2026-08-05T21:00:22",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3266,6 +3266,23 @@
       "column": "todo",
       "assignee": "Noa",
       "purpose": "八方美人的で結論のない記事を、ファクト積み上げ＋PREP構成の明確な結論に修正する。オフィスホワイトニング推奨の結論を末尾に追加し、一段落一トピックに分割し終えたら完了",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-05",
+      "status_changed_at": "2026-08-05",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t224",
+      "title": "クマ取りPU画像差し替え",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "クマ取り診断PU(7地域記事)の画像を差し替える",
       "impact": "",
       "description": "",
       "deadline": "",
