@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T11:26:51",
+  "last_updated": "2026-08-10T12:17:57",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -3307,14 +3307,14 @@
       "created_by": "CEO",
       "created_at": "2026-08-10",
       "status_changed_at": "2026-08-10",
-      "notes": "[08/10 10:57] 原因確定: Winut一覧が50行/ページ→8/2頃ページ仕様変更。タグ51個以上の7アカ（医ダイ168/ED75/コスメ67/ピル59/看護54/包茎51/クマ51）だけスクレイパーのチェック→計測DLが空振り（チェック0件でDL→アラート）。タグ50以下は全部正常（AGA=50で生存）。Winut設定は無罪。修正は先方スクレイパー側（project-popupのCloud Function）。renから先方に連絡\n[08/10 11:26] 先方退職判明→自前修復に方針転換。①タグ削除で5アカ(ED/ピル/包茎/クマ/看護)は50個以下に落ちて自動復旧見込み(候補188件リスト納品済)。②医ダイ(生存タグ117)とコスメ(69)は削除では50以下不可→自前の日次計測CSV収集スクリプト(Playwright+ローカルcron)をCTOマターで構築。③project-popupのCloud Functionsはren権限なし(BQ読みのみ)。project-popup管理権の引き継ぎ先確認もrenマター。④先方インフラ無管理化=linefriends収集も突然死リスクあり",
+      "notes": "[08/10 10:57] 原因確定: Winut一覧が50行/ページ→8/2頃ページ仕様変更。タグ51個以上の7アカ（医ダイ168/ED75/コスメ67/ピル59/看護54/包茎51/クマ51）だけスクレイパーのチェック→計測DLが空振り（チェック0件でDL→アラート）。タグ50以下は全部正常（AGA=50で生存）。Winut設定は無罪。修正は先方スクレイパー側（project-popupのCloud Function）。renから先方に連絡\n[08/10 11:26] 先方退職判明→自前修復に方針転換。①タグ削除で5アカ(ED/ピル/包茎/クマ/看護)は50個以下に落ちて自動復旧見込み(候補188件リスト納品済)。②医ダイ(生存タグ117)とコスメ(69)は削除では50以下不可→自前の日次計測CSV収集スクリプト(Playwright+ローカルcron)をCTOマターで構築。③project-popupのCloud Functionsはren権限なし(BQ読みのみ)。project-popup管理権の引き継ぎ先確認もrenマター。④先方インフラ無管理化=linefriends収集も突然死リスクあり\n[08/10 12:17] 復旧完了(t226)。タグ削除は復旧目的では不要に。残=project-popup管理権引き継ぎ確認のみ(ball:ren)。PWローテはlinefriends収集が死ぬため完全自前化まで禁止",
       "ball": "ren",
       "parent_id": ""
     },
     {
       "id": "t226",
       "title": "Winut自前計測コレクター構築（医ダイ・コスメ用、全アカ拡張可）",
-      "column": "todo",
+      "column": "done",
       "assignee": "CTO",
       "purpose": "50タグ超アカウントのimp計測を自前で毎日収集しfriend_data_cacheに合流。Playwright+ローカルcron。認証情報はren設置",
       "impact": "",
@@ -3324,7 +3324,7 @@
       "created_by": "CEO",
       "created_at": "2026-08-10",
       "status_changed_at": "2026-08-10",
-      "notes": "",
+      "notes": "[08/10 12:17] 8/10完了: winut_collector.py(Playwright)で7アカ全成功。毎朝7時cron登録済み。8/1〜8/9遡り復元・本番経路検証済み。残: 月末エッジ(9/1に8/31分が取れない)を8月中に手当て",
       "ball": "worker",
       "parent_id": ""
     }
