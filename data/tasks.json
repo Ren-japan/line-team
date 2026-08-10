@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-10T13:59:43",
-  "updated_by": "CEO",
+  "last_updated": "2026-08-10T14:17:38",
+  "updated_by": "Noa",
   "tasks": [
     {
       "id": "t5",
@@ -3326,6 +3326,23 @@
       "status_changed_at": "2026-08-10",
       "notes": "[08/10 12:17] 8/10完了: winut_collector.py(Playwright)で7アカ全成功。毎朝7時cron登録済み。8/1〜8/9遡り復元・本番経路検証済み。残: 月末エッジ(9/1に8/31分が取れない)を8月中に手当て",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t227",
+      "title": "コスメ(carena) PU計測が8/3から完全ゼロ、GTM/WINUTタグ確認",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "8/3以降imp/click/友達ゼロを復旧",
+      "impact": "",
+      "description": "carenacosmetic.co.jpのseo_cosmeタグ、8/1-8/2は正常(LP imp計1,116)だが8/3〜8/9はlp_imp/pu_imp/pu_click/added_friendsが全タグで完全ゼロ(タグのレコード自体は毎日134件存在、値だけゼロ)。同時期に医療ダイエット・AGA等の他ジャンルは通常通り友達を稼いでおり(8/3-8/9で計77人)、全体障害ではなくコスメだけがピンポイントで死んでいる。7月ペース(LP imp平均554/日・友達1.45人/日)で計算すると7日間で友達約10人相当のロス。仮説: GTMタグ配信停止/削除、またはWINUTタグ設定異常(7/21にも台帳の停止設定とWINUT実反映のラグ問題が未解決のまま残っている)。実機・GTM側でカレーナのタグが生きているか確認してほしい。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-10",
+      "status_changed_at": "2026-08-10",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
