@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T19:39:21",
+  "last_updated": "2026-08-10T19:58:06",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3358,7 +3358,7 @@
       "created_by": "Noa",
       "created_at": "2026-08-10",
       "status_changed_at": "2026-08-10",
-      "notes": "",
+      "notes": "[08/10 19:58] 週次分析(8月W1)中に新仮説判明: Renのバックフィルコミットメッセージに『51タグ以上の7アカでimp/友だちがゼロ化した障害を復元』とあり、対象は7アカウント限定。看護転職・包茎がこの7アカに含まれていなければ、他ジャンルが復旧しても取り残される。Renにwinut_accounts.tsvの対象一覧を確認してほしい。包茎は8/2時点で既にLP imp5まで下がっており、GAS障害以前から別の低下が進行していた可能性も残る。詳細: noa-docs/weekly-analysis-2026-08-w1.html",
       "ball": "ceo",
       "parent_id": ""
     },
