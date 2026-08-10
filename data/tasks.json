@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T14:46:04",
+  "last_updated": "2026-08-10T18:10:53",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3341,8 +3341,25 @@
       "created_by": "Noa",
       "created_at": "2026-08-10",
       "status_changed_at": "2026-08-10",
-      "notes": "[08/10 14:46] 訂正: コスメ固有の問題ではなかった。全ジャンルのlp_impを日別に洗い直したところ、8/3以降 医療ダイエット(glp1_seo/glp1_seo_ava)・ED・ピル・包茎・こいずみ・shimi_seo・看護転職・コスメ 等、主要ジャンルの大半でlp_imp/pu_impが完全ゼロ化(友達数だけは別経路で計上継続=t162と同じ症状)。一方AGA/FAGA/いびき/hokuro/メンズ脱毛は通常通り収集継続しており、全滅ではなく部分的な停止。7/7-7/13に発生した同一症状(t162/t163、原因=BQ→スプシ書込Cloud Runプロセスの先方インフラ側停止、復旧策としてsync_bq_extract_to_sheet.pyを17:30cron登録)の再発の可能性が高い。まずcronジョブ(sync_bq_extract_to_sheet.py)が生きているか確認するのが最短",
+      "notes": "[08/10 14:46] 訂正: コスメ固有の問題ではなかった。全ジャンルのlp_impを日別に洗い直したところ、8/3以降 医療ダイエット(glp1_seo/glp1_seo_ava)・ED・ピル・包茎・こいずみ・shimi_seo・看護転職・コスメ 等、主要ジャンルの大半でlp_imp/pu_impが完全ゼロ化(友達数だけは別経路で計上継続=t162と同じ症状)。一方AGA/FAGA/いびき/hokuro/メンズ脱毛は通常通り収集継続しており、全滅ではなく部分的な停止。7/7-7/13に発生した同一症状(t162/t163、原因=BQ→スプシ書込Cloud Runプロセスの先方インフラ側停止、復旧策としてsync_bq_extract_to_sheet.pyを17:30cron登録)の再発の可能性が高い。まずcronジョブ(sync_bq_extract_to_sheet.py)が生きているか確認するのが最短\n[08/10 18:09] 確認(8/10 18:08): Renのバックフィル(commit 9f9c0d9)後、コスメ含む主要ジャンル(医療ダイエット/ED/ピル/シミ)は8/3-8/9のlp_imp/pu_imp/pu_click/友達が復旧確認できた(コスメ友達は8/3-8/9で計14人回復)。ただし同コミットにバグあり: lib/data_loader.pyがlib.constants.SEO_NATIVE_ACCOUNTSを参照するが定義が漏れておりImportErrorで load_unified_data() が全滅していた→ローカルのみ空リストで暫定パッチして確認(コミットはしていない、Renに本来の値を追加コミットしてもらう必要あり)。また看護転職(seo_job_kango)と包茎(seo_phimo)は8/3-8/9も引き続きほぼゼロで、今回のGAS障害とは別原因の疑い(包茎は8/2から既に低下開始)。",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t228",
+      "title": "看護転職(job_kango)・包茎(phimo)のlp_imp、GAS復旧後も引き続きほぼゼロ",
+      "column": "todo",
+      "assignee": "Noa",
+      "purpose": "8/2以降の急減原因を特定",
+      "impact": "",
+      "description": "t227(GAS新データ収集障害)の復旧確認中に発見。他ジャンル(医療ダイエット/ED/ピル/シミ/コスメ)は8/3-8/9のlp_impが正常水準に復旧したが、seo_job_kangoは8/1時点で既に1・8/2以降ゼロ、seo_phimoは8/2の15から8/3以降1〜2で張り付いたまま。GAS障害とは別原因(タグ/記事URL紐付け・記事側のアクセス自体の停止等)の疑い。包茎はt176(houhien/toha追加率0%調査)と関連する可能性があるので合わせて確認。看護転職は既存t63(PU+LP改善)の対象記事のアクセス自体が止まっている可能性。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-10",
+      "status_changed_at": "2026-08-10",
+      "notes": "",
+      "ball": "ceo",
       "parent_id": ""
     }
   ]
