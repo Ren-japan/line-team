@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T14:17:38",
+  "last_updated": "2026-08-10T14:46:04",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3330,7 +3330,7 @@
     },
     {
       "id": "t227",
-      "title": "コスメ(carena) PU計測が8/3から完全ゼロ、GTM/WINUTタグ確認",
+      "title": "GAS新データ収集タブ funnel計測が8/3から複数ジャンルで停止(t162/t163再発疑い)",
       "column": "todo",
       "assignee": "Ren",
       "purpose": "8/3以降imp/click/友達ゼロを復旧",
@@ -3341,7 +3341,7 @@
       "created_by": "Noa",
       "created_at": "2026-08-10",
       "status_changed_at": "2026-08-10",
-      "notes": "",
+      "notes": "[08/10 14:46] 訂正: コスメ固有の問題ではなかった。全ジャンルのlp_impを日別に洗い直したところ、8/3以降 医療ダイエット(glp1_seo/glp1_seo_ava)・ED・ピル・包茎・こいずみ・shimi_seo・看護転職・コスメ 等、主要ジャンルの大半でlp_imp/pu_impが完全ゼロ化(友達数だけは別経路で計上継続=t162と同じ症状)。一方AGA/FAGA/いびき/hokuro/メンズ脱毛は通常通り収集継続しており、全滅ではなく部分的な停止。7/7-7/13に発生した同一症状(t162/t163、原因=BQ→スプシ書込Cloud Runプロセスの先方インフラ側停止、復旧策としてsync_bq_extract_to_sheet.pyを17:30cron登録)の再発の可能性が高い。まずcronジョブ(sync_bq_extract_to_sheet.py)が生きているか確認するのが最短",
       "ball": "ren",
       "parent_id": ""
     }
