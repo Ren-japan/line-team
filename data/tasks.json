@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12T10:29:39",
+  "last_updated": "2026-08-12T11:54:40",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3377,6 +3377,23 @@
       "status_changed_at": "2026-08-10",
       "notes": "",
       "ball": "watching",
+      "parent_id": ""
+    },
+    {
+      "id": "t230",
+      "title": "line-consoleのdata_loader.pyが旧版、2つの修正が未反映",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "line-dashboardの修正2件を移植",
+      "impact": "",
+      "description": "Noaが「PU全件」CSVをline-consoleからエクスポートしたところ、claude-projects/line-dashboardの分析と数値が食い違うことが判明(2026-08-12)。原因: line-console/lib/data_loader.pyのload_unified_data()が古いバージョンで、①7/13の新データ収集タブ二重転記対策(drop_duplicates(data_date,account,tag_name))と②8/10のBQ_daily_data直結化+Winut手動補完バックフィル層、の2つが未反映。結果、7月分の友達・PU impが正確に2倍(90人vs45人、12,038vs6,022)、8月分(GAS障害期間8/3-8/9)が全PUで友達0人表示になっていた。claude-projects/line-dashboard/lib/data_loader.pyの該当箇所(load_unified_data内、コメント「1.5 BQ直結タブで直近日付を置換」以降)をline-console側に移植すれば解消する見込み。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-12",
+      "status_changed_at": "2026-08-12",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
