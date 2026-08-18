@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T15:24:07",
+  "last_updated": "2026-08-18T19:11:05",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3480,6 +3480,40 @@
       "status_changed_at": "2026-08-18",
       "notes": "",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t236",
+      "title": "週次分析・週次報告作成（8月W2）",
+      "column": "done",
+      "assignee": "Noa",
+      "purpose": "8月W2友達129人(前週170人)を分析・報告",
+      "impact": "",
+      "description": "8月W2(8/10-8/16)の友だち・ファネル分析。医療ダイエット(GLP-1)が追加率崩壊(7.41%→3.88%)の主犯と特定、AGA記事群も横断的に同症状。週次報告8/17タブに反映済み。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-18",
+      "status_changed_at": "2026-08-18",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t237",
+      "title": "記事タグ紐付け(補完バケット)の記事レベル復元可否確認",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "記事単位PU分析の復元可否をRenに確認",
+      "impact": "",
+      "description": "8/3以降、医療ダイエット・ED・ピル・コスメ・こいずみ・シミ取りでPU経由友達の86%以上が記事不明の「補完」タグに計上。8月W1→W2で改善なし。t227(GAS障害)は集計合計の復旧が対象で、記事単位の紐付け復元は範囲外と判明。Renへ復元可否の確認を送付済み、回答待ち。",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-18",
+      "status_changed_at": "2026-08-18",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
