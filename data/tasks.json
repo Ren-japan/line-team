@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T11:32:43",
+  "last_updated": "2026-08-24T11:53:58",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3548,6 +3548,23 @@
       "status_changed_at": "2026-08-21",
       "notes": "",
       "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t240",
+      "title": "記事単位の順位・CVトラッキング基盤の検討",
+      "column": "watching",
+      "assignee": "Noa",
+      "purpose": "バーティカル記事(SEO記事・地域記事・商標記事)の順位(GSC)とCV(ASP等)を記事単位で継続的に確認できる仕組みを作る。完了条件=起動時の申し送りやダッシュボードで記事別の順位推移・CV状況が見れる状態になること",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-24",
+      "status_changed_at": "2026-08-24",
+      "notes": "",
+      "ball": "worker",
       "parent_id": ""
     }
   ]
