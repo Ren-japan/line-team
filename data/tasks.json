@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T12:55:59",
+  "last_updated": "2026-08-24T13:24:15",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3556,6 +3556,23 @@
       "column": "watching",
       "assignee": "Noa",
       "purpose": "バーティカル記事(SEO記事・地域記事・商標記事)の順位(GSC)とCV(ASP等)を記事単位で継続的に確認できる仕組みを作る。完了条件=起動時の申し送りやダッシュボードで記事別の順位推移・CV状況が見れる状態になること",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "Noa",
+      "created_at": "2026-08-24",
+      "status_changed_at": "2026-08-24",
+      "notes": "",
+      "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t241",
+      "title": "医療ダイエット バナー友達減少(51→40人/週)のウォッチ",
+      "column": "watching",
+      "assignee": "Noa",
+      "purpose": "8月W3でLP imp+17.6%増にもかかわらずバナー経由友達が減少。PU経由は横ばいのため規模的にコスメより優先度低、深掘りは保留し次週以降の推移だけ観察する",
       "impact": "",
       "description": "",
       "deadline": "",
