@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26T11:10:48",
+  "last_updated": "2026-08-26T11:11:50",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -3621,7 +3621,7 @@
     {
       "id": "t244",
       "title": "お口プラス マウスピース矯正 大宮 地域記事作成",
-      "column": "todo",
+      "column": "in_progress",
       "assignee": "Noa",
       "purpose": "大宮版地域記事を新規作成",
       "impact": "",
