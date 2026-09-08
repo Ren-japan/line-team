@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T17:57:38",
+  "last_updated": "2026-09-08T10:36:52",
   "updated_by": "CEO",
   "tasks": [
     {
@@ -3701,6 +3701,23 @@
       "created_by": "CEO",
       "created_at": "2026-09-04",
       "status_changed_at": "2026-09-04",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t254",
+      "title": "引き継ぎ: スキル内の旧基準・矛盾の消し込み",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "effect-judge/coverage-checkに出力禁止のIMPFR/CTR基準が残存、weekly-report文字数基準3系統併存、diagnosis実行経路が旧SKILL参照、winut-manual2箇所。詳細フロー調査(9/8)で発覚。t253と合わせて一本化",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-09-08",
+      "status_changed_at": "2026-09-08",
       "notes": "",
       "ball": "ceo",
       "parent_id": ""
