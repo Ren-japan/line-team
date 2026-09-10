@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T18:33:54",
+  "last_updated": "2026-09-10T09:23:18",
   "updated_by": "Noa",
   "tasks": [
     {
@@ -3754,6 +3754,23 @@
       "status_changed_at": "2026-09-09",
       "notes": "",
       "ball": "worker",
+      "parent_id": ""
+    },
+    {
+      "id": "t257",
+      "title": "9月データ反映遅延(新データ収集タブ9/4以降停止疑い)確認",
+      "column": "todo",
+      "assignee": "Ren",
+      "purpose": "GAS新データ収集タブへの書き込みが9/3で止まっている疑いをRenに確認する。t162/t163と同型の障害か把握してるか聞く。解消を確認できたらLINE週次分析(9月W1)を再実施して完了とする",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": true,
+      "created_by": "Noa",
+      "created_at": "2026-09-10",
+      "status_changed_at": "2026-09-10",
+      "notes": "",
+      "ball": "ren",
       "parent_id": ""
     }
   ]
