@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-10T09:23:18",
-  "updated_by": "Noa",
+  "last_updated": "2026-09-11T09:32:27",
+  "updated_by": "CEO",
   "tasks": [
     {
       "id": "t5",
@@ -3769,6 +3769,40 @@
       "created_by": "Noa",
       "created_at": "2026-09-10",
       "status_changed_at": "2026-09-10",
+      "notes": "",
+      "ball": "ren",
+      "parent_id": ""
+    },
+    {
+      "id": "t258",
+      "title": "引き継ぎレポート: 渡すジャンル別シナリオ＋時期別数値推移（リス時代・SEO時代含む）",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "LINEをリス外部に移管するため、ジャンルごとに①どういうシナリオか②時期別にどう伸びたかをまとめる。マネMTG決定(9/11)・最優先",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-09-11",
+      "status_changed_at": "2026-09-11",
+      "notes": "",
+      "ball": "ceo",
+      "parent_id": ""
+    },
+    {
+      "id": "t259",
+      "title": "LOAログイン情報＋現状まとめを小柳さん・齋藤さんに共有",
+      "column": "todo",
+      "assignee": "CEO",
+      "purpose": "引き継ぎ用。アカウント一覧・プラン・友だち数・運用状況＋ログイン情報の所在(Notion)をまとめて共有準備。共有実行はren",
+      "impact": "",
+      "description": "",
+      "deadline": "",
+      "needs_approval": false,
+      "created_by": "CEO",
+      "created_at": "2026-09-11",
+      "status_changed_at": "2026-09-11",
       "notes": "",
       "ball": "ren",
       "parent_id": ""
